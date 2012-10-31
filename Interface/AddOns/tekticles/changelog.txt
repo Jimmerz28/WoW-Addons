@@ -1,0 +1,41 @@
+4.1.0.12-Beta
+    Fix channel list buttons not getting fonts
+    Fix title picker buttons in 4.1
+
+3.3.0.11-Release
+    Seems that the friends frame defined its own fonts, ugh
+
+3.2.0.10-Release
+    I can't, for the life of me, find where SetFont is being called to break font inheritance... so fuck it I'll just force the font objects back to what they're supposed to be.
+
+3.0.9.9-Release
+    Forgot libstub
+
+3.0.3.8-Beta
+    ReputationDetailFont doesn't inherit anymore, ugheth
+
+3.0.3.7-Beta
+    Missed SystemFont_Shadow_Huge3
+    Missed SystemFont_Small
+
+3.0.2.6-Beta
+    Convert everything to Blizzy's new base fonts.  I don't know why they made these... meh
+    Add about panel
+    Add preview panel
+
+3.0.1.5-Beta
+    Remove fonts that are gone in Wrath
+
+2.4.2.4-Beta
+    Fix for people who don't have LibStub (that's possible?)
+
+2.4.2.3-Beta
+    Apply font to BossEmoteNormalHuge
+
+2.4.1.2-Beta
+    Register fonts with LMS3, if present
+
+2.4.1.1-Beta
+    Fix them thar font paths
+    And so it begins...
+

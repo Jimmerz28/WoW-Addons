@@ -1,0 +1,29 @@
+------------------------------------------------------------------------
+r305 | adjo | 2012-09-03 09:35:17 +0000 (Mon, 03 Sep 2012) | 1 line
+Changed paths:
+   A /tags/5.0.4 (from /trunk:304)
+
+Tagging as 5.0.4
+------------------------------------------------------------------------
+r304 | adjo | 2012-09-02 09:16:12 +0000 (Sun, 02 Sep 2012) | 1 line
+Changed paths:
+   M /trunk/Genie.toc
+   M /trunk/Modules/Genie_LDB/Genie_LDB.toc
+   M /trunk/Modules/Genie_UI/Genie_UI.toc
+
+UPDATE; toc 5.0.4
+------------------------------------------------------------------------
+r303 | adjo | 2012-09-01 19:49:28 +0000 (Sat, 01 Sep 2012) | 1 line
+Changed paths:
+   M /trunk/Genie.toc
+   M /trunk/Modules/Genie_LDB/Genie_LDB.toc
+   M /trunk/Modules/Genie_UI/Genie_UI.toc
+
+UPDATE
+------------------------------------------------------------------------
+r302 | adjo | 2012-02-22 20:55:46 +0000 (Wed, 22 Feb 2012) | 1 line
+Changed paths:
+   M /trunk/Genie.lua
+
+NEW; Automatic start after tradeskill-item-creation; ticket 119
+------------------------------------------------------------------------

@@ -1,0 +1,4 @@
+MACRO 16777217 "squirrel" "INV_Misc_QuestionMark"
+/tar terrified
+/interact
+END

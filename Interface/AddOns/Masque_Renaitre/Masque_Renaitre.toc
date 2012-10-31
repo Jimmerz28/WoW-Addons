@@ -1,0 +1,9 @@
+## Interface: 50001
+## Title: Masque|c0000FF00:|r|cffa335ee Renaitre|r 
+## Version: v5.0.1
+## Notes: Renaitre's (US Burning Blade) button skins for Masque.
+## Author: Limb0
+## Credits: StormFX and JJ Sheets (the creators of Masque and ButtonFacade), Sairen (creator of cyCircled)
+## Dependencies: Masque
+
+Skins.lua

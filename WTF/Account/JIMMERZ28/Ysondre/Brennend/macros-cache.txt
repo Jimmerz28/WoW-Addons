@@ -1,0 +1,3 @@
+MACRO 16777217 "Freez" INV_Misc_QuestionMark
+/cast Freeze
+END

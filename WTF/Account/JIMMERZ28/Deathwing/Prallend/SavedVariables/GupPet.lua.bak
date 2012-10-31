@@ -1,0 +1,609 @@
+
+GUPPET_SAVEDDATA = {
+	["MultiGround"] = {
+		["Total"] = 0,
+	},
+	["Multi"] = {
+		{
+			["Name"] = "Sandstone Drake",
+			["Slot"] = 21,
+			["Id"] = 93326,
+			["CreatureID"] = 50269,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [1]
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 1,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 1,
+	},
+	["Aquatic"] = {
+		{
+			["Name"] = "Abyssal Seahorse",
+			["Slot"] = 1,
+			["Id"] = 75207,
+			["CreatureID"] = 40054,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [1]
+		{
+			["Name"] = "Sea Turtle",
+			["Slot"] = 22,
+			["Id"] = 64731,
+			["CreatureID"] = 34187,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [2]
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 2,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 2,
+	},
+	["Fly"] = {
+		{
+			["Name"] = "Albino Drake",
+			["Slot"] = 2,
+			["Id"] = 60025,
+			["CreatureID"] = 32158,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [1]
+		{
+			["Name"] = "Blue Riding Nether Ray",
+			["Slot"] = 4,
+			["Id"] = 39803,
+			["CreatureID"] = 22978,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [2]
+		{
+			["Name"] = "Bronze Drake Mount",
+			["Slot"] = 5,
+			["Id"] = 59569,
+			["CreatureID"] = 31717,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [3]
+		{
+			["Name"] = "Celestial Steed",
+			["Slot"] = 7,
+			["Id"] = 75614,
+			["CreatureID"] = 40625,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [4]
+		{
+			["Name"] = "Cenarion War Hippogryph",
+			["Slot"] = 8,
+			["Id"] = 43927,
+			["CreatureID"] = 24488,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [5]
+		{
+			["Name"] = "Dark Phoenix",
+			["Slot"] = 9,
+			["Id"] = 88990,
+			["CreatureID"] = 47841,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [6]
+		{
+			["Name"] = "Drake of the West Wind",
+			["Slot"] = 10,
+			["Id"] = 88741,
+			["CreatureID"] = 47647,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [7]
+		{
+			["Name"] = "Frosty Flying Carpet",
+			["Slot"] = 11,
+			["Id"] = 75596,
+			["CreatureID"] = 40533,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [8]
+		{
+			["Name"] = "Green Proto-Drake",
+			["Slot"] = 13,
+			["Id"] = 61294,
+			["CreatureID"] = 32562,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [9]
+		{
+			["Name"] = "Green Riding Nether Ray",
+			["Slot"] = 14,
+			["Id"] = 39798,
+			["CreatureID"] = 22958,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [10]
+		{
+			["Name"] = "Headless Horseman's Mount",
+			["Slot"] = 15,
+			["Id"] = 48025,
+			["CreatureID"] = 27152,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [11]
+		{
+			["Name"] = "Imperial Quilen",
+			["Slot"] = 16,
+			["Id"] = 124659,
+			["CreatureID"] = 63831,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [12]
+		{
+			["Name"] = "Magnificent Flying Carpet",
+			["Slot"] = 17,
+			["Id"] = 61309,
+			["CreatureID"] = 33030,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [13]
+		{
+			["Name"] = "Purple Riding Nether Ray",
+			["Slot"] = 18,
+			["Id"] = 39801,
+			["CreatureID"] = 22975,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [14]
+		{
+			["Name"] = "Red Riding Nether Ray",
+			["Slot"] = 19,
+			["Id"] = 39800,
+			["CreatureID"] = 22976,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [15]
+		{
+			["Name"] = "Rusted Proto-Drake",
+			["Slot"] = 20,
+			["Id"] = 63963,
+			["CreatureID"] = 33904,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [16]
+		{
+			["Name"] = "Sandstone Drake",
+			["Slot"] = 21,
+			["Id"] = 93326,
+			["CreatureID"] = 50269,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [17]
+		{
+			["Name"] = "Silver Riding Nether Ray",
+			["Slot"] = 23,
+			["Id"] = 39802,
+			["CreatureID"] = 22977,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [18]
+		{
+			["Name"] = "Time-Lost Proto-Drake",
+			["Slot"] = 28,
+			["Id"] = 60002,
+			["CreatureID"] = 32153,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [19]
+		{
+			["Name"] = "Turbo-Charged Flying Machine",
+			["Slot"] = 29,
+			["Id"] = 44151,
+			["CreatureID"] = 24654,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [20]
+		{
+			["Name"] = "Tyrael's Charger",
+			["Slot"] = 30,
+			["Id"] = 107203,
+			["CreatureID"] = 56921,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [21]
+		{
+			["Name"] = "Violet Proto-Drake",
+			["Slot"] = 31,
+			["Id"] = 60024,
+			["CreatureID"] = 32157,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [22]
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 22,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 22,
+	},
+	["Unknown"] = {
+		["Total"] = 0,
+	},
+	["Ground"] = {
+		{
+			["Name"] = "Big Blizzard Bear",
+			["Slot"] = 3,
+			["Id"] = 58983,
+			["CreatureID"] = 31319,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [1]
+		{
+			["Name"] = "Brown Riding Camel",
+			["Slot"] = 6,
+			["Id"] = 88748,
+			["CreatureID"] = 47652,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [2]
+		{
+			["Name"] = "Celestial Steed",
+			["Slot"] = 7,
+			["Id"] = 75614,
+			["CreatureID"] = 40625,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [3]
+		{
+			["Name"] = "Frosty Flying Carpet",
+			["Slot"] = 11,
+			["Id"] = 75596,
+			["CreatureID"] = 40533,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [4]
+		{
+			["Name"] = "Great Brewfest Kodo",
+			["Slot"] = 12,
+			["Id"] = 49379,
+			["CreatureID"] = 27707,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [5]
+		{
+			["Name"] = "Headless Horseman's Mount",
+			["Slot"] = 15,
+			["Id"] = 48025,
+			["CreatureID"] = 27152,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [6]
+		{
+			["Name"] = "Magnificent Flying Carpet",
+			["Slot"] = 17,
+			["Id"] = 61309,
+			["CreatureID"] = 33030,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [7]
+		{
+			["Name"] = "Swift Brewfest Ram",
+			["Slot"] = 24,
+			["Id"] = 43900,
+			["CreatureID"] = 24368,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [8]
+		{
+			["Name"] = "Swift Lovebird",
+			["Slot"] = 25,
+			["Id"] = 102350,
+			["CreatureID"] = 54742,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [9]
+		{
+			["Name"] = "Swift White Hawkstrider",
+			["Slot"] = 26,
+			["Id"] = 46628,
+			["CreatureID"] = 26131,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [10]
+		{
+			["Name"] = "Tan Riding Camel",
+			["Slot"] = 27,
+			["Id"] = 88749,
+			["CreatureID"] = 47653,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [11]
+		{
+			["Name"] = "Turbo-Charged Flying Machine",
+			["Slot"] = 29,
+			["Id"] = 44151,
+			["CreatureID"] = 24654,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [12]
+		{
+			["Name"] = "Tyrael's Charger",
+			["Slot"] = 30,
+			["Id"] = 107203,
+			["CreatureID"] = 56921,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [13]
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 13,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 13,
+	},
+	["Companion"] = {
+		["Total"] = 0,
+	},
+}
+GUPPET_SAVEDLOCATIONS = {
+	["BattleGrounds"] = 40,
+	["Instances"] = 20,
+	["Arenas"] = 30,
+	["Cities"] = 10,
+	["Global World"] = 0,
+}
+GUPPET_OPTIONS = {
+	["Debug"] = false,
+	["PreviewFrameStartPos"] = 0,
+	["Class"] = {
+		["AquaticForm"] = true,
+		["FlyForm"] = true,
+	},
+	["IngameButton"] = {
+		["MountButton"] = "Auto",
+		["xOffset"] = 0,
+		["Icons"] = {
+			["Fly"] = "Interface\\Icons\\Ability_Mount_Drake_Bronze.blp",
+			["Companion"] = "Interface\\Icons\\INV_Box_PetCarrier_01.blp",
+			["Ground"] = "Interface\\Icons\\Ability_Mount_Mammoth_Black.blp",
+			["Auto"] = "Interface\\Icons\\Ability_Mount_Drake_Azure.blp",
+		},
+		["yOffset"] = 0,
+		["Show"] = false,
+		["Alignment"] = "H",
+		["RelativePoint"] = "CENTER",
+		["CompanionButton"] = true,
+		["Lock"] = false,
+		["Scale"] = 1,
+	},
+	["NewVersion"] = 0,
+	["PreviewFrameSpeed"] = 1,
+	["AutoCompanion"] = {
+		["Enabled"] = 1,
+		["PetOfTheDay"] = {
+			["Enabled"] = false,
+			["Day"] = 0,
+			["Month"] = 0,
+			["PetId"] = 0,
+			["Year"] = 0,
+		},
+		["Outside"] = true,
+		["BattleGround"] = true,
+		["Party"] = true,
+		["City"] = true,
+		["DismissMounted"] = false,
+		["Resummon"] = 0,
+		["Arena"] = true,
+		["Delay"] = 2,
+		["Raid"] = true,
+	},
+	["MinimapButton"] = {
+		["Show"] = false,
+		["Radius"] = 78,
+		["Position"] = 355,
+		["xOffset"] = 0,
+		["RelativePoint"] = "",
+		["Lock"] = true,
+		["yOffset"] = 0,
+	},
+	["Mode"] = "Expert_",
+}

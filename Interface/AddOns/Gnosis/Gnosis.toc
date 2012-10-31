@@ -1,0 +1,45 @@
+## Interface: 50001
+## Title: Gnosis (|cffaaff44Castbars and Timers|r) v3.23
+## Notes: Highly configurable castbar and single timer addon.
+## Author: elchefe <>
+## Version: v3.23
+## SavedVariables: GnosisDB, GnosisConfigs
+## SavedVariablesPerCharacter: GnosisChar
+## OptionalDeps: Ace3, LibSharedMedia-3.0, AceGUI-3.0-SharedMediaWidgets
+## X-Embeds: Ace3, LibSharedMedia-3.0, AceGUI-3.0-SharedMediaWidgets
+## LoadOnDemand: 0
+## DefaultState: enabled
+## X-Curse-Packaged-Version: v3.23
+## X-Curse-Project-Name: Gnosis (Castbars and Timers)
+## X-Curse-Project-ID: gnosis
+## X-Curse-Repository-ID: wow/gnosis/mainline
+
+# Libraries
+#@no-lib-strip@
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\AceAddon-3.0\AceAddon-3.0.xml
+Libs\AceGUI-3.0\AceGUI-3.0.xml
+Libs\AceConfig-3.0\AceConfig-3.0.xml
+Libs\AceConsole-3.0\AceConsole-3.0.xml
+Libs\AceDB-3.0\AceDB-3.0.xml
+Libs\AceEvent-3.0\AceEvent-3.0.xml
+Libs\LibSharedMedia-3.0\lib.xml
+Libs\AceGUI-3.0-SharedMediaWidgets\widget.xml
+#@end-no-lib-strip@
+
+# xml
+Gnosis.xml
+
+# lua
+Gnosis.lua
+Locale.lua
+Callback.lua
+OptionsFuncs.lua
+Options.lua
+Variables.lua
+Bars.lua
+Timers.lua
+
+# Gnosis' StatusBar implementation
+CreateStatusBar.lua

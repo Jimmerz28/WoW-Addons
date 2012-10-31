@@ -1,0 +1,27 @@
+
+TradeSkillMaster_ShoppingDB = {
+	["profileKeys"] = {
+		["Vergottlicht - Deathwing"] = "Vergottlicht - Deathwing",
+	},
+	["global"] = {
+		["treeGroupStatus"] = {
+			["groups"] = {
+				["1"] = true,
+			},
+			["scrollvalue"] = 0,
+			["selected"] = 1,
+			["treesizable"] = true,
+			["treewidth"] = 175,
+			["fullwidth"] = 800.9999389648438,
+		},
+	},
+	["profiles"] = {
+		["Vergottlicht - Deathwing"] = {
+			["dealfinding"] = {
+				["DealfindingList"] = {
+				},
+			},
+			["version"] = 1,
+		},
+	},
+}

@@ -1,0 +1,10 @@
+MACRO 16777217 "AM" INV_Misc_QuestionMark
+#showtooltip Arcane Blast
+/use Oshu'gun Relic
+/cast Arcane Blast
+END
+MACRO 16777218 "FB" INV_Misc_QuestionMark
+#showtooltip Fireball
+/cast Presence of Mind
+/cast Fireball
+END

@@ -1,0 +1,21 @@
+## Interface: 50001
+
+## Title: GnomishVendorShrinker
+## Notes: Compact scrolling vendor frame
+## Author: Tekkub Stoutwrithe
+## Version: 5.0.1.15
+## X-Website: http://www.tekkub.net/
+## X-Email: tekkub-wow@googlegroups.com
+## X-Category: Misc
+## X-Icon: Interface\Icons\INV_Misc_Toy_07
+
+## LoadManagers: AddonLoader
+## X-LoadOn-Merchant: true
+## X-LoadOn-InterfaceOptions: GnomishVendorShrinker
+
+tekFunks\gsc.lua
+tekKonfig\tekKonfig.xml
+LibItemSearch-1.0.lua
+
+KnownScanner.lua
+GnomishVendorShrinker.lua

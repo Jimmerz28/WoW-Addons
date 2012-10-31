@@ -1,0 +1,175 @@
+
+DominosDB = {
+	["profileKeys"] = {
+		["Beichte - Deathwing"] = "Priest",
+	},
+	["profiles"] = {
+		["Priest"] = {
+			["frames"] = {
+				{
+					["point"] = "BOTTOM",
+					["padW"] = 2,
+					["x"] = 0,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 0,
+					["pages"] = {
+						["PRIEST"] = {
+							["page2"] = 1,
+							["page5"] = 4,
+							["page4"] = 3,
+							["shadow"] = 6,
+							["page3"] = 2,
+							["page6"] = 5,
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [1]
+				{
+					["point"] = "BOTTOM",
+					["padW"] = 2,
+					["x"] = 0,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 40,
+					["pages"] = {
+						["PRIEST"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [2]
+				{
+					["point"] = "BOTTOM",
+					["padW"] = 2,
+					["x"] = 0,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 80,
+					["pages"] = {
+						["PRIEST"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [3]
+				{
+					["point"] = "BOTTOM",
+					["padW"] = 2,
+					["x"] = 0,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 120,
+					["pages"] = {
+						["PRIEST"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [4]
+				{
+					["point"] = "BOTTOM",
+					["padW"] = 2,
+					["x"] = 0,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 160,
+					["pages"] = {
+						["PRIEST"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [5]
+				{
+					["point"] = "BOTTOM",
+					["padW"] = 2,
+					["x"] = 0,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 200,
+					["pages"] = {
+						["PRIEST"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [6]
+				{
+					["point"] = "BOTTOM",
+					["padW"] = 2,
+					["x"] = 0,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 240,
+					["pages"] = {
+						["PRIEST"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [7]
+				{
+					["point"] = "BOTTOM",
+					["padW"] = 2,
+					["x"] = 0,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 280,
+					["pages"] = {
+						["PRIEST"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [8]
+				{
+					["point"] = "BOTTOM",
+					["padW"] = 2,
+					["x"] = 0,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 320,
+					["pages"] = {
+						["PRIEST"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [9]
+				{
+					["point"] = "BOTTOM",
+					["padW"] = 2,
+					["x"] = 0,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 360,
+					["pages"] = {
+						["PRIEST"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [10]
+				["menu"] = {
+					["y"] = 0,
+					["x"] = -244,
+					["point"] = "BOTTOMRIGHT",
+				},
+				["extra"] = {
+					["y"] = 0,
+					["x"] = -244,
+					["point"] = "CENTER",
+				},
+				["bags"] = {
+					["numButtons"] = 5,
+					["point"] = "BOTTOMRIGHT",
+					["spacing"] = 2,
+				},
+				["pet"] = {
+					["y"] = -32,
+					["x"] = 0,
+					["point"] = "CENTER",
+					["spacing"] = 6,
+				},
+				["class"] = {
+					["numButtons"] = 0,
+					["point"] = "CENTER",
+					["spacing"] = 2,
+				},
+			},
+		},
+	},
+}
+DominosVersion = "5.0.6"

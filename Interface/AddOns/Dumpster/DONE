@@ -1,0 +1,33 @@
+Dump by BOE/BOP status. need to figure out how to determine bind status of an item.
+	http://www.wowwiki.com/UIOBJECT_GameTooltip
+	LibGratuity
+	if at mailbox/guild bank, auto-exclude bound items
+Load on demand
+Auto-select vendor portion for innkeepers and such
+	GossipFrame
+	GossipTitleButton1
+	GossipTitleButton2
+Option parsing library, syntax
+	"/din fur of the noob/green/2/bop"
+	"/din /boe /green fur of the noob"
+	"/din --boe --green fur of the noob"
+	green (uncommon) vs green dye
+	'green or better' 'lower than epic'
+full stacks vs partial stacks - /din /full netherweave cloth
+                /din 5 /partial
+dall needs to change current tabs
+dout at vendor - buying
+        /dout 5 sacred candle
+/dout from mail - check out Postal
+        start from oldest mail
+        delete mail if its empty?
+## X-LoadOn-Slash
+Sets of things to dump
+        /din /set /all
+        /din /sets set1 set2 set3
+        /din /set !set1
+        instead of /din 3 x and /din 4 y, do /din /set set1 which moves both
+color result by success/failure
+GUI for editing sets
+
+

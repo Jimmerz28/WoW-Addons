@@ -1,0 +1,30 @@
+MACRO 16777220 "Critters" "INV_Misc_QuestionMark"
+/run if GetMouseButtonClicked() == 'RightButton' then Livestock.DismissCritter() else Livestock.PickCritter() end
+END
+MACRO 16777222 "Mangle" "INV_Misc_QuestionMark"
+#showtooltip Mangle (Cat)
+/cast Tiger's Fury
+/cast Mangle (Cat)
+END
+MACRO 16777218 "Mangle" "INV_Misc_QuestionMark"
+#showtooltip Mangle - Cat
+/cast Tiger's Fury
+/cast Mangle - Cat
+END
+MACRO 16777217 "Mount" "Ability_Hunter_ZenArchery"
+#showtooltip
+/cast [flyable] Swift Flight Form(Shapeshift)
+/castrandom Big Blizzard Bear(), Swift White Hawkstrider()
+END
+MACRO 16777219 "Pounce/Shred" "INV_Misc_QuestionMark"
+#showtooltip Pounce
+/cast Tiger's Fury(Rank 5)
+/cast Pounce
+END
+MACRO 16777221 "RG" "INV_Misc_QuestionMark"
+#showtooltip Wild Growth
+/use Talisman of Resurgence
+/use Sliver of Pure Ice
+/cast [mod:alt, target=player] Wild Growth
+/cast Wild Growth
+END

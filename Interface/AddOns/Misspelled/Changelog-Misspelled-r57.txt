@@ -1,0 +1,36 @@
+------------------------------------------------------------------------
+r57 | nrpieper | 2010-10-12 02:14:40 +0000 (Tue, 12 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/Misspelled.lua
+   M /trunk/Misspelled.toc
+
+TOC bump to 4.0
+------------------------------------------------------------------------
+r56 | nrpieper | 2010-09-29 17:30:46 +0000 (Wed, 29 Sep 2010) | 1 line
+Changed paths:
+   M /trunk/Dict/Dic_enGB.lua
+   M /trunk/Dict/Dic_enUS.lua
+   M /trunk/Misspelled.lua
+   M /trunk/Misspelled.toc
+
+Added the following Cataclysm proper nouns to the enUS and enGB dictionaries: Akir, Altarius, Ammunae, Anhuur, Anraphet, Archmage, Arugal, Asim, Azil, Barad, Baradin, Barim, Batol, Blindwatcher, Bonecrusher, Corborus, Corla, Deepholm, Drahga, Earthrager, Ertan, Erudax, Erunak, Fenrus, Forgemaster, Ghur'sha, Gilneas, Gilnid, Greenskin, Husam, Isiset, Karsh, Kelp'thar, Kezan, Lockmaw, Mindbender, Nandos, Naz'jar, Obsidius, Ozruk, Ozumat, Rajh, Razorclaw, Rethilgore, Rhahk'Zor, Rom'ogg, Setesh, Shodowburner, Siamat, Silverlaine, Slabhide, Springvale, Steelbender, Stonecore, Stonespeaker, Throngus, Tol'vir, Tol, Uldum, Ulthok, Umbriss, VanCleef, Vashj'ir, Worgen
+------------------------------------------------------------------------
+r55 | nrpieper | 2010-09-14 22:59:36 +0000 (Tue, 14 Sep 2010) | 2 lines
+Changed paths:
+   M /trunk
+   M /trunk/Misspelled.lua
+   M /trunk/Misspelled.toc
+
+Small change to remark out popupmenuitem.owner lines that don't appear to be needed, and were throwing a [this] is nil error in Cat/Wow 4
+Choose to "Use Out of Date Addons", to use Misspelled with the current PRT or Cataclysm clients.
+------------------------------------------------------------------------
+r54 | nrpieper | 2010-07-22 18:24:08 +0000 (Thu, 22 Jul 2010) | 3 lines
+Changed paths:
+   A /trunk/Localization
+   A /trunk/Localization/Includes.xml
+   A /trunk/Localization/enUS.lua
+
+Added support for UI localization.  Now I just need some help with translations.
+"Fixed" compatibility with the addon Gryphonheart Items:
+(GHI) Gryphonheart Items begins it's item color tags with a (|C) capitol C (vs the standard |c).  I added that possibility to the chat text parsing routines.
+------------------------------------------------------------------------

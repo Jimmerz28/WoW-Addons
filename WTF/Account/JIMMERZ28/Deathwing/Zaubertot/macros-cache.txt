@@ -1,0 +1,15 @@
+MACRO 16777220 "Critters" INV_Misc_QuestionMark
+/run if GetMouseButtonClicked() == 'RightButton' then Livestock.DismissCritter() else Livestock.PickCritter() end
+END
+MACRO 16777218 "Fireball" INV_Misc_QuestionMark
+#showtooltip Frostfire Bolt
+/cast Frostfire Bolt
+END
+MACRO 16777217 "Mount" INV_Misc_QuestionMark
+#showtooltip 
+/castrandom Big Blizzard Bear
+END
+MACRO 16777219 "Poly" INV_Misc_QuestionMark
+#showtooltip Polymorph
+/castrandom Polymorph(Pig), Polymorph, Polymorph(Rabbit)
+END

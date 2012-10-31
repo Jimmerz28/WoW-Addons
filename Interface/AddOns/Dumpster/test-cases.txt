@@ -1,0 +1,28 @@
+
+In to:
+	bank
+	gbank
+	trade
+	merchant
+	merchant from gossip (innkeeper)
+	mail from inbox
+	mail from sendbox
+	
+Out from:
+	bank
+	gbank
+	merchant
+	merchant from gossip (innkeeper)
+	mail from inbox
+	mail from sendbox
+
+/din 2 apple
+/din /only 2 apple
+/din /remain 2 apple
+/din /full apple
+/din /partial apple
+/din /except apple
+
+Merchant stack splitting:
+/dout 3 shiny apple
+/dout 11 shiny apple

@@ -1,0 +1,14 @@
+
+MasqueDB = {
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Jaymes - Deathwing"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

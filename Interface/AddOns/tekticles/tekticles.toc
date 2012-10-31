@@ -1,0 +1,24 @@
+## Interface: 50001
+
+## Title: tekticles
+## Notes: Simple font replacement
+## Author: Tekkub Stoutwrithe
+## Version: 4.1.0.12
+## X-Website: http://www.tekkub.net/
+## X-Email: tekkub-wow@googlegroups.com
+## X-Credits: ClearFont2 by Kirkburn
+## X-Category: Interface Enhancements
+
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
+## OptionalDeps: LibSharedMedia-3.0
+
+LibStub.lua
+tekKonfigAboutPanel.lua
+tekKonfigHeading.lua
+tekKonfigGroup.lua
+tekKonfigScroll.lua
+
+tekticles.lua
+sample.lua

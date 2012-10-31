@@ -1,0 +1,9 @@
+<Ui>
+	<Frame name="GnosisDummy">
+		<Scripts>
+			<OnUpdate>
+				Gnosis:OnUpdate();
+			</OnUpdate>
+		</Scripts>
+	</Frame>
+</Ui>

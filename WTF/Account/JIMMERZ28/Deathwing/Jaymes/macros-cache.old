@@ -1,0 +1,5 @@
+MACRO 16777217 "trinket" "INV_Misc_QuestionMark"
+#showtooltip Hand of Gul'dan
+/use Insignia of the Earthen Lord
+/cast Hand of Gul'dan
+END

@@ -1,0 +1,15 @@
+MACRO 16777220 "HB" INV_Misc_QuestionMark
+#showtooltip Howling Blast
+Deathchill
+END
+MACRO 16777219 "PS" INV_Misc_QuestionMark
+#showtooltip Scourge Strike
+/use 14
+/cast Scourge Strike
+END
+MACRO 16777218 "Touch" INV_Misc_QuestionMark
+#showtooltip Howling Blast
+/use 13
+/use 14
+/cast Howling Blast
+END

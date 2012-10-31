@@ -1,0 +1,29 @@
+
+TradeSkillMaster_AuctioningDB = {
+	["global"] = {
+		["hideAdvanced"] = true,
+		["treeGroupStatus"] = {
+			["groups"] = {
+				["1"] = true,
+			},
+			["scrollvalue"] = 0,
+			["selected"] = 1,
+			["treesizable"] = true,
+			["fullwidth"] = 800.9999389648438,
+		},
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Vergottlicht - Deathwing"] = "Default",
+	},
+	["factionrealm"] = {
+		["Alliance - Deathwing"] = {
+			["player"] = {
+				["Vergottlicht"] = true,
+			},
+		},
+	},
+}

@@ -1,0 +1,21 @@
+## Title: Genie |cff7fff7f UI|r
+## Interface: 50001
+## Version: 5.0.4
+## X-Date: 2012-09-02T09:16:12Z
+## X-Revision: 304
+## Author: adjo
+## X-Website: http://wow.curseforge.com/projects/genie
+## X-Feedback: http://wow.curseforge.com/projects/genie/tickets/
+## X-Curse-Packaged-Version: 5.0.4
+## X-Curse-Project-Name: Genie
+## X-Curse-Project-ID: genie
+## X-Curse-Repository-ID: wow/genie/mainline
+
+## RequiredDeps: Genie, Genie_LDB
+## OptionalDeps: Ace3
+
+AceGUIContainer-GenieFrame.lua
+AceGUIContainer-GenieTreeGroup.lua
+AceGUIWidget-GenieIcon.lua
+
+GenieUI.lua

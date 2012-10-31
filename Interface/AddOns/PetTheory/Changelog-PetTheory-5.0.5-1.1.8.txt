@@ -1,0 +1,15 @@
+tag 5.0.5-1.1.8
+26a8304bba6016fe267ccb79f831de275fa8b555
+James D. Callahan III <jcallahan@curse.com>
+2012-10-10 21:45:17 -0500
+
+
+
+--------------------
+
+James D. Callahan III:
+	- FloatingBattlePetTooltip doesn't have an info_line (yet).
+	- More loading changes, to prevent errors.
+	- Don't just hide the PetJournalFilterButton and PetJournalListScrollFrame - completely remove their anchors as well so they cannot possibly show.
+	- Handle edge-case where zone name is nil (likely before the player is completely in the game) and added matching against the sub zone as well.
+	- Stop dynamically setting the anchors for BattlePetTooltip.info_line - they're always the same.

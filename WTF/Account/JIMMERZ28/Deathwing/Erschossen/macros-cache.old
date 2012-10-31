@@ -1,0 +1,12 @@
+MACRO 16777220 "AS" "INV_Misc_QuestionMark"
+#showtooltip Arcane Shot
+/cast Bestial Wrath
+/cast Arcane Shot
+END
+MACRO 16777219 "SS" "INV_Misc_QuestionMark"
+#showtooltip Steady Shot
+/use 13
+/use 14
+/cast Steady Shot
+/cast Kill Command
+END

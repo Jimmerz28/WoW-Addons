@@ -1,0 +1,39 @@
+## Interface: 40000
+
+## Title: Dumpster |cff7fff7f -Ace3-|r
+## Title-enUS: Dumpster |cff7fff7f -Ace3-|r
+## Notes: Dump things in/out of your bank/guild bank
+## Notes-enUS: Dump things in/out of your bank/guild bank
+
+## Author: Badhairday-Malygos
+## X-Email: bobvila136 AT gmail DOT com
+## X-Feedback: bobvila136 AT gmail DOT com
+## X-Website: http://wow.curse.com/downloads/wow-addons/details/dumpster.aspx
+## X-Category: Inventory
+
+## Version: 106
+## X-Revision: 106
+## X-Date: 2008-12-30
+
+## X-Localizations: enUS
+## X-CompatibleLocales: enUS
+
+## RequiredDeps:
+## OptionalDeps: Ace3
+## X-Embeds: Ace3
+
+## SavedVariables: dumpset
+## SavedVariablesPerCharacter:
+
+## LoadOnDemand: 0
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+## DefaultState: enabled
+
+hidden-tooltip-for-scanning.xml
+
+embeds.xml
+
+Dumpster-enUS.lua
+Dumpster.lua
+

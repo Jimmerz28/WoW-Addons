@@ -1,0 +1,6 @@
+## Interface: 50001
+## Title: Combuctor Basic Sets
+## Author: Tuller
+## Notes: Basic sets for Combuctor
+## Dependencies: Combuctor
+sets.lua

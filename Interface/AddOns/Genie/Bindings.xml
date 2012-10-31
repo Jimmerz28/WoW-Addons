@@ -1,0 +1,30 @@
+<Bindings>
+    <Binding name="GENIE_WORK" header="GENIE_BINDINGS">
+		Genie.API:PreWorks()
+	</Binding>
+	<Binding name="GENIE_BAGWORK">
+		Genie.API:DoBagWorks()
+	</Binding>
+	<Binding name="GENIE_BANKWORK">
+		if Genie.atBank then
+			Genie.API:DoBankWorks()
+		end
+	</Binding>
+	<Binding name="GENIE_GUILDBANKWORK">
+		if Genie.atGuildBank then
+			Genie.API:DoGuildbankWorks()
+		end		
+	</Binding>
+	<Binding name="GENIE_UI">
+		Genie.API:ToggleUI()
+	</Binding>
+	<Binding name="GENIE_OPTIONS">
+		Genie.API:ToggleOptionsFrame()
+        </Binding>
+	<Binding name="GENIE_CONFIGMODE">
+		Genie.API:ToggleEditmode()
+	</Binding>        
+        <Binding name="GENIE_STOP">
+		Genie:Stop()
+	</Binding>
+</Bindings>

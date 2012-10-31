@@ -1,0 +1,10 @@
+
+TradeSkillMaster_MailingDB = {
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Vergottlicht - Deathwing"] = "Default",
+	},
+}

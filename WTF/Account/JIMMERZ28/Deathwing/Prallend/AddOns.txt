@@ -1,0 +1,9 @@
+Dominos_Roll: disabled
+Dominos_Cast: disabled
+WIM: enabled
+TradeSkillMaster_Shopping: enabled
+TradeSkillMaster_AuctionDB: enabled
+TradeSkillMaster_Accounting: enabled
+TradeSkillMaster_Crafting: enabled
+TradeSkillMaster_Mailing: enabled
+Skada: enabled

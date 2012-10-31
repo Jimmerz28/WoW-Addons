@@ -1,0 +1,344 @@
+
+AUCTIONATOR_SAVEDVARS = {
+	["_10000"] = 200,
+	["_50000"] = 500,
+	["_500"] = 5,
+	["_1000000"] = 2500,
+	["_200000"] = 1000,
+	["STARTING_DISCOUNT"] = 5,
+	["_5000000"] = 10000,
+	["_2000"] = 100,
+}
+AUCTIONATOR_PRICING_HISTORY = {
+	["Glyph of Bull Rush"] = {
+		["is"] = "67482:0",
+		["2191378"] = "1647500:1",
+	},
+	["Glyph of Scatter Shot"] = {
+		["is"] = "45734:0",
+		["2191377"] = "239000:1",
+	},
+	["Glyph of Charm Woodland Creature"] = {
+		["is"] = "43335:0",
+		["2191377"] = "199500:1",
+	},
+	["Ghost Iron Bar"] = {
+		["is"] = "72096:0",
+		["2191376"] = "121500:20",
+	},
+	["Seven of Embers"] = {
+		["is"] = "61994:0",
+		["2191376"] = "2492500:1",
+	},
+	["Glyph of Borrowed Time"] = {
+		["is"] = "43371:0",
+		["2191377"] = "238000:1",
+	},
+	["Glyph of Wind Shear"] = {
+		["is"] = "41532:0",
+		["2191377"] = "189500:1",
+	},
+	["Whiptail"] = {
+		["is"] = "52988:0",
+		["2191376"] = "19400:20",
+	},
+	["Glyph of Bloodcurdling Shout"] = {
+		["is"] = "43396:0",
+		["2191378"] = "539000:1",
+	},
+	["Glyph of Soul Consumption"] = {
+		["is"] = "43390:0",
+		["2191377"] = "162000:1",
+	},
+	["Glyph of Grace"] = {
+		["is"] = "43332:0",
+		["2191377"] = "229000:1",
+	},
+	["Enchant Weapon - Strength"] = {
+		["is"] = "38879:0",
+		["2191378"] = "1747500:1",
+	},
+	["Glyph of Shackle Undead"] = {
+		["is"] = "43373:0",
+		["2191377"] = "239000:1",
+	},
+	["Glyph of the Monkey"] = {
+		["is"] = "43360:0",
+		["2191377"] = "199500:1",
+	},
+	["Glyph of Shield Wall"] = {
+		["is"] = "45797:0",
+		["2191377"] = "489000:1",
+	},
+	["Five of Embers"] = {
+		["is"] = "61992:0",
+		["2191376"] = "3327500:1",
+	},
+	["Two of Embers"] = {
+		["is"] = "61989:0",
+		["2191376"] = "3245000:1",
+	},
+	["Four of Stones"] = {
+		["is"] = "61999:0",
+		["2191376"] = "2430000:1",
+	},
+	["Glyph of Inquisition"] = {
+		["is"] = "45747:0",
+		["2191377"] = "239000:1",
+	},
+	["Glyph of Raging Wind"] = {
+		["is"] = "43432:0",
+		["2191378"] = "189500:1",
+	},
+	["Glyph of Life Tap"] = {
+		["is"] = "45785:0",
+		["2191377"] = "539000:1",
+	},
+	["Glyph of Fear"] = {
+		["is"] = "42458:0",
+		["2191377"] = "1647500:1",
+	},
+	["Eight of the Winds"] = {
+		["is"] = "62011:0",
+		["2191376"] = "3245000:1",
+	},
+	["Glyph of Health Funnel"] = {
+		["is"] = "42461:0",
+		["2191377"] = "199500:1",
+	},
+}
+AUCTIONATOR_SHOPPING_LISTS = {
+	{
+		["items"] = {
+		},
+		["isRecents"] = 1,
+		["name"] = "Recent Searches",
+	}, -- [1]
+	{
+		["items"] = {
+			"Greater Cosmic Essence", -- [1]
+			"Infinite Dust", -- [2]
+			"Dream Shard", -- [3]
+			"Abyss Crystal", -- [4]
+		},
+		["name"] = "Sample Shopping List #1",
+		["isSorted"] = false,
+	}, -- [2]
+}
+AUCTIONATOR_PRICE_DATABASE = {
+	["__dbversion"] = 4,
+	["Deathwing_Alliance"] = {
+		["Glyph of Bull Rush"] = {
+			["mr"] = 1649999,
+			["cc"] = 5,
+			["id"] = "67482",
+			["H685"] = 1649999,
+			["sc"] = 1,
+		},
+		["Glyph of Scatter Shot"] = {
+			["mr"] = 239990,
+			["cc"] = 5,
+			["id"] = "45734",
+			["H685"] = 239990,
+			["sc"] = 3,
+		},
+		["Glyph of Charm Woodland Creature"] = {
+			["mr"] = 199999,
+			["cc"] = 5,
+			["id"] = "43335",
+			["H685"] = 199999,
+			["sc"] = 11,
+		},
+		["Ghost Iron Bar"] = {
+			["mr"] = 122000,
+			["cc"] = 6,
+			["id"] = "72096",
+			["H685"] = 122000,
+			["sc"] = 4,
+		},
+		["Glyph of Life Tap"] = {
+			["mr"] = 539948,
+			["cc"] = 5,
+			["id"] = "45785",
+			["H685"] = 539948,
+			["sc"] = 9,
+		},
+		["Glyph of Crimson Banish"] = {
+			["mr"] = 182486,
+			["cc"] = 5,
+			["id"] = "45789",
+			["H685"] = 182486,
+			["sc"] = 9,
+		},
+		["Glyph of Mirrored Blades"] = {
+			["mr"] = 90622,
+			["cc"] = 5,
+			["id"] = "45735",
+			["H685"] = 90622,
+			["sc"] = 3,
+		},
+		["Seven of Embers"] = {
+			["mr"] = 2495000,
+			["cc"] = 10,
+			["id"] = "61994",
+			["H685"] = 2495000,
+			["sc"] = 0,
+		},
+		["Glyph of Borrowed Time"] = {
+			["mr"] = 238999,
+			["cc"] = 5,
+			["id"] = "43371",
+			["H685"] = 238999,
+			["sc"] = 5,
+		},
+		["Glyph of Wind Shear"] = {
+			["mr"] = 189985,
+			["cc"] = 5,
+			["id"] = "41532",
+			["H685"] = 189985,
+			["sc"] = 7,
+		},
+		["Whiptail"] = {
+			["mr"] = 19593,
+			["cc"] = 6,
+			["id"] = "52988",
+			["H685"] = 19593,
+			["sc"] = 6,
+		},
+		["Glyph of Bloodcurdling Shout"] = {
+			["mr"] = 539935,
+			["cc"] = 5,
+			["id"] = "43396",
+			["H685"] = 539935,
+			["sc"] = 1,
+		},
+		["Glyph of Fear Ward"] = {
+			["mr"] = 69450,
+			["cc"] = 5,
+			["id"] = "42399",
+			["H685"] = 69450,
+			["sc"] = 5,
+		},
+		["Glyph of Soul Consumption"] = {
+			["mr"] = 162386,
+			["cc"] = 5,
+			["id"] = "43390",
+			["H685"] = 162386,
+			["sc"] = 9,
+		},
+		["Glyph of Grace"] = {
+			["mr"] = 230000,
+			["cc"] = 5,
+			["id"] = "43332",
+			["H685"] = 230000,
+			["sc"] = 11,
+		},
+		["Enchant Weapon - Strength"] = {
+			["mr"] = 1749999,
+			["cc"] = 4,
+			["id"] = "38879",
+			["H685"] = 1749999,
+			["sc"] = 6,
+		},
+		["Glyph of Shield Wall"] = {
+			["mr"] = 239989,
+			["cc"] = 5,
+			["id"] = "45797",
+			["H685"] = 239989,
+			["sc"] = 1,
+		},
+		["Glyph of the Penguin"] = {
+			["mr"] = 41871,
+			["cc"] = 5,
+			["id"] = "43361",
+			["H685"] = 41871,
+			["sc"] = 8,
+		},
+		["Glyph of Inquisition"] = {
+			["mr"] = 239988,
+			["cc"] = 5,
+			["id"] = "45747",
+			["H685"] = 239988,
+			["sc"] = 2,
+		},
+		["Five of Embers"] = {
+			["mr"] = 3330000,
+			["cc"] = 10,
+			["id"] = "61992",
+			["H685"] = 3330000,
+			["sc"] = 0,
+		},
+		["Two of Embers"] = {
+			["mr"] = 3246750,
+			["cc"] = 10,
+			["id"] = "61989",
+			["H685"] = 3246750,
+			["sc"] = 0,
+		},
+		["Four of Stones"] = {
+			["mr"] = 2432625,
+			["cc"] = 10,
+			["id"] = "61999",
+			["H685"] = 2432625,
+			["sc"] = 0,
+		},
+		["Glyph of Shackle Undead"] = {
+			["mr"] = 239989,
+			["cc"] = 5,
+			["id"] = "43373",
+			["H685"] = 239989,
+			["sc"] = 5,
+		},
+		["Glyph of Raging Wind"] = {
+			["mr"] = 189999,
+			["cc"] = 5,
+			["id"] = "43432",
+			["H685"] = 189999,
+			["sc"] = 1,
+		},
+		["Glyph of the Monkey"] = {
+			["mr"] = 199999,
+			["cc"] = 5,
+			["id"] = "43360",
+			["H685"] = 199999,
+			["sc"] = 8,
+		},
+		["Glyph of Fear"] = {
+			["mr"] = 1649949,
+			["cc"] = 5,
+			["id"] = "42458",
+			["H685"] = 1649949,
+			["sc"] = 9,
+		},
+		["Eight of the Winds"] = {
+			["mr"] = 3246750,
+			["cc"] = 10,
+			["id"] = "62011",
+			["H685"] = 3246750,
+			["sc"] = 0,
+		},
+		["Glyph of Health Funnel"] = {
+			["mr"] = 199999,
+			["cc"] = 5,
+			["id"] = "42461",
+			["H685"] = 199999,
+			["sc"] = 9,
+		},
+	},
+}
+AUCTIONATOR_LAST_SCAN_TIME = nil
+AUCTIONATOR_TOONS = {
+	["Jaymes"] = {
+		["firstSeen"] = 1349045736,
+		["firstVersion"] = "3.0.5",
+	},
+}
+AUCTIONATOR_STACKING_PREFS = {
+}
+AUCTIONATOR_SCAN_MINLEVEL = 1
+AUCTIONATOR_DB_MAXITEM_AGE = 180
+AUCTIONATOR_DB_MAXHIST_AGE = -1
+AUCTIONATOR_DB_MAXHIST_DAYS = 5
+AUCTIONATOR_DC_PAUSE = nil
+AUCTIONATOR_DE_DATA = nil
+AUCTIONATOR_DE_DATA_BAK = nil

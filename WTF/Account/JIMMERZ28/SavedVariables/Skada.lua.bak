@@ -1,0 +1,20 @@
+
+SkadaDB = {
+	["profileKeys"] = {
+		["Jaymes - Deathwing"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["windows"] = {
+				{
+					["set"] = "total",
+					["hidden"] = true,
+					["y"] = -109.5948104858398,
+					["mode"] = "Damage",
+					["point"] = "LEFT",
+					["x"] = -0,
+				}, -- [1]
+			},
+		},
+	},
+}

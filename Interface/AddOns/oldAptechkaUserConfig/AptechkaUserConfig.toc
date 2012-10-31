@@ -1,0 +1,5 @@
+## Interface: 50001
+## Title: AptechkaUserConfig
+## Notes: Personal settings
+## Dependencies: Aptechka
+userconfig.lua

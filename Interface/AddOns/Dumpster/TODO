@@ -1,0 +1,42 @@
+Split stacks - be able to pull 15 Netherweave Cloth instead of 15 stacks
+	http://wowprogramming.com/docs/api/GetItemInfo
+	http://wowprogramming.com/docs/api/GetContainerItemInfo	
+	http://wowprogramming.com/docs/api/GetGuildBankItemInfo
+	full stacks vs partial stacks - /din /full netherweave cloth
+		/din 5 /partial
+	pull from smallest stack first
+	consolidate stacks?
+	/din 5i nether
+	/din 5t nether
+	/din /5 nether
+	one-time autodump.. "make sure there's 40 potions in my bag"
+global sets vs individual sets
+profiles
+	autodump rules
+	sets
+soulbound unusable armor class (plate item, cloth wearer)
+/din or dout money - gbank, mail
+conjured items
+autodumping - keep 2 widgets in the bank, keep 1 in my inventory, etc
+	have to check for free space
+mail retrieval options:
+	- pull out auction expired first?
+	- direction of mail retrieval (oldest first, newest first)
+try to put items in bag where items already exist
+	- bag 4 contains chilled meat, so /din chilled meat should put them in bag 4 if possible
+	- change guild tabs
+/dout on mail in succession in a macro fails
+	/dout a
+	/dout b
+	/dout c
+/send on /din to mail.  abort on not finding
+/subject on /din to mail
+/conjured
+/usable armor class, /plate, /leather, etc
+/equippable
+/ilvl < 200
+/only across all characters - take info from BankItems
+associate vendor with set, reputation of vendor (exalted, etc)
+auto-buy only from exalted vendors
+reset flags on command chaining - /resetflags?
+allow links to be pasted to command line/GUI

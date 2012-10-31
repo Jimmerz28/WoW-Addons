@@ -1,0 +1,9 @@
+
+TradeSkillMaster_AccountingDB = {
+	["global"] = {
+		["infoID"] = 1,
+	},
+	["profileKeys"] = {
+		["Vergottlicht - Deathwing"] = "Default",
+	},
+}

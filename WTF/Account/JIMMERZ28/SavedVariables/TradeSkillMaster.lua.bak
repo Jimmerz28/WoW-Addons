@@ -1,0 +1,11 @@
+
+TradeSkillMasterDB = {
+	["profileKeys"] = {
+		["Vergottlicht - Deathwing"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["infoMessage"] = 10,
+		},
+	},
+}

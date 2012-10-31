@@ -1,0 +1,11 @@
+MACRO 16777218 "Heroic Strike" "INV_Misc_QuestionMark"
+#showtooltip Thunder Clap
+/use Seal of the Pantheon
+/use Corroded Skeleton Key
+/cast Thunder Clap
+END
+MACRO 16777219 "LS" "INV_Misc_QuestionMark"
+#showtooltip Last Stand
+/cast Last Stand
+/cast Lifeblood
+END

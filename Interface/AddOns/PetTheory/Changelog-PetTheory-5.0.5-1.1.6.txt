@@ -1,0 +1,14 @@
+tag 5.0.5-1.1.6
+f0d2dfc6b1861b4deb1ec80a5208592407720eb8
+James D. Callahan III <jcallahan@curse.com>
+2012-10-08 22:26:53 -0500
+
+
+
+--------------------
+
+James D. Callahan III:
+	- Changed tooltip code to be sensible - no more overlapping FontStrings.
+	- Show the rarity color for the pet named in the release-confirmation popup.
+	- Disable the "Only Favorites" checkbox when turning off "Collected" - don't disable "Collected".
+	- Consolidate all the info.isNotRadio into one, above all the button additions.

@@ -1,0 +1,23 @@
+## Title: Genie |cff7fff7f LDB|r
+## Interface: 50001
+## Author: adjo
+## Version: 5.0.4
+## X-Date: 2012-09-02T09:16:12Z
+## X-Revision: 304
+## X-Website: http://wow.curseforge.com/projects/genie
+## X-Feedback: http://wow.curseforge.com/projects/genie/tickets/
+## X-Curse-Packaged-Version: 5.0.4
+## X-Curse-Project-Name: Genie
+## X-Curse-Project-ID: genie
+## X-Curse-Repository-ID: wow/genie/mainline
+
+## SavedVariables: GenieUI_IconDB
+## RequiredDeps: Genie
+## OptionalDeps: Ace3, LibDBIcon-1.0
+
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+#@no-lib-strip@
+Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
+#@end-no-lib-strip@
+
+LDB+I.lua

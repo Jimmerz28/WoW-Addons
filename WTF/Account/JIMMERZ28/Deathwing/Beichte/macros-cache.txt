@@ -1,0 +1,24 @@
+MACRO 16777218 "MF" "INV_Misc_QuestionMark"
+#showtooltip Shadow Word: Pain
+/use 14
+/cast Shadow Word: Pain
+END
+MACRO 16777220 "Mind Blast" "INV_Misc_QuestionMark"
+#showtooltip Mind Blast
+/cast Inner Focus
+/cast Mind Blast
+END
+MACRO 16777221 "Prayer" "INV_Misc_QuestionMark"
+#showtooltip Prayer of Mending
+/script UIErrorsFrame:Hide()
+/use Talisman of Resurgence
+/script UIErrorsFrame:Clear();
+/script UIErrorsFrame:Show()
+/cast [modifier:alt,target=player] Prayer of Mending
+/cast Prayer of Mending
+END
+MACRO 16777219 "VT" "INV_Misc_QuestionMark"
+#showtooltip Vampiric Touch
+/use 14
+/cast Vampiric Touch
+END
