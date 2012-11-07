@@ -885,6 +885,10 @@ AutoBarDB = {
 					"AutoBarButtonMiscFun", -- [30]
 					"AutoBarButtonShields", -- [31]
 					"AutoBarButtonClassBuff", -- [32]
+					"AutoBarButtonClassPets2", -- [33]
+					"AutoBarButtonDebuff", -- [34]
+					"AutoBarButtonClassPet", -- [35]
+					"AutoBarButtonConjure", -- [36]
 				},
 				["posX"] = 448.4515794240542,
 				["ROGUE"] = true,
@@ -1299,11 +1303,12 @@ AutoBarDB = {
 					["arrangeOnUse"] = "Engineering",
 				},
 				["AutoBarButtonMount"] = {
+					["SetBest"] = nil --[[ skipped inline function ]],
 				},
 				["AutoBarButtonDebuff"] = {
 				},
 				["AutoBarButtonClassBuff"] = {
-					["arrangeOnUse"] = "Unending Breath",
+					["arrangeOnUse"] = "Soulstone",
 				},
 			},
 			["barList"] = {
@@ -1336,7 +1341,6 @@ AutoBarDB = {
 					["arrangeOnUse"] = "Inscription",
 				},
 				["AutoBarButtonMount"] = {
-					["SetBest"] = nil --[[ skipped inline function ]],
 				},
 				["AutoBarButtonClassBuff"] = {
 					["arrangeOnUse"] = "Blessing of Kings",
@@ -1363,9 +1367,12 @@ AutoBarDB = {
 		["Beichte - Deathwing"] = {
 			["buttonDataList"] = {
 				["AutoBarButtonCrafting"] = {
-					["arrangeOnUse"] = "Enchanting",
+					["arrangeOnUse"] = "Tailoring",
 				},
 				["AutoBarButtonMount"] = {
+				},
+				["AutoBarButtonClassBuff"] = {
+					["arrangeOnUse"] = "Power Word: Fortitude",
 				},
 			},
 			["barList"] = {

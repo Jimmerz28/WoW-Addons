@@ -12,20 +12,32 @@ TradeSkillMaster_ShoppingDB = {
 			["treesizable"] = true,
 		},
 		["previousSearches"] = {
-			"Kyparite", -- [1]
-			"Azshara's Veil/exact", -- [2]
-			"Glyph of Spirit of Redemption/exact", -- [3]
-			"Gnomish Army Knife", -- [4]
-			"gnomish army", -- [5]
-			"ghost iron bolt", -- [6]
-			"ghost iron bar", -- [7]
-			"Perfect Brilliant Pandarian Garnet", -- [8]
-			"b", -- [9]
-			"Primordial Ruby/exact", -- [10]
+			"ghost iron dragon", -- [1]
+			"sun's radiance", -- [2]
+			"Kyparite", -- [3]
+			"heavens", -- [4]
+			"ghost iron bar", -- [5]
+			"spinefish", -- [6]
+			"rain poppy", -- [7]
+			"green tea leaf", -- [8]
+			"desecrated oil", -- [9]
+			"green leaf tea", -- [10]
+			"spirit dust", -- [11]
+			"i wouldn't", -- [12]
+			"Azshara's Veil/exact", -- [13]
+			"Glyph of Spirit of Redemption/exact", -- [14]
+			"Gnomish Army Knife", -- [15]
+			"gnomish army", -- [16]
+			"ghost iron bolt", -- [17]
+			"Perfect Brilliant Pandarian Garnet", -- [18]
+			"b", -- [19]
+			"Primordial Ruby/exact", -- [20]
 		},
 		["automaticDestroyingModes"] = {
 			["disenchant"] = false,
 			["transform"] = false,
+			["prospect"] = false,
+			["mill"] = false,
 		},
 	},
 	["profileKeys"] = {
@@ -64,11 +76,11 @@ TradeSkillMaster_ShoppingDB = {
 			},
 		},
 		["Jaymes - Deathwing"] = {
-			["version"] = 1,
 			["dealfinding"] = {
 				["DealfindingList"] = {
 				},
 			},
+			["version"] = 1,
 		},
 		["Prallend - Deathwing"] = {
 			["version"] = 1,
@@ -78,11 +90,11 @@ TradeSkillMaster_ShoppingDB = {
 			},
 		},
 		["Vergottlicht - Deathwing"] = {
+			["version"] = 1,
 			["dealfinding"] = {
 				["DealfindingList"] = {
 				},
 			},
-			["version"] = 1,
 		},
 		["Geiler - Deathwing"] = {
 			["version"] = 1,

@@ -1,5 +1,5 @@
 MACRO 5 "FIGHT SONG" "INV_WAND_1H_430NIGHTELF_C_01"
-/2 Go Costa, Fight Costa, Win Costa! When we enter a fight, those horde better run for the hills, because if they do not, then for us it's free honor kills! Hail Costa, We Will Never Fail!
+/1 Go Costa, Fight Costa, Win Costa! When we enter a fight, those horde better run for the hills, because if they do not, then for us it's free honor kills! Hail Costa, We Will Never Fail!
 END
 MACRO 2 "Milling" "INV_Misc_QuestionMark"
 /cast Milling

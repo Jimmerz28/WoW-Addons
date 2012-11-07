@@ -1,4 +1,4 @@
-## Interface: 40000
+## Interface: 50001
 
 ## Title: Dumpster |cff7fff7f -Ace3-|r
 ## Title-enUS: Dumpster |cff7fff7f -Ace3-|r

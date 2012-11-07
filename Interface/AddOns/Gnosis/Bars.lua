@@ -51,10 +51,12 @@ function Gnosis:CheckStoredCastbarOptions()
 	local iUpgrade195 = 0;
 	local iUpgrade210 = 0;
 	local iUpgrade254 = 0;
+	local iUpgrade325 = 0;
 	local strUpgrade150 = "upgrading bars to v1.50 options:\n  ";
 	local strUpgrade195 = "upgrading bars to v1.95 options:\n  ";
 	local strUpgrade210 = "upgrading bars to v2.10 options:\n  ";
 	local strUpgrade254 = "upgrading bars to v2.54 options:\n  ";
+	local strUpgrade325 = "upgrading bars to v3.25 options:\n  ";
 
 	for cbname, cbopt in pairs(self.s.cbconf) do
 		-- upgrade castbar if needed (v1.50)
@@ -146,6 +148,14 @@ function Gnosis:CheckStoredCastbarOptions()
 
 			cbopt.cboptver = 2.54;
 		end
+		
+		-- upgrade to v3.25 (no changes to bars itself)
+		if(cbopt.cboptver < 3.25) then
+			iUpgrade325 = iUpgrade325 + 1;
+			strUpgrade325 = strUpgrade325 .. cbname .. "  ";
+			
+			cbopt.cboptver = 3.25;
+		end
 
 		-- add colBarNI if missing
 		cbopt.colBarNI = cbopt.colBarNI or cbopt.colBar;
@@ -166,9 +176,9 @@ function Gnosis:CheckStoredCastbarOptions()
 			cbopt.unit = "sr";
 		elseif(cbopt.unit == "melrng") then
 			cbopt.unit = "smr";
-	end
 		end
-
+	end
+	
 	if(iUpgrade150 > 0) then
 		strUpgrade150 = strUpgrade150 .. "\n  ..." .. iUpgrade150 .. " bars upgraded\n  ...please check those bars' options";
 		self:Print(strUpgrade150);
@@ -187,6 +197,11 @@ function Gnosis:CheckStoredCastbarOptions()
 	if(iUpgrade254 > 0) then
 		strUpgrade254 = strUpgrade254 .. "\n  ..." .. iUpgrade254 .. " bars upgraded\n  ...please check those bars' options";
 		self:Print(strUpgrade254);
+	end
+	
+	if(iUpgrade325 > 0) then
+		strUpgrade325 = strUpgrade325 .. "\n  ..." .. iUpgrade325 .. " bars upgraded\n  ...please check those bars' options";
+		self:Print(strUpgrade325);
 	end
 
 	self:CreateCBTables();
@@ -1256,7 +1271,48 @@ function Gnosis:CreateCastnameFromString(name, rank, cb)
 	if((not bRank and rank and rank ~= "") or cb.stacks) then
 		bOther = true;
 	end
+	
+	if(bRank) then
+		str = string_gsub(str, "arabic", strRankArabic);
+		str = string_gsub(str, "roman", strRankRoman);
+		str = string_gsub(str, "rank<([^>]+)>", "%1");
+		str = string_gsub(str, "txr<([^>]+)>", "%1");
+	else
+		str = string_gsub(str, "arabic", "");
+		str = string_gsub(str, "roman", "");
+		str = string_gsub(str, "rank<([^>]+)>", "");
+		str = string_gsub(str, "txr<([^>]+)>", "");
+	end
 
+	if(bOther) then
+		str = string_gsub(str, "misc", cb.stacks and cb.stacks or rank);
+		str = string_gsub(str, "txm<([^>]+)>", "%1");
+	else
+		str = string_gsub(str, "misc", "");
+		str = string_gsub(str, "txm<([^>]+)>", "");
+	end
+
+	if(cb.bIsTrade) then
+		str = string_gsub(str, "tscur", string_format("%.0f", cb.tscnt));
+		str = string_gsub(str, "tstot", string_format("%.0f", cb.tstot));
+		str = string_gsub(str, "txts<([^>]+)>", "%1");
+	else
+		str = string_gsub(str, "tscur", "");
+		str = string_gsub(str, "tstot", "");
+		str = string_gsub(str, "txts<([^>]+)>", "");
+	end
+
+	if(strTarget) then
+		str = string_gsub(str, "tar<([^>]+)>", "%1");
+		str = string_gsub(str, "tar%[([^%]]+)%]", "%1");	-- added to allow ->
+		str = string_gsub(str, "target", strTarget);
+	else
+		str = string_gsub(str, "tar<([^>]+)>", "");
+		str = string_gsub(str, "tar%[([^%]]+)%]", "");
+		str = string_gsub(str, "target", "");
+	end
+
+	-- abbr and name
 	lenname = string_match(str, "abbr<(%d*)>");
 	str = string_gsub(str, "abbr<([^>]*)>", "abbr");
 
@@ -1299,46 +1355,7 @@ function Gnosis:CreateCastnameFromString(name, rank, cb)
 	end
 
 	str = string_gsub(str, "name", name);
-	if(bRank) then
-		str = string_gsub(str, "arabic", strRankArabic);
-		str = string_gsub(str, "roman", strRankRoman);
-		str = string_gsub(str, "rank<([^>]+)>", "%1");
-		str = string_gsub(str, "txr<([^>]+)>", "%1");
-	else
-		str = string_gsub(str, "arabic", "");
-		str = string_gsub(str, "roman", "");
-		str = string_gsub(str, "rank<([^>]+)>", "");
-		str = string_gsub(str, "txr<([^>]+)>", "");
-	end
-
-	if(bOther) then
-		str = string_gsub(str, "misc", cb.stacks and cb.stacks or rank);
-		str = string_gsub(str, "txm<([^>]+)>", "%1");
-	else
-		str = string_gsub(str, "misc", "");
-		str = string_gsub(str, "txm<([^>]+)>", "");
-	end
-
-	if(cb.bIsTrade) then
-		str = string_gsub(str, "tscur", string_format("%.0f", cb.tscnt));
-		str = string_gsub(str, "tstot", string_format("%.0f", cb.tstot));
-		str = string_gsub(str, "txts<([^>]+)>", "%1");
-	else
-		str = string_gsub(str, "tscur", "");
-		str = string_gsub(str, "tstot", "");
-		str = string_gsub(str, "txts<([^>]+)>", "");
-	end
-
-	if(strTarget) then
-		str = string_gsub(str, "tar<([^>]+)>", "%1");
-		str = string_gsub(str, "tar%[([^%]]+)%]", "%1");	-- added to allow ->
-		str = string_gsub(str, "target", strTarget);
-	else
-		str = string_gsub(str, "tar<([^>]+)>", "");
-		str = string_gsub(str, "tar%[([^%]]+)%]", "");
-		str = string_gsub(str, "target", "");
-	end
-
+	
 	-- unit name
 	if(uname) then
 		str = string_gsub(str, "who", uname);

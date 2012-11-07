@@ -1,6 +1,6 @@
 Version: 1
 Frame: TSMMainFrame1
-FrameLevel: 12
+FrameLevel: 18
 Anchor: CENTER
 X: -18
 Y: 16
@@ -14,7 +14,7 @@ Y: 128
 W: 150
 H: 42
 Frame: CombuctorFrame1
-FrameLevel: 11
+FrameLevel: 1
 Anchor: RIGHT
 X: 0
 Y: 0
@@ -86,7 +86,7 @@ H: 40
 Frame: DominosFrame10
 FrameLevel: 1
 Anchor: CENTER
-X: 0
+X: 50
 Y: -72
 W: 480
 H: 40
@@ -139,10 +139,3 @@ X: 11
 Y: -38
 W: 466
 H: 24
-Frame: WIM3_msgFrame2
-FrameLevel: 2
-Anchor: BOTTOMLEFT
-X: 0
-Y: 42
-W: 333
-H: 220

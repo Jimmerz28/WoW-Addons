@@ -260,8 +260,30 @@ function Gnosis:OnInitialize()
 		end
 	end
 
-	self.db = LibStub("AceDB-3.0"):New("GnosisChar", defaults);
-	self.s = self.db.profile;
+	-- remove character specific profile name in character specific configuration file
+	if(not GnosisCharConfig) then
+		GnosisCharConfig = {};
+		
+		self.db = LibStub("AceDB-3.0"):New("GnosisChar", defaults);	
+		if(self.db and self.db.profile and self:tsize(self.db.profile) > 0) then
+			-- copy AceDB profile to GnosisCharConfig
+			GnosisCharConfig = self:deepcopy(self.db.profile);
+		end
+	elseif(self:tsize(GnosisCharConfig) == 0) then
+		print("Copy to GnosisCharConfig");
+		self.db = LibStub("AceDB-3.0"):New("GnosisChar", defaults);	
+		if(self.db and self.db.profile and self:tsize(self.db.profile) > 0) then
+			-- copy AceDB profile to GnosisCharConfig
+			GnosisCharConfig = self:deepcopy(self.db.profile);
+		end
+	elseif(self:tsize(GnosisCharConfig) > 0 and GnosisChar) then
+		-- empty GnosisChar table (removing AceDB character specific profile)
+		wipe(GnosisChar);
+		GnosisChar = nil;
+	end
+	
+	-- set link to GnosisCharConfig
+	self.s = GnosisCharConfig;
 
 	self:RegisterChatCommand("gnosis", "HandleChatCommand");
 
@@ -325,6 +347,11 @@ function Gnosis:OnEnable()
 
 	-- check castbar options
 	self:CheckStoredCastbarOptions();
+	
+	-- upgrade character specific options version number?
+	if(self.s.optver < self.optver) then
+		self.s.optver = self.optver;
+	end
 
 	-- first start?
 	local bFirstStart = self:CheckForFirstStart();
@@ -541,7 +568,7 @@ function Gnosis:SetupChanneledSpellsTable()
 	self:AddChanneledSpellById(32000, 5, false, 6, false, true, "shadow", false, 2); 	-- mind sear
 	self:AddChanneledSpellById(47540, 3, false, 2, true, false, "holy", true, 1);		-- penance, first tick instant
 	self:AddChanneledSpellById(64843, 4, true, 15, false, true, "holy", true, 3);		-- divine hymn
-	self:AddChanneledSpellById(64901, 4, true, 15, false, true, "holy", false, 2); 	-- hymn of hope
+	self:AddChanneledSpellById(64901, 4, true, 15, false, true, "holy", false, 2); 		-- hymn of hope
 
 	-- mage
 	self:AddChanneledSpellById(10, 8, false, 15, false, true, "frost", false, 2);		-- blizzard
@@ -550,15 +577,19 @@ function Gnosis:SetupChanneledSpellsTable()
 
 	-- warlock
 	self:AddChanneledSpellById(1120, 5, true, 15, false, false, "shadow", false, 2);	-- drain soul
-	self:AddChanneledSpellById(689, 3, false, 4, false, false, "shadow", false, 2);	-- drain life
-	self:AddChanneledSpellById(4629, 4, false, 15, false, true, "fire", false, 2);	-- rain of fire
-	self:AddChanneledSpellById(1949, 15, false, 15, false, true, "fire", false, 1);	-- hellfire
-	self:AddChanneledSpellById(755, 3, false, 4, false, false, "shadow", false, 2);	-- health funnel
+	self:AddChanneledSpellById(689, 3, false, 4, false, false, "shadow", false, 2);		-- drain life
+	self:AddChanneledSpellById(4629, 4, false, 15, false, true, "fire", false, 2);		-- rain of fire
+	self:AddChanneledSpellById(1949, 15, false, 15, false, true, "fire", false, 1);		-- hellfire
+	self:AddChanneledSpellById(755, 3, false, 4, false, false, "shadow", false, 2);		-- health funnel
 	self:AddChanneledSpellById(79268, 3, true, 15, false, false, "shadow", true, 4);	-- soul harvest
+	self:AddChanneledSpellById(103103, 4, false, 5, false, false, "shadow", false, 1);	-- malefic grasp
 
 	-- druid
-	self:AddChanneledSpellById(740, 4, false, 15, false, true, "nature", true, 3);	-- tranquility
-	self:AddChanneledSpellById(16914, 10, false, 15, false, true, "nature", false, 2);-- hurricane
+	self:AddChanneledSpellById(740, 4, false, 15, false, true, "nature", true, 3);		-- tranquility
+	self:AddChanneledSpellById(16914, 10, false, 15, false, true, "nature", false, 2);	-- hurricane
+	
+	-- monk
+	self:AddChanneledSpellById(101546, 3, false, 4, false, true, nil, false, 1);		-- spinning crane kick
 end
 
 function Gnosis:CreateColorString(r, g, b, a)
@@ -880,7 +911,7 @@ function Gnosis:ClipTest(fCurTime)
 	end
 end
 
-function Gnosis:AddBasicCastbar(name, unit, movefactor_y, movefactor_x)
+function Gnosis:AddBasicCastbar(name, unit, movefactor_y, movefactor_x, scale)
 	local fScale = UIParent:GetScale();
 	local cfg;
 
@@ -891,17 +922,23 @@ function Gnosis:AddBasicCastbar(name, unit, movefactor_y, movefactor_x)
 	self:OptCreateNewCastbar(name, unit);
 
 	cfg = self.s.cbconf[name];
+	
+	if(scale ~= self.tCastbarDefaults.scale) then
+		cfg.scale = scale;
+		Gnosis:SetBarParams(name);
+	end
+	
 	cfg.anchor.py = cfg.anchor.py + movefactor_y * (self.tCastbarDefaults.height/GetScreenHeight() + 0.01) * fScale;
 	cfg.anchor.px = cfg.anchor.px + movefactor_x * (self.tCastbarDefaults.height/GetScreenHeight()*2.5 + self.tCastbarDefaults.width/GetScreenWidth() + 0.01) * fScale;
 	self:AnchorBar(name);
 end
 
 function Gnosis:CreateBasicCastbarSet()
-	self:AddBasicCastbar(self.L["CBSetPlayer"], "player", 2, 0);
-	self:AddBasicCastbar(self.L["CBSetTarget"], "target", 1, 0);
-	self:AddBasicCastbar(self.L["CBSetFocus"], "focus", 0, 0);
-	self:AddBasicCastbar(self.L["CBSetPet"], "pet", -2, 0);
-	self:AddBasicCastbar(self.L["CBSetMirror"], "mirror", 4, 0);
+	self:AddBasicCastbar(self.L["CBSetPlayer"], "player", 2, 0, 1.35);
+	self:AddBasicCastbar(self.L["CBSetTarget"], "target", 1, 0, 1.0);
+	self:AddBasicCastbar(self.L["CBSetFocus"], "focus", 0, 0, 1.0);
+	self:AddBasicCastbar(self.L["CBSetPet"], "pet", -2, 0, 1.0);
+	self:AddBasicCastbar(self.L["CBSetMirror"], "mirror", 4, 0, 1.0);
 end
 
 function Gnosis:CreateMadnessSet()

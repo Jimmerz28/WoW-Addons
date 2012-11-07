@@ -24,6 +24,7 @@ TradeSkillMaster_MailingDB = {
 			},
 			["mailItems"] = {
 				["glyphs"] = "jaymes",
+				["cards"] = "jaymes",
 			},
 		},
 	},

@@ -3,6 +3,7 @@ local tonumber = tonumber;
 local type = type;
 local pairs = pairs;
 local ipairs = ipairs;
+local wipe = wipe;
 local table_insert = table.insert;
 local table_sort = table.sort;
 local table_remove = table.remove;
@@ -253,16 +254,6 @@ function Gnosis:OptCreateBasicTables()
 				end,
 				width = "full",
 			},
-			respd = {
-				order = 11,
-				name = Gnosis.L["OptResetPlayerData"],
-				type = "execute",
-				func = function()
-					Gnosis.db:ResetDB(Gnosis.db:GetCurrentProfile());
-					ReloadUI();
-				end,
-				width = "full",
-			},
 			impbars = {
 				order = 11,
 				name = Gnosis.L["OptImportBar"],
@@ -272,6 +263,25 @@ function Gnosis:OptCreateBasicTables()
 				end,
 				width = "full",
 			},
+			expbars = {
+				order = 12,
+				name = Gnosis.L["OptExportAllBars"],
+				type = "execute",
+				func = function()
+					Gnosis:ExportAllBars();
+				end,
+				width = "full",
+			},
+			respd = {
+				order = 13,
+				name = Gnosis.L["OptResetPlayerData"],
+				type = "execute",
+				func = function()
+					wipe(GnosisCharConfig);
+					ReloadUI();
+				end,
+				width = "full",
+			},			
 		},
 	};
 
@@ -1758,6 +1768,46 @@ function Gnosis:CreateBarValueScript(key, tab)
 	end
 
 	return nil;
+end
+
+function Gnosis:ExportAllBars()
+	if(self.s and self.s.cbconf) then
+		local output = "";
+		
+		-- created sorted table
+		local tSorted = {};
+		for key, value in pairs(self.castbars) do
+			table_insert(tSorted, key);
+		end
+		table_sort(tSorted);
+	
+		for i, cbname in ipairs(tSorted) do
+			if(self.s.cbconf[cbname]) then
+				local key_name = string_gsub(cbname, "\"", "\\\"");
+				local str = Gnosis:CreateBarValueScript("Gnosis.s.cbconf[\"" .. key_name .. "\"]", Gnosis.s.cbconf[cbname]);
+
+				if(str) then
+					local dispstr = "Gnosis:ImportBarInit(\"" .. key_name .. "\"); " .. str .. " Gnosis:ImportBarFinalize(\"" .. key_name .. "\");"
+					
+					output = output .. "--[[ Exported bar: " .. cbname .. " ]]\n" .. dispstr .. "\n\n";				
+				end
+			end
+		end
+		
+		StaticPopupDialogs["GNOSIS_EXPORTCB"] = {
+			text = string_format(Gnosis.L["CpyScriptFromEditBox"], "*");
+			button1 = "Close",
+			OnAccept = function() end,
+			timeout = 0,
+			whileDead = true,
+			hideOnEscape = true,
+			OnShow = function(this)
+				this.editBox:SetText(output);
+			end,
+			hasEditBox = true
+		};
+		StaticPopup_Show("GNOSIS_EXPORTCB");
+	end
 end
 
 function Gnosis:ExportBar(key)

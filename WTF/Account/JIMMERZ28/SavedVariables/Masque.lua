@@ -73,7 +73,8 @@ MasqueDB = {
 				["Masque"] = {
 					["SkinID"] = "Renaitre: Beveled Light",
 				},
-				["Dominos_Bag Bar"] = {
+				["AutoBar_AutoBarClassBarHunter"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Renaitre: Beveled Light",
 				},
 				["AutoBar_AutoBarClassBarRogue"] = {
@@ -91,11 +92,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Renaitre: Beveled Light",
 				},
-				["AutoBar_AutoBarClassBarHunter"] = {
-					["Inherit"] = false,
+				["Dominos"] = {
 					["SkinID"] = "Renaitre: Beveled Light",
 				},
-				["Dominos"] = {
+				["Dominos_Bag Bar"] = {
 					["SkinID"] = "Renaitre: Beveled Light",
 				},
 				["AutoBar_AutoBarClassBarExtras"] = {

@@ -2,7 +2,7 @@ Version: 1
 Frame: TSMMainFrame1
 FrameLevel: 18
 Anchor: CENTER
-X: -168
+X: -169
 Y: -17
 W: 823
 H: 686
@@ -133,7 +133,7 @@ Y: -38
 W: 466
 H: 24
 Frame: AuctionFrame
-FrameLevel: 32
+FrameLevel: 36
 Anchor: LEFT
 X: 16
 Y: 112

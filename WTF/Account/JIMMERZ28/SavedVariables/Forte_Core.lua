@@ -5,8 +5,8 @@ FX_Saved = {
 	["Timers"] = {
 	},
 	["Healthstone"] = {
-		["Vergottlicht"] = 0,
 		["Jaymes"] = 1,
+		["Beichte"] = 0,
 	},
 	["Exceptions"] = {
 		["Hellfire Channeler"] = 0,
@@ -18,7 +18,7 @@ FX_Saved = {
 		["Fathom-Guard Tidalvess"] = 1,
 		["Fathom-Guard Sharkkis"] = 1,
 	},
-	["Update"] = 19247.233,
+	["Update"] = 6090.784000000001,
 	["Profiles"] = {
 		["Active"] = 1,
 		["Characters"] = {
@@ -371,13 +371,13 @@ FX_Saved = {
 								[0] = true,
 							},
 							["Swing"] = false,
+							["Warn"] = true,
 							["Buff"] = {
 								1, -- [1]
 								1, -- [2]
 								1, -- [3]
 								[0] = true,
 							},
-							["Flip"] = true,
 							["scale"] = 1,
 							["IconTime"] = true,
 							["Test"] = false,
@@ -475,7 +475,7 @@ FX_Saved = {
 							},
 							["SplashFactor"] = 4,
 							["Height"] = 24,
-							["Warn"] = true,
+							["Flip"] = true,
 							["MinRange"] = {
 								0, -- [1]
 								[0] = false,
@@ -907,9 +907,10 @@ FX_Saved = {
 					[0] = 1,
 				},
 				["TimerSmooth"] = 5,
-				["RecklessnessStart"] = {
-					">>> Taking 20% more damage with Recklessness (12 sec) <<<", -- [1]
-					[0] = 1,
+				["OptionsFontLabelColor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
 				},
 				["SeduceFailed"] = {
 					">> Seduction Failed! <<", -- [1]
@@ -924,7 +925,7 @@ FX_Saved = {
 					[0] = 1,
 				},
 				["ShowAll"] = true,
-				["GlobalScale"] = 1,
+				["SpellTimerInterval"] = 0.2,
 				["Splash"] = {
 					["Active"] = 1,
 					["Instance"] = "Splash",
@@ -954,10 +955,7 @@ FX_Saved = {
 				},
 				["GlobalFrameNames"] = false,
 				["OptionsHeaderTexture"] = "Interface\\AddOns\\Forte_Core\\Textures\\Otravi",
-				["RebirthStart"] = {
-					">>> Rebirth on %s <<<", -- [1]
-					[0] = 1,
-				},
+				["GlobalScale"] = 1,
 				["SoulstoneStart"] = {
 					"Soulstoning >> %s << Now", -- [1]
 					[0] = 1,
@@ -1053,13 +1051,13 @@ FX_Saved = {
 				["CancelDelay"] = 0.5,
 				["HealthstoneWidth"] = 100,
 				["PetTargetDelay"] = 0.5,
+				["DevourMagicFailed"] = {
+					">> Devour Magic Failed! <<", -- [1]
+					[0] = 0,
+				},
 				["SIStart"] = {
 					"+++ Survival Instincts (12 sec) +++", -- [1]
 					[0] = 1,
-				},
-				["SummonFont"] = {
-					"Interface\\AddOns\\Forte_Core\\Fonts\\GOTHIC.TTF", -- [1]
-					11, -- [2]
 				},
 				["Mix"] = 0.5,
 				["LoadDelay"] = 1,
@@ -1133,12 +1131,12 @@ FX_Saved = {
 					"+++ Frenzied Regeneration (20 sec) +++", -- [1]
 					[0] = 1,
 				},
+				["SoulstoneAuto"] = false,
+				["HealthstoneUnknown"] = true,
 				["SeduceStart"] = {
 					"Seducing >> %s << Now", -- [1]
 					[0] = 0,
 				},
-				["SoulstoneAuto"] = false,
-				["HealthstoneUnknown"] = true,
 				["UseTokens"] = "pet pettarget vehicle focus mouseover",
 				["SoulstoneExpand"] = true,
 				["DevourMagicReady"] = {
@@ -1182,9 +1180,9 @@ FX_Saved = {
 					[0] = true,
 				},
 				["SummonInterval"] = 1,
-				["DevourMagicFailed"] = {
-					">> Devour Magic Failed! <<", -- [1]
-					[0] = 0,
+				["SummonFont"] = {
+					"Interface\\AddOns\\Forte_Core\\Fonts\\GOTHIC.TTF", -- [1]
+					11, -- [2]
 				},
 				["SoulstoneStartWhisper"] = {
 					">> Soulstoning you now <<", -- [1]
@@ -1234,17 +1232,19 @@ FX_Saved = {
 				["SoulstoneSpace"] = 1,
 				["SplashStrata"] = "MEDIUM",
 				["OptionsHeight"] = 440,
-				["SpellTimerInterval"] = 0.2,
-				["SoulstoneStrata"] = "MEDIUM",
-				["OptionsFontLabelColor"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
+				["RebirthStart"] = {
+					">>> Rebirth on %s <<<", -- [1]
+					[0] = 1,
 				},
+				["SoulstoneStrata"] = "MEDIUM",
 				["BloodpactLossColor"] = {
 					1, -- [1]
 					0, -- [2]
 					0, -- [3]
+				},
+				["RecklessnessStart"] = {
+					">>> Taking 20% more damage with Recklessness (12 sec) <<<", -- [1]
+					[0] = 1,
 				},
 				["SoulstoneReadySound"] = {
 					"Sound\\Spells\\SimonGame_Visual_GameTick.wav", -- [1]
@@ -1390,21 +1390,16 @@ FX_Saved = {
 		},
 	},
 	["RaidStatus"] = {
-		["Vergottlicht"] = {
+		["Jaymes"] = {
 			0, -- [1]
-			19247.233, -- [2]
-			"PALADIN", -- [3]
+			6090.784000000001, -- [2]
+			"WARLOCK", -- [3]
 			"v1.980.8", -- [4]
 		},
-		["Tudd"] = {
+		["Beichte"] = {
 			-2, -- [1]
-			14745.914, -- [2]
-			"MAGE", -- [3]
-		},
-		["Jaymes"] = {
-			-2, -- [1]
-			14745.914, -- [2]
-			"WARLOCK", -- [3]
+			4848.948, -- [2]
+			"PRIEST", -- [3]
 			"v1.980.8", -- [4]
 		},
 	},

@@ -1184,10 +1184,10 @@ SkadaPerCharDB = {
 						["name"] = "Sha Breath",
 						["damage"] = 30859,
 					},
-					["Shadow Bolt"] = {
-						["id"] = 9613,
-						["name"] = "Shadow Bolt",
-						["damage"] = 22972,
+					["Stunning Strike"] = {
+						["id"] = 131402,
+						["name"] = "Stunning Strike",
+						["damage"] = 7534,
 					},
 					["Drain Soul"] = {
 						["id"] = 74402,
@@ -1199,15 +1199,15 @@ SkadaPerCharDB = {
 						["name"] = "Blade Storm",
 						["damage"] = 6800,
 					},
+					["Shadow Bolt"] = {
+						["id"] = 9613,
+						["name"] = "Shadow Bolt",
+						["damage"] = 22972,
+					},
 					["Sha Barbs"] = {
 						["id"] = 131032,
 						["name"] = "Sha Barbs",
 						["damage"] = 8508,
-					},
-					["Stunning Strike"] = {
-						["id"] = 131402,
-						["name"] = "Stunning Strike",
-						["damage"] = 7534,
 					},
 					["Thunderclap"] = {
 						["id"] = 130437,
