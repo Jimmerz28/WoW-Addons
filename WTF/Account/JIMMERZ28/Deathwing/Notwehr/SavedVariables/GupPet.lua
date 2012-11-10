@@ -416,7 +416,7 @@ GUPPET_SAVEDDATA = {
 		}, -- [27]
 		{
 			["Name"] = "Swift Purple Gryphon",
-			["Slot"] = 49,
+			["Slot"] = 50,
 			["Id"] = 32292,
 			["CreatureID"] = 18362,
 			["Weight"] = {
@@ -429,7 +429,7 @@ GUPPET_SAVEDDATA = {
 		}, -- [28]
 		{
 			["Name"] = "Swift Red Gryphon",
-			["Slot"] = 50,
+			["Slot"] = 51,
 			["Id"] = 32289,
 			["CreatureID"] = 18376,
 			["Weight"] = {
@@ -442,7 +442,7 @@ GUPPET_SAVEDDATA = {
 		}, -- [29]
 		{
 			["Name"] = "Time-Lost Proto-Drake",
-			["Slot"] = 53,
+			["Slot"] = 54,
 			["Id"] = 60002,
 			["CreatureID"] = 32153,
 			["Weight"] = {
@@ -455,7 +455,7 @@ GUPPET_SAVEDDATA = {
 		}, -- [30]
 		{
 			["Name"] = "Turbo-Charged Flying Machine",
-			["Slot"] = 54,
+			["Slot"] = 55,
 			["Id"] = 44151,
 			["CreatureID"] = 24654,
 			["Weight"] = {
@@ -468,7 +468,7 @@ GUPPET_SAVEDDATA = {
 		}, -- [31]
 		{
 			["Name"] = "Tyrael's Charger",
-			["Slot"] = 55,
+			["Slot"] = 56,
 			["Id"] = 107203,
 			["CreatureID"] = 56921,
 			["Weight"] = {
@@ -481,7 +481,7 @@ GUPPET_SAVEDDATA = {
 		}, -- [32]
 		{
 			["Name"] = "Violet Proto-Drake",
-			["Slot"] = 57,
+			["Slot"] = 58,
 			["Id"] = 60024,
 			["CreatureID"] = 32157,
 			["Weight"] = {
@@ -792,10 +792,10 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [22]
 		{
-			["Name"] = "Swift Palomino",
+			["Name"] = "Swift Moonsaber",
 			["Slot"] = 48,
-			["Id"] = 23227,
-			["CreatureID"] = 14559,
+			["Id"] = 65638,
+			["CreatureID"] = 34550,
 			["Weight"] = {
 				["BattleGrounds"] = 0,
 				["Global World"] = 1,
@@ -805,10 +805,10 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [23]
 		{
-			["Name"] = "Swift White Hawkstrider",
-			["Slot"] = 51,
-			["Id"] = 46628,
-			["CreatureID"] = 26131,
+			["Name"] = "Swift Palomino",
+			["Slot"] = 49,
+			["Id"] = 23227,
+			["CreatureID"] = 14559,
 			["Weight"] = {
 				["BattleGrounds"] = 0,
 				["Global World"] = 1,
@@ -818,10 +818,10 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [24]
 		{
-			["Name"] = "Tan Riding Camel",
+			["Name"] = "Swift White Hawkstrider",
 			["Slot"] = 52,
-			["Id"] = 88749,
-			["CreatureID"] = 47653,
+			["Id"] = 46628,
+			["CreatureID"] = 26131,
 			["Weight"] = {
 				["BattleGrounds"] = 0,
 				["Global World"] = 1,
@@ -831,10 +831,10 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [25]
 		{
-			["Name"] = "Turbo-Charged Flying Machine",
-			["Slot"] = 54,
-			["Id"] = 44151,
-			["CreatureID"] = 24654,
+			["Name"] = "Tan Riding Camel",
+			["Slot"] = 53,
+			["Id"] = 88749,
+			["CreatureID"] = 47653,
 			["Weight"] = {
 				["BattleGrounds"] = 0,
 				["Global World"] = 1,
@@ -844,10 +844,10 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [26]
 		{
-			["Name"] = "Tyrael's Charger",
+			["Name"] = "Turbo-Charged Flying Machine",
 			["Slot"] = 55,
-			["Id"] = 107203,
-			["CreatureID"] = 56921,
+			["Id"] = 44151,
+			["CreatureID"] = 24654,
 			["Weight"] = {
 				["BattleGrounds"] = 0,
 				["Global World"] = 1,
@@ -857,8 +857,21 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [27]
 		{
-			["Name"] = "Unpainted Mechanostrider",
+			["Name"] = "Tyrael's Charger",
 			["Slot"] = 56,
+			["Id"] = 107203,
+			["CreatureID"] = 56921,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [28]
+		{
+			["Name"] = "Unpainted Mechanostrider",
+			["Slot"] = 57,
 			["Id"] = 17454,
 			["CreatureID"] = 10180,
 			["Weight"] = {
@@ -868,15 +881,15 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [28]
+		}, -- [29]
 		["TotalWeight"] = {
 			["BattleGrounds"] = 0,
-			["Global World"] = 28,
+			["Global World"] = 29,
 			["Arenas"] = 0,
 			["Cities"] = 0,
 			["Instances"] = 0,
 		},
-		["Total"] = 28,
+		["Total"] = 29,
 	},
 	["Companion"] = {
 		{
@@ -916,7 +929,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [3]
 		{
-			["Id"] = 4142445,
+			["Id"] = 4237903,
 			["CreatureID"] = 33238,
 			["Name"] = "Argent Squire",
 			["Weight"] = {
@@ -928,7 +941,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [4]
 		{
-			["Id"] = 4223045,
+			["Id"] = 4142445,
 			["CreatureID"] = 33238,
 			["Name"] = "Argent Squire",
 			["Weight"] = {
@@ -940,7 +953,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [5]
 		{
-			["Id"] = 4237903,
+			["Id"] = 4223045,
 			["CreatureID"] = 33238,
 			["Name"] = "Argent Squire",
 			["Weight"] = {
@@ -1072,7 +1085,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [16]
 		{
-			["Id"] = 4223041,
+			["Id"] = 4237899,
 			["CreatureID"] = 14421,
 			["Name"] = "Brown Prairie Dog",
 			["Weight"] = {
@@ -1084,7 +1097,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [17]
 		{
-			["Id"] = 4237899,
+			["Id"] = 4858317,
 			["CreatureID"] = 14421,
 			["Name"] = "Brown Prairie Dog",
 			["Weight"] = {
@@ -1096,7 +1109,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [18]
 		{
-			["Id"] = 4858317,
+			["Id"] = 4223041,
 			["CreatureID"] = 14421,
 			["Name"] = "Brown Prairie Dog",
 			["Weight"] = {
@@ -1192,7 +1205,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [26]
 		{
-			["Id"] = 4858325,
+			["Id"] = 5335345,
 			["CreatureID"] = 32591,
 			["Name"] = "Cobra Hatchling",
 			["Weight"] = {
@@ -1204,7 +1217,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [27]
 		{
-			["Id"] = 4237906,
+			["Id"] = 6946470,
 			["CreatureID"] = 32591,
 			["Name"] = "Cobra Hatchling",
 			["Weight"] = {
@@ -1216,7 +1229,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [28]
 		{
-			["Id"] = 5335345,
+			["Id"] = 4223059,
 			["CreatureID"] = 32591,
 			["Name"] = "Cobra Hatchling",
 			["Weight"] = {
@@ -1240,7 +1253,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [30]
 		{
-			["Id"] = 6946470,
+			["Id"] = 4858325,
 			["CreatureID"] = 32591,
 			["Name"] = "Cobra Hatchling",
 			["Weight"] = {
@@ -1252,7 +1265,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [31]
 		{
-			["Id"] = 4223059,
+			["Id"] = 4237906,
 			["CreatureID"] = 32591,
 			["Name"] = "Cobra Hatchling",
 			["Weight"] = {
@@ -1288,7 +1301,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [34]
 		{
-			["Id"] = 4858321,
+			["Id"] = 4223047,
 			["CreatureID"] = 33530,
 			["Name"] = "Curious Oracle Hatchling",
 			["Weight"] = {
@@ -1300,7 +1313,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [35]
 		{
-			["Id"] = 4860925,
+			["Id"] = 4858321,
 			["CreatureID"] = 33530,
 			["Name"] = "Curious Oracle Hatchling",
 			["Weight"] = {
@@ -1312,7 +1325,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [36]
 		{
-			["Id"] = 4223047,
+			["Id"] = 4860925,
 			["CreatureID"] = 33530,
 			["Name"] = "Curious Oracle Hatchling",
 			["Weight"] = {
@@ -1336,7 +1349,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [38]
 		{
-			["Id"] = 5335343,
+			["Id"] = 4237902,
 			["CreatureID"] = 33529,
 			["Name"] = "Curious Wolvar Pup",
 			["Weight"] = {
@@ -1348,7 +1361,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [39]
 		{
-			["Id"] = 4237902,
+			["Id"] = 5335343,
 			["CreatureID"] = 33529,
 			["Name"] = "Curious Wolvar Pup",
 			["Weight"] = {
@@ -1432,7 +1445,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [46]
 		{
-			["Id"] = 4223034,
+			["Id"] = 4858315,
 			["CreatureID"] = 15698,
 			["Name"] = "Father Winter's Helper",
 			["Weight"] = {
@@ -1444,7 +1457,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [47]
 		{
-			["Id"] = 4858315,
+			["Id"] = 4223034,
 			["CreatureID"] = 15698,
 			["Name"] = "Father Winter's Helper",
 			["Weight"] = {
@@ -1480,6 +1493,18 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [50]
 		{
+			["Id"] = 12345360,
+			["CreatureID"] = 62829,
+			["Name"] = "Fishy",
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [51]
+		{
 			["Id"] = 10205007,
 			["CreatureID"] = 61320,
 			["Name"] = "Forest Spiderling",
@@ -1490,7 +1515,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [51]
+		}, -- [52]
 		{
 			["Id"] = 4142446,
 			["CreatureID"] = 28883,
@@ -1502,7 +1527,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [52]
+		}, -- [53]
 		{
 			["Id"] = 4223030,
 			["CreatureID"] = 29147,
@@ -1514,7 +1539,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [53]
+		}, -- [54]
 		{
 			["Id"] = 4223043,
 			["CreatureID"] = 31575,
@@ -1526,7 +1551,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [54]
+		}, -- [55]
 		{
 			["Id"] = 4860923,
 			["CreatureID"] = 42183,
@@ -1538,7 +1563,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [55]
+		}, -- [56]
 		{
 			["Id"] = 4223065,
 			["CreatureID"] = 7553,
@@ -1550,7 +1575,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [56]
+		}, -- [57]
 		{
 			["Id"] = 4142461,
 			["CreatureID"] = 34694,
@@ -1562,7 +1587,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [57]
+		}, -- [58]
 		{
 			["Id"] = 4237912,
 			["CreatureID"] = 35400,
@@ -1574,7 +1599,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [58]
+		}, -- [59]
 		{
 			["Id"] = 4223061,
 			["CreatureID"] = 7555,
@@ -1586,7 +1611,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [59]
+		}, -- [60]
 		{
 			["Id"] = 10020192,
 			["CreatureID"] = 61827,
@@ -1598,7 +1623,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [60]
+		}, -- [61]
 		{
 			["Id"] = 10020670,
 			["CreatureID"] = 61828,
@@ -1610,7 +1635,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [61]
+		}, -- [62]
 		{
 			["Id"] = 6946473,
 			["CreatureID"] = 35387,
@@ -1622,7 +1647,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [62]
+		}, -- [63]
 		{
 			["Id"] = 4142459,
 			["CreatureID"] = 35387,
@@ -1634,7 +1659,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [63]
+		}, -- [64]
 		{
 			["Id"] = 4223075,
 			["CreatureID"] = 53048,
@@ -1646,7 +1671,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [64]
+		}, -- [65]
 		{
 			["Id"] = 4142465,
 			["CreatureID"] = 46896,
@@ -1658,7 +1683,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [65]
+		}, -- [66]
 		{
 			["Id"] = 4142473,
 			["CreatureID"] = 36979,
@@ -1670,7 +1695,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [66]
+		}, -- [67]
 		{
 			["Id"] = 4142474,
 			["CreatureID"] = 51600,
@@ -1682,7 +1707,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [67]
+		}, -- [68]
 		{
 			["Id"] = 4142464,
 			["CreatureID"] = 54027,
@@ -1694,7 +1719,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [68]
+		}, -- [69]
 		{
 			["Id"] = 4142471,
 			["CreatureID"] = 40703,
@@ -1706,7 +1731,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [69]
+		}, -- [70]
 		{
 			["Id"] = 4223064,
 			["CreatureID"] = 32939,
@@ -1718,7 +1743,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [70]
+		}, -- [71]
 		{
 			["Id"] = 7623238,
 			["CreatureID"] = 63832,
@@ -1730,7 +1755,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [71]
+		}, -- [72]
 		{
 			["Id"] = 4223072,
 			["CreatureID"] = 50545,
@@ -1742,7 +1767,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [72]
+		}, -- [73]
 		{
 			["Id"] = 4223039,
 			["CreatureID"] = 18839,
@@ -1754,7 +1779,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [73]
+		}, -- [74]
 		{
 			["Id"] = 4223029,
 			["CreatureID"] = 20408,
@@ -1766,7 +1791,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [74]
+		}, -- [75]
 		{
 			["Id"] = 4860922,
 			["CreatureID"] = 8376,
@@ -1778,7 +1803,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [75]
+		}, -- [76]
 		{
 			["Id"] = 4860921,
 			["CreatureID"] = 22445,
@@ -1790,7 +1815,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [76]
+		}, -- [77]
 		{
 			["Id"] = 4142467,
 			["CreatureID"] = 51601,
@@ -1802,7 +1827,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [77]
+		}, -- [78]
 		{
 			["Id"] = 11159287,
 			["CreatureID"] = 51649,
@@ -1814,23 +1839,11 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [78]
+		}, -- [79]
 		{
 			["Id"] = 4142450,
 			["CreatureID"] = 29726,
 			["Name"] = "Mr. Chilly",
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [79]
-		{
-			["Id"] = 5333811,
-			["CreatureID"] = 16548,
-			["Name"] = "Mr. Wiggles",
 			["Weight"] = {
 				["BattleGrounds"] = 0,
 				["Global World"] = 1,
@@ -1852,6 +1865,18 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [81]
 		{
+			["Id"] = 5333811,
+			["CreatureID"] = 16548,
+			["Name"] = "Mr. Wiggles",
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [82]
+		{
 			["Id"] = 4142449,
 			["CreatureID"] = 24389,
 			["Name"] = "Muckbreath",
@@ -1862,7 +1887,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [82]
+		}, -- [83]
 		{
 			["Id"] = 4223071,
 			["CreatureID"] = 33219,
@@ -1874,7 +1899,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [83]
+		}, -- [84]
 		{
 			["Id"] = 4142469,
 			["CreatureID"] = 54438,
@@ -1886,7 +1911,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [84]
+		}, -- [85]
 		{
 			["Id"] = 4223038,
 			["CreatureID"] = 28470,
@@ -1898,7 +1923,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [85]
+		}, -- [86]
 		{
 			["Id"] = 4223021,
 			["CreatureID"] = 18381,
@@ -1910,23 +1935,11 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [86]
+		}, -- [87]
 		{
 			["Id"] = 5333815,
 			["CreatureID"] = 54227,
 			["Name"] = "Nuts",
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [87]
-		{
-			["Id"] = 4237911,
-			["CreatureID"] = 35399,
-			["Name"] = "Obsidian Hatchling",
 			["Weight"] = {
 				["BattleGrounds"] = 0,
 				["Global World"] = 1,
@@ -1948,6 +1961,18 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [89]
 		{
+			["Id"] = 4237911,
+			["CreatureID"] = 35399,
+			["Name"] = "Obsidian Hatchling",
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [90]
+		{
 			["Id"] = 4142470,
 			["CreatureID"] = 36607,
 			["Name"] = "Onyxian Whelpling",
@@ -1958,7 +1983,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [90]
+		}, -- [91]
 		{
 			["Id"] = 10015296,
 			["CreatureID"] = 7382,
@@ -1970,23 +1995,11 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [91]
+		}, -- [92]
 		{
 			["Id"] = 4223040,
 			["CreatureID"] = 23266,
 			["Name"] = "Peanut",
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [92]
-		{
-			["Id"] = 4223068,
-			["CreatureID"] = 16085,
-			["Name"] = "Peddlefeet",
 			["Weight"] = {
 				["BattleGrounds"] = 0,
 				["Global World"] = 1,
@@ -2008,6 +2021,18 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [94]
 		{
+			["Id"] = 4223068,
+			["CreatureID"] = 16085,
+			["Name"] = "Peddlefeet",
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [95]
+		{
 			["Id"] = 4223035,
 			["CreatureID"] = 32595,
 			["Name"] = "Pengu",
@@ -2018,7 +2043,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [95]
+		}, -- [96]
 		{
 			["Id"] = 4142472,
 			["CreatureID"] = 37865,
@@ -2030,7 +2055,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [96]
+		}, -- [97]
 		{
 			["Id"] = 4142453,
 			["CreatureID"] = 9656,
@@ -2042,7 +2067,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [97]
+		}, -- [98]
 		{
 			["Id"] = 4223022,
 			["CreatureID"] = 26119,
@@ -2054,31 +2079,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [98]
-		{
-			["Id"] = 4223054,
-			["CreatureID"] = 24753,
-			["Name"] = "Pint-Sized Pink Pachyderm",
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
 		}, -- [99]
-		{
-			["Id"] = 4237901,
-			["CreatureID"] = 24753,
-			["Name"] = "Pint-Sized Pink Pachyderm",
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [100]
 		{
 			["Id"] = 5333814,
 			["CreatureID"] = 24753,
@@ -2090,9 +2091,21 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
+		}, -- [100]
+		{
+			["Id"] = 4237901,
+			["CreatureID"] = 24753,
+			["Name"] = "Pint-Sized Pink Pachyderm",
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
 		}, -- [101]
 		{
-			["Id"] = 6946469,
+			["Id"] = 4223054,
 			["CreatureID"] = 24753,
 			["Name"] = "Pint-Sized Pink Pachyderm",
 			["Weight"] = {
@@ -2104,6 +2117,18 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [102]
 		{
+			["Id"] = 6946469,
+			["CreatureID"] = 24753,
+			["Name"] = "Pint-Sized Pink Pachyderm",
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [103]
+		{
 			["Id"] = 4223055,
 			["CreatureID"] = 32818,
 			["Name"] = "Plump Turkey",
@@ -2114,7 +2139,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [103]
+		}, -- [104]
 		{
 			["Id"] = 4237909,
 			["CreatureID"] = 32592,
@@ -2126,7 +2151,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [104]
+		}, -- [105]
 		{
 			["Id"] = 9911790,
 			["CreatureID"] = 61080,
@@ -2138,7 +2163,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [105]
+		}, -- [106]
 		{
 			["Id"] = 10019600,
 			["CreatureID"] = 61366,
@@ -2150,23 +2175,11 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [106]
+		}, -- [107]
 		{
 			["Id"] = 10020941,
 			["CreatureID"] = 62051,
 			["Name"] = "Ravager Hatchling",
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [107]
-		{
-			["Id"] = 5335346,
-			["CreatureID"] = 35398,
-			["Name"] = "Razormaw Hatchling",
 			["Weight"] = {
 				["BattleGrounds"] = 0,
 				["Global World"] = 1,
@@ -2188,7 +2201,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [109]
 		{
-			["Id"] = 4858329,
+			["Id"] = 5335346,
 			["CreatureID"] = 35398,
 			["Name"] = "Razormaw Hatchling",
 			["Weight"] = {
@@ -2200,6 +2213,18 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [110]
 		{
+			["Id"] = 4858329,
+			["CreatureID"] = 35398,
+			["Name"] = "Razormaw Hatchling",
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [111]
+		{
 			["Id"] = 4142462,
 			["CreatureID"] = 35394,
 			["Name"] = "Razzashi Hatchling",
@@ -2210,7 +2235,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [111]
+		}, -- [112]
 		{
 			["Id"] = 4223025,
 			["CreatureID"] = 21009,
@@ -2222,7 +2247,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [112]
+		}, -- [113]
 		{
 			["Id"] = 10311939,
 			["CreatureID"] = 61169,
@@ -2234,7 +2259,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [113]
+		}, -- [114]
 		{
 			["Id"] = 4223020,
 			["CreatureID"] = 25109,
@@ -2246,7 +2271,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [114]
+		}, -- [115]
 		{
 			["Id"] = 4223079,
 			["CreatureID"] = 48107,
@@ -2258,7 +2283,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [115]
+		}, -- [116]
 		{
 			["Id"] = 4223076,
 			["CreatureID"] = 51635,
@@ -2270,7 +2295,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [116]
+		}, -- [117]
 		{
 			["Id"] = 4858319,
 			["CreatureID"] = 33810,
@@ -2282,7 +2307,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [117]
+		}, -- [118]
 		{
 			["Id"] = 4142444,
 			["CreatureID"] = 7380,
@@ -2294,7 +2319,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [118]
+		}, -- [119]
 		{
 			["Id"] = 4223070,
 			["CreatureID"] = 51090,
@@ -2306,21 +2331,9 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [119]
-		{
-			["Id"] = 5326717,
-			["CreatureID"] = 23909,
-			["Name"] = "Sinister Squashling",
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
 		}, -- [120]
 		{
-			["Id"] = 5333806,
+			["Id"] = 4858328,
 			["CreatureID"] = 23909,
 			["Name"] = "Sinister Squashling",
 			["Weight"] = {
@@ -2332,7 +2345,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [121]
 		{
-			["Id"] = 5335342,
+			["Id"] = 5333806,
 			["CreatureID"] = 23909,
 			["Name"] = "Sinister Squashling",
 			["Weight"] = {
@@ -2356,7 +2369,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [123]
 		{
-			["Id"] = 4223056,
+			["Id"] = 4237908,
 			["CreatureID"] = 23909,
 			["Name"] = "Sinister Squashling",
 			["Weight"] = {
@@ -2368,7 +2381,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [124]
 		{
-			["Id"] = 4858328,
+			["Id"] = 5326717,
 			["CreatureID"] = 23909,
 			["Name"] = "Sinister Squashling",
 			["Weight"] = {
@@ -2380,7 +2393,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [125]
 		{
-			["Id"] = 4237908,
+			["Id"] = 4223056,
 			["CreatureID"] = 23909,
 			["Name"] = "Sinister Squashling",
 			["Weight"] = {
@@ -2392,6 +2405,18 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [126]
 		{
+			["Id"] = 5335342,
+			["CreatureID"] = 23909,
+			["Name"] = "Sinister Squashling",
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [127]
+		{
 			["Id"] = 10018228,
 			["CreatureID"] = 61255,
 			["Name"] = "Skunk",
@@ -2402,7 +2427,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [127]
+		}, -- [128]
 		{
 			["Id"] = 4223026,
 			["CreatureID"] = 10598,
@@ -2414,7 +2439,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [128]
+		}, -- [129]
 		{
 			["Id"] = 4223050,
 			["CreatureID"] = 26050,
@@ -2426,7 +2451,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [129]
+		}, -- [130]
 		{
 			["Id"] = 9907383,
 			["CreatureID"] = 7560,
@@ -2438,7 +2463,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [130]
+		}, -- [131]
 		{
 			["Id"] = 4223027,
 			["CreatureID"] = 16547,
@@ -2450,7 +2475,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [131]
+		}, -- [132]
 		{
 			["Id"] = 4223023,
 			["CreatureID"] = 27217,
@@ -2462,23 +2487,11 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [132]
+		}, -- [133]
 		{
 			["Id"] = 4223048,
 			["CreatureID"] = 16701,
 			["Name"] = "Spirit of Summer",
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [133]
-		{
-			["Id"] = 4223037,
-			["CreatureID"] = 32791,
-			["Name"] = "Spring Rabbit",
 			["Weight"] = {
 				["BattleGrounds"] = 0,
 				["Global World"] = 1,
@@ -2500,7 +2513,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [135]
 		{
-			["Id"] = 5333809,
+			["Id"] = 4223037,
 			["CreatureID"] = 32791,
 			["Name"] = "Spring Rabbit",
 			["Weight"] = {
@@ -2512,6 +2525,18 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [136]
 		{
+			["Id"] = 5333809,
+			["CreatureID"] = 32791,
+			["Name"] = "Spring Rabbit",
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [137]
+		{
 			["Id"] = 4142457,
 			["CreatureID"] = 9662,
 			["Name"] = "Sprite Darter Hatchling",
@@ -2522,7 +2547,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [137]
+		}, -- [138]
 		{
 			["Id"] = 4223067,
 			["CreatureID"] = 23274,
@@ -2534,7 +2559,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [138]
+		}, -- [139]
 		{
 			["Id"] = 4223049,
 			["CreatureID"] = 33226,
@@ -2546,7 +2571,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [139]
+		}, -- [140]
 		{
 			["Id"] = 4223057,
 			["CreatureID"] = 33188,
@@ -2558,7 +2583,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [140]
+		}, -- [141]
 		{
 			["Id"] = 4237900,
 			["CreatureID"] = 33188,
@@ -2570,21 +2595,9 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [141]
-		{
-			["Id"] = 4858323,
-			["CreatureID"] = 32589,
-			["Name"] = "Tickbird Hatchling",
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
 		}, -- [142]
 		{
-			["Id"] = 4142451,
+			["Id"] = 5335341,
 			["CreatureID"] = 32589,
 			["Name"] = "Tickbird Hatchling",
 			["Weight"] = {
@@ -2608,7 +2621,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [144]
 		{
-			["Id"] = 4237907,
+			["Id"] = 4142451,
 			["CreatureID"] = 32589,
 			["Name"] = "Tickbird Hatchling",
 			["Weight"] = {
@@ -2620,7 +2633,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [145]
 		{
-			["Id"] = 5335341,
+			["Id"] = 4858323,
 			["CreatureID"] = 32589,
 			["Name"] = "Tickbird Hatchling",
 			["Weight"] = {
@@ -2632,6 +2645,18 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [146]
 		{
+			["Id"] = 4237907,
+			["CreatureID"] = 32589,
+			["Name"] = "Tickbird Hatchling",
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [147]
+		{
 			["Id"] = 10001135,
 			["CreatureID"] = 61160,
 			["Name"] = "Tiny Harvester",
@@ -2642,7 +2667,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [147]
+		}, -- [148]
 		{
 			["Id"] = 4223084,
 			["CreatureID"] = 48982,
@@ -2654,7 +2679,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [148]
+		}, -- [149]
 		{
 			["Id"] = 4142456,
 			["CreatureID"] = 15710,
@@ -2666,7 +2691,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [149]
+		}, -- [150]
 		{
 			["Id"] = 4223042,
 			["CreatureID"] = 24388,
@@ -2678,23 +2703,11 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [150]
+		}, -- [151]
 		{
 			["Id"] = 4223074,
 			["CreatureID"] = 38374,
 			["Name"] = "Toxic Wasteling",
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [151]
-		{
-			["Id"] = 4223046,
-			["CreatureID"] = 7395,
-			["Name"] = "Undercity Cockroach",
 			["Weight"] = {
 				["BattleGrounds"] = 0,
 				["Global World"] = 1,
@@ -2716,6 +2729,18 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [153]
 		{
+			["Id"] = 4223046,
+			["CreatureID"] = 7395,
+			["Name"] = "Undercity Cockroach",
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [154]
+		{
 			["Id"] = 5335344,
 			["CreatureID"] = 28513,
 			["Name"] = "Vampiric Batling",
@@ -2726,7 +2751,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [154]
+		}, -- [155]
 		{
 			["Id"] = 4142460,
 			["CreatureID"] = 34587,
@@ -2738,7 +2763,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [155]
+		}, -- [156]
 		{
 			["Id"] = 4142443,
 			["CreatureID"] = 30379,
@@ -2750,7 +2775,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [156]
+		}, -- [157]
 		{
 			["Id"] = 4223036,
 			["CreatureID"] = 16549,
@@ -2762,7 +2787,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [157]
+		}, -- [158]
 		{
 			["Id"] = 5333808,
 			["CreatureID"] = 21018,
@@ -2774,21 +2799,9 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [158]
-		{
-			["Id"] = 6946471,
-			["CreatureID"] = 32590,
-			["Name"] = "White Tickbird Hatchling",
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
 		}, -- [159]
 		{
-			["Id"] = 4142454,
+			["Id"] = 6946471,
 			["CreatureID"] = 32590,
 			["Name"] = "White Tickbird Hatchling",
 			["Weight"] = {
@@ -2812,7 +2825,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [161]
 		{
-			["Id"] = 5326719,
+			["Id"] = 4142454,
 			["CreatureID"] = 32590,
 			["Name"] = "White Tickbird Hatchling",
 			["Weight"] = {
@@ -2824,7 +2837,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [162]
 		{
-			["Id"] = 4223053,
+			["Id"] = 5326719,
 			["CreatureID"] = 32590,
 			["Name"] = "White Tickbird Hatchling",
 			["Weight"] = {
@@ -2860,9 +2873,9 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [165]
 		{
-			["Id"] = 5333810,
-			["CreatureID"] = 23231,
-			["Name"] = "Willy",
+			["Id"] = 4223053,
+			["CreatureID"] = 32590,
+			["Name"] = "White Tickbird Hatchling",
 			["Weight"] = {
 				["BattleGrounds"] = 0,
 				["Global World"] = 1,
@@ -2872,7 +2885,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [166]
 		{
-			["Id"] = 5326715,
+			["Id"] = 5333810,
 			["CreatureID"] = 23231,
 			["Name"] = "Willy",
 			["Weight"] = {
@@ -2884,7 +2897,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [167]
 		{
-			["Id"] = 4858316,
+			["Id"] = 5326715,
 			["CreatureID"] = 23231,
 			["Name"] = "Willy",
 			["Weight"] = {
@@ -2896,7 +2909,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [168]
 		{
-			["Id"] = 4223024,
+			["Id"] = 4858316,
 			["CreatureID"] = 23231,
 			["Name"] = "Willy",
 			["Weight"] = {
@@ -2908,9 +2921,9 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [169]
 		{
-			["Id"] = 4858326,
-			["CreatureID"] = 15706,
-			["Name"] = "Winter Reindeer",
+			["Id"] = 4223024,
+			["CreatureID"] = 23231,
+			["Name"] = "Willy",
 			["Weight"] = {
 				["BattleGrounds"] = 0,
 				["Global World"] = 1,
@@ -2920,7 +2933,7 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [170]
 		{
-			["Id"] = 4223058,
+			["Id"] = 4858326,
 			["CreatureID"] = 15706,
 			["Name"] = "Winter Reindeer",
 			["Weight"] = {
@@ -2932,6 +2945,18 @@ GUPPET_SAVEDDATA = {
 			},
 		}, -- [171]
 		{
+			["Id"] = 4223058,
+			["CreatureID"] = 15706,
+			["Name"] = "Winter Reindeer",
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [172]
+		{
 			["Id"] = 4223082,
 			["CreatureID"] = 52831,
 			["Name"] = "Winterspring Cub",
@@ -2942,7 +2967,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [172]
+		}, -- [173]
 		{
 			["Id"] = 4223052,
 			["CreatureID"] = 22943,
@@ -2954,7 +2979,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [173]
+		}, -- [174]
 		{
 			["Id"] = 4223028,
 			["CreatureID"] = 10259,
@@ -2966,7 +2991,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [174]
+		}, -- [175]
 		{
 			["Id"] = 5333805,
 			["CreatureID"] = 21008,
@@ -2978,7 +3003,7 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [175]
+		}, -- [176]
 		{
 			["Id"] = 11727824,
 			["CreatureID"] = 66105,
@@ -2990,15 +3015,15 @@ GUPPET_SAVEDDATA = {
 				["Cities"] = 0,
 				["Instances"] = 0,
 			},
-		}, -- [176]
+		}, -- [177]
 		["TotalWeight"] = {
 			["BattleGrounds"] = 0,
-			["Global World"] = 176,
+			["Global World"] = 177,
 			["Arenas"] = 0,
 			["Cities"] = 0,
 			["Instances"] = 0,
 		},
-		["Total"] = 176,
+		["Total"] = 177,
 	},
 }
 GUPPET_SAVEDLOCATIONS = {
@@ -3035,6 +3060,16 @@ GUPPET_OPTIONS = {
 	["NewVersion"] = 0,
 	["PreviewFrameSpeed"] = 1,
 	["AutoDismount"] = false,
+	["Mode"] = "Expert_",
+	["MinimapButton"] = {
+		["Show"] = false,
+		["Radius"] = 78,
+		["Position"] = 355,
+		["xOffset"] = 0,
+		["RelativePoint"] = "",
+		["Lock"] = true,
+		["yOffset"] = 0,
+	},
 	["AutoCompanion"] = {
 		["Enabled"] = 1,
 		["PetOfTheDay"] = {
@@ -3050,18 +3085,8 @@ GUPPET_OPTIONS = {
 		["City"] = true,
 		["DismissMounted"] = false,
 		["Resummon"] = 0,
-		["Arena"] = true,
-		["Delay"] = 2,
 		["Raid"] = true,
+		["Delay"] = 2,
+		["Arena"] = true,
 	},
-	["MinimapButton"] = {
-		["Show"] = false,
-		["Radius"] = 78,
-		["Position"] = 355,
-		["xOffset"] = 0,
-		["RelativePoint"] = "",
-		["Lock"] = true,
-		["yOffset"] = 0,
-	},
-	["Mode"] = "Expert_",
 }

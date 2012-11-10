@@ -1,52 +1,16 @@
 
 GenieDB = {
-	["global"] = {
-		["color"] = {
-			["bool"] = {
-				["a"] = 1,
-				["r"] = 0.9372549019607843,
-				["g"] = 0.6901960784313725,
-				["b"] = 0.8705882352941177,
-			},
-			["string"] = {
-				["a"] = 1,
-				["r"] = 0.8862745098039215,
-				["g"] = 0.9372549019607843,
-				["b"] = 0.4,
-			},
-			["disabled"] = {
-				["a"] = 1,
-				["r"] = 0.3686274509803922,
-				["g"] = 0.3686274509803922,
-				["b"] = 0.3686274509803922,
-			},
-			["family"] = {
-				["a"] = 1,
-				["r"] = 0.9686274509803922,
-				["g"] = 0.4431372549019608,
-				["b"] = 0.4431372549019608,
-			},
-			["combined"] = {
-				["a"] = 1,
-				["r"] = 0.5372549019607843,
-				["g"] = 0.6588235294117647,
-				["b"] = 1,
-			},
-			["number"] = {
-				["a"] = 1,
-				["r"] = 0.5019607843137255,
-				["g"] = 0.9372549019607843,
-				["b"] = 0.8666666666666667,
-			},
-			["editHighlight"] = {
-				["a"] = 0.5100000202655792,
-				["r"] = 0.4509803921568628,
-				["g"] = 1,
-				["b"] = 0.8941176470588235,
+	["factionrealm"] = {
+		["Alliance - Deathwing"] = {
+			["gb"] = {
+				["Inertia"] = {
+					[4] = {
+					},
+					[8] = {
+					},
+				},
 			},
 		},
-		["GB_Delay"] = 1,
-		["edit"] = false,
 	},
 	["profileKeys"] = {
 		["Prallend - Deathwing"] = "Default",
@@ -54,13 +18,61 @@ GenieDB = {
 		["Untote - Jubei'Thos"] = "Default",
 		["Erschossen - Deathwing"] = "Default",
 		["Jaymes - Deathwing"] = "Default",
-		["Notwehr - Deathwing"] = "Default",
+		["Geiler - Deathwing"] = "Default",
 		["Vergottlicht - Deathwing"] = "Default",
 		["Dunskull - Deathwing"] = "Default",
 		["Beichte - Deathwing"] = "Default",
 		["Zaubertot - Deathwing"] = "Default",
 		["Geil - Uldum"] = "Default",
-		["Geiler - Deathwing"] = "Default",
+		["Notwehr - Deathwing"] = "Default",
+	},
+	["global"] = {
+		["color"] = {
+			["bool"] = {
+				["a"] = 1,
+				["b"] = 0.8705882352941177,
+				["g"] = 0.6901960784313725,
+				["r"] = 0.9372549019607843,
+			},
+			["string"] = {
+				["a"] = 1,
+				["b"] = 0.4,
+				["g"] = 0.9372549019607843,
+				["r"] = 0.8862745098039215,
+			},
+			["disabled"] = {
+				["a"] = 1,
+				["b"] = 0.3686274509803922,
+				["g"] = 0.3686274509803922,
+				["r"] = 0.3686274509803922,
+			},
+			["family"] = {
+				["a"] = 1,
+				["b"] = 0.4431372549019608,
+				["g"] = 0.4431372549019608,
+				["r"] = 0.9686274509803922,
+			},
+			["combined"] = {
+				["a"] = 1,
+				["b"] = 1,
+				["g"] = 0.6588235294117647,
+				["r"] = 0.5372549019607843,
+			},
+			["number"] = {
+				["a"] = 1,
+				["b"] = 0.8666666666666667,
+				["g"] = 0.9372549019607843,
+				["r"] = 0.5019607843137255,
+			},
+			["editHighlight"] = {
+				["a"] = 0.5100000202655792,
+				["b"] = 0.8941176470588235,
+				["g"] = 1,
+				["r"] = 0.4509803921568628,
+			},
+		},
+		["GB_Delay"] = 1,
+		["edit"] = false,
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -248,11 +260,16 @@ GenieDB = {
 				},
 			},
 			["attachTo"] = {
-				["tooltip"] = false,
 				["minimap"] = true,
+				["tooltip"] = false,
 			},
 			["version"] = 5000,
 			["customFamilies"] = {
+				["dps"] = {
+					["set"] = "DPS",
+					[72844] = "Pit Lord's Destroyer:16",
+					[23476] = "Squire's Shirt:4",
+				},
 				["tanking"] = {
 					[23476] = "Squire's Shirt:4",
 					[81659] = "Faded Forest Signet:11",
@@ -273,11 +290,6 @@ GenieDB = {
 					[81649] = "Faded Forest Heavy Armplates:9",
 					[81622] = "Faded Forest Heavy Warboots:8",
 					["set"] = "Tanking",
-				},
-				["dps"] = {
-					["set"] = "DPS",
-					[72844] = "Pit Lord's Destroyer:16",
-					[23476] = "Squire's Shirt:4",
 				},
 				["healing"] = {
 					[76153] = "Signet of the Twilight Prophet:12",

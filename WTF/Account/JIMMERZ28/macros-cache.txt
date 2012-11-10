@@ -1,5 +1,5 @@
 MACRO 5 "FIGHT SONG" "INV_WAND_1H_430NIGHTELF_C_01"
-/1 Go Costa, Fight Costa, Win Costa! When we enter a fight, those horde better run for the hills, because if they do not, then for us it's free honor kills! Hail Costa, We Will Never Fail!
+/2 Go Costa, Fight Costa, Win Costa! When we enter a fight, those horde better run for the hills, because if they do not, then for us it's free honor kills! Hail Costa, We Will Never Fail!
 END
 MACRO 2 "Milling" "INV_Misc_QuestionMark"
 /cast Milling
@@ -7,16 +7,12 @@ MACRO 2 "Milling" "INV_Misc_QuestionMark"
 /use Khadgar's Whisker
 /use Azshara's Veil
 /use Heartblossom
-/use Twilight Jasmine
-/use Whiptail
-/use Mageroyal
-/use Briarthorn
-/use Silverleaf
-/use Wild Steelbloom
-/use Peacebloom
+/use Dreaming Glory
+/use Fadeleaf
+/use Rain Poppy
 /use Swiftthistle
 /use Silkweed
-/use Green 
+/use Green Tea Leaf
 END
 MACRO 4 "Mount" "Ability_Creature_Cursed_03"
 /guppet am

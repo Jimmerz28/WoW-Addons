@@ -6,13 +6,13 @@ SkadaDB = {
 		["Untote - Jubei'Thos"] = "Default",
 		["Erschossen - Deathwing"] = "Default",
 		["Jaymes - Deathwing"] = "Default",
+		["Notwehr - Deathwing"] = "Default",
 		["Geiler - Deathwing"] = "Default",
-		["Vergottlicht - Deathwing"] = "Default",
 		["Beichte - Deathwing"] = "Default",
 		["Dunskull - Deathwing"] = "Default",
 		["Zaubertot - Deathwing"] = "Default",
 		["Geil - Uldum"] = "Default",
-		["Notwehr - Deathwing"] = "Default",
+		["Vergottlicht - Deathwing"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

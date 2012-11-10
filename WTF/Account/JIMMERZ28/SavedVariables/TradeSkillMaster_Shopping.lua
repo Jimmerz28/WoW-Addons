@@ -1,57 +1,60 @@
 
 TradeSkillMaster_ShoppingDB = {
-	["global"] = {
-		["treeGroupStatus"] = {
-			["groups"] = {
-				["1"] = true,
-			},
-			["scrollvalue"] = 0,
-			["fullwidth"] = 800.9999389648438,
-			["selected"] = 1,
-			["treewidth"] = 175,
-			["treesizable"] = true,
-		},
-		["previousSearches"] = {
-			"ghost iron dragon", -- [1]
-			"sun's radiance", -- [2]
-			"Kyparite", -- [3]
-			"heavens", -- [4]
-			"ghost iron bar", -- [5]
-			"spinefish", -- [6]
-			"rain poppy", -- [7]
-			"green tea leaf", -- [8]
-			"desecrated oil", -- [9]
-			"green leaf tea", -- [10]
-			"spirit dust", -- [11]
-			"i wouldn't", -- [12]
-			"Azshara's Veil/exact", -- [13]
-			"Glyph of Spirit of Redemption/exact", -- [14]
-			"Gnomish Army Knife", -- [15]
-			"gnomish army", -- [16]
-			"ghost iron bolt", -- [17]
-			"Perfect Brilliant Pandarian Garnet", -- [18]
-			"b", -- [19]
-			"Primordial Ruby/exact", -- [20]
-		},
-		["automaticDestroyingModes"] = {
-			["disenchant"] = false,
-			["transform"] = false,
-			["prospect"] = false,
-			["mill"] = false,
-		},
-	},
 	["profileKeys"] = {
 		["Dunskull - Deathwing"] = "Dunskull - Deathwing",
 		["Untote - Jubei'Thos"] = "Untote - Jubei'Thos",
 		["Erschossen - Deathwing"] = "Erschossen - Deathwing",
 		["Jaymes - Deathwing"] = "Jaymes - Deathwing",
-		["Prallend - Deathwing"] = "Prallend - Deathwing",
+		["Beichte - Deathwing"] = "Beichte - Deathwing",
 		["Vergottlicht - Deathwing"] = "Vergottlicht - Deathwing",
 		["Geiler - Deathwing"] = "Geiler - Deathwing",
 		["Notwehr - Deathwing"] = "Notwehr - Deathwing",
 		["Zaubertot - Deathwing"] = "Zaubertot - Deathwing",
 		["Geil - Uldum"] = "Geil - Uldum",
-		["Beichte - Deathwing"] = "Beichte - Deathwing",
+		["Prallend - Deathwing"] = "Prallend - Deathwing",
+	},
+	["global"] = {
+		["treeGroupStatus"] = {
+			["groups"] = {
+				[3] = true,
+				[4] = true,
+				["1"] = true,
+			},
+			["scrollvalue"] = 0,
+			["treesizable"] = true,
+			["selected"] = 1,
+			["treewidth"] = 175,
+			["fullwidth"] = 800.9999389648438,
+		},
+		["previousSearches"] = {
+			"Windwool Cloth", -- [1]
+			"Primordial Ruby", -- [2]
+			"ghost iron dragon", -- [3]
+			"sun's radiance", -- [4]
+			"Kyparite", -- [5]
+			"heavens", -- [6]
+			"ghost iron bar", -- [7]
+			"spinefish", -- [8]
+			"rain poppy", -- [9]
+			"green tea leaf", -- [10]
+			"desecrated oil", -- [11]
+			"green leaf tea", -- [12]
+			"spirit dust", -- [13]
+			"i wouldn't", -- [14]
+			"Azshara's Veil/exact", -- [15]
+			"Glyph of Spirit of Redemption/exact", -- [16]
+			"Gnomish Army Knife", -- [17]
+			"gnomish army", -- [18]
+			"ghost iron bolt", -- [19]
+			"Perfect Brilliant Pandarian Garnet", -- [20]
+			"b", -- [21]
+			"Primordial Ruby/exact", -- [22]
+		},
+		["automaticDestroyingModes"] = {
+			["disenchant"] = false,
+			["transform"] = false,
+			["prospect"] = false,
+		},
 	},
 	["profiles"] = {
 		["Dunskull - Deathwing"] = {
@@ -76,18 +79,18 @@ TradeSkillMaster_ShoppingDB = {
 			},
 		},
 		["Jaymes - Deathwing"] = {
+			["version"] = 1,
 			["dealfinding"] = {
 				["DealfindingList"] = {
 				},
 			},
-			["version"] = 1,
 		},
-		["Prallend - Deathwing"] = {
-			["version"] = 1,
+		["Beichte - Deathwing"] = {
 			["dealfinding"] = {
 				["DealfindingList"] = {
 				},
 			},
+			["version"] = 1,
 		},
 		["Vergottlicht - Deathwing"] = {
 			["version"] = 1,
@@ -124,7 +127,7 @@ TradeSkillMaster_ShoppingDB = {
 				},
 			},
 		},
-		["Beichte - Deathwing"] = {
+		["Prallend - Deathwing"] = {
 			["version"] = 1,
 			["dealfinding"] = {
 				["DealfindingList"] = {
