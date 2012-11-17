@@ -132,3 +132,10 @@ X: 11
 Y: -38
 W: 466
 H: 24
+Frame: AuctionFrame
+FrameLevel: 27
+Anchor: LEFT
+X: 16
+Y: 112
+W: 832
+H: 447

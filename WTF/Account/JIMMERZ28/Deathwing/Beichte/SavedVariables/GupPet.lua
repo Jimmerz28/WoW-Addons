@@ -3098,7 +3098,7 @@ GUPPET_OPTIONS = {
 			["Enabled"] = false,
 			["Day"] = 0,
 			["Month"] = 0,
-			["PetId"] = 4142454,
+			["PetId"] = 4223024,
 			["Year"] = 0,
 		},
 		["Outside"] = true,

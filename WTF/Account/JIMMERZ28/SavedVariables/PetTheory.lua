@@ -2,14 +2,15 @@
 PetTheorySettings = {
 	["profileKeys"] = {
 		["Dunskull - Deathwing"] = "Default",
+		["Zerkratzen - Deathwing"] = "Default",
 		["Untote - Jubei'Thos"] = "Default",
 		["Erschossen - Deathwing"] = "Default",
 		["Jaymes - Deathwing"] = "Default",
 		["Vergottlicht - Deathwing"] = "Default",
-		["Geiler - Deathwing"] = "Default",
+		["Beichte - Deathwing"] = "Default",
 		["Notwehr - Deathwing"] = "Default",
 		["Zaubertot - Deathwing"] = "Default",
 		["Geil - Uldum"] = "Default",
-		["Beichte - Deathwing"] = "Default",
+		["Geiler - Deathwing"] = "Default",
 	},
 }

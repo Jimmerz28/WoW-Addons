@@ -1,4 +1,11 @@
 Version: 1
+Frame: _NPCScanButton
+FrameLevel: 1
+Anchor: BOTTOM
+X: 0
+Y: 128
+W: 150
+H: 42
 Frame: CombuctorFrame1
 FrameLevel: 1
 Anchor: RIGHT
@@ -100,10 +107,10 @@ H: 30
 Frame: DominosFramemenu
 FrameLevel: 1
 Anchor: TOP
-X: 50
+X: 39
 Y: 0
-W: 336
-H: 36
+W: 314
+H: 38
 Frame: DominosFrameextra
 FrameLevel: 1
 Anchor: CENTER

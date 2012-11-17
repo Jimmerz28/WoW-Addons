@@ -1,6 +1,6 @@
 Version: 1
 Frame: TSMMainFrame1
-FrameLevel: 18
+FrameLevel: 12
 Anchor: CENTER
 X: -18
 Y: 16
@@ -14,7 +14,7 @@ Y: 128
 W: 150
 H: 42
 Frame: CombuctorFrame1
-FrameLevel: 1
+FrameLevel: 10
 Anchor: RIGHT
 X: 0
 Y: 0

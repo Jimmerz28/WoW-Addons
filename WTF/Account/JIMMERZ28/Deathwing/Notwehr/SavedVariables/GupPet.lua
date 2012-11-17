@@ -3060,16 +3060,6 @@ GUPPET_OPTIONS = {
 	["NewVersion"] = 0,
 	["PreviewFrameSpeed"] = 1,
 	["AutoDismount"] = false,
-	["Mode"] = "Expert_",
-	["MinimapButton"] = {
-		["Show"] = false,
-		["Radius"] = 78,
-		["Position"] = 355,
-		["xOffset"] = 0,
-		["RelativePoint"] = "",
-		["Lock"] = true,
-		["yOffset"] = 0,
-	},
 	["AutoCompanion"] = {
 		["Enabled"] = 1,
 		["PetOfTheDay"] = {
@@ -3085,8 +3075,18 @@ GUPPET_OPTIONS = {
 		["City"] = true,
 		["DismissMounted"] = false,
 		["Resummon"] = 0,
-		["Raid"] = true,
-		["Delay"] = 2,
 		["Arena"] = true,
+		["Delay"] = 2,
+		["Raid"] = true,
 	},
+	["MinimapButton"] = {
+		["Show"] = false,
+		["Radius"] = 78,
+		["Position"] = 355,
+		["xOffset"] = 0,
+		["RelativePoint"] = "",
+		["Lock"] = true,
+		["yOffset"] = 0,
+	},
+	["Mode"] = "Expert_",
 }

@@ -1,0 +1,29 @@
+tag v2.3
+405db72d3db40a89432151c5fbcabb281a387e50
+funkydude <none>
+2012-09-29 00:25:43 +0100
+
+Tagging as v2.3
+
+
+--------------------
+
+funkydude:
+	- tweaks
+	- Buttons: Remove some custom minimap icon handling code.
+	- Shove the Minimap into the FRAMELOCK_STATES.PETBATTLES global table so that it's hidden during a pet battle, it wasn't being hidden due to being re-parented to UIParent, so the MinimapCluster :Hide call that Blizz does wouldn't cover it.
+	- Buttons: more addon buttons
+	- BorderPresets: Add new preset, Space by Ruka.
+	- Buttons: Add a border around the world map button and tweak it a little to make it blend in with other icons.
+	- Borders: Don't set the old pixelated circular mask when clearing all borders.
+	- Buttons: Support more addon buttons.
+	- Buttons: more addon buttons
+	- Buttons: Remove the Atlas-specific button handling code as the author has thankfully moved to using LibDBIcon instead of using a button on a frame on the map.
+	- Clock: Handle width setting a different way in an attempt to fix the clock being cut out when using certain fonts.
+	- HudMap: Add a toggle option for _NPCScan.Overlay
+	- Buttons: more addon buttons
+	- HudMap: Preliminary support for re-parenting _NPCScan.Overlay to the HudMap.
+	- Buttons: more addon buttons
+	- Clarify that 0 disables auto-zoom out.
+	- Movers: add a warning when disabling movers
+	- Buttons: more addon buttons

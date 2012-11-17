@@ -3,484 +3,6 @@ GUPPET_SAVEDDATA = {
 	["MultiGround"] = {
 		["Total"] = 0,
 	},
-	["Unknown"] = {
-		["Total"] = 0,
-	},
-	["Aquatic"] = {
-		{
-			["Name"] = "Abyssal Seahorse",
-			["Slot"] = 1,
-			["Id"] = 75207,
-			["CreatureID"] = 40054,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [1]
-		{
-			["Name"] = "Sea Turtle",
-			["Slot"] = 38,
-			["Id"] = 64731,
-			["CreatureID"] = 34187,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [2]
-		["TotalWeight"] = {
-			["BattleGrounds"] = 0,
-			["Global World"] = 2,
-			["Arenas"] = 0,
-			["Cities"] = 0,
-			["Instances"] = 0,
-		},
-		["Total"] = 2,
-	},
-	["Fly"] = {
-		{
-			["Name"] = "Albino Drake",
-			["Slot"] = 2,
-			["Id"] = 60025,
-			["CreatureID"] = 32158,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [1]
-		{
-			["Name"] = "Armored Snowy Gryphon",
-			["Slot"] = 3,
-			["Id"] = 61229,
-			["CreatureID"] = 32335,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [2]
-		{
-			["Name"] = "Blue Riding Nether Ray",
-			["Slot"] = 8,
-			["Id"] = 39803,
-			["CreatureID"] = 22978,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [3]
-		{
-			["Name"] = "Bronze Drake Mount",
-			["Slot"] = 9,
-			["Id"] = 59569,
-			["CreatureID"] = 31717,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [4]
-		{
-			["Name"] = "Celestial Steed",
-			["Slot"] = 12,
-			["Id"] = 75614,
-			["CreatureID"] = 40625,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [5]
-		{
-			["Name"] = "Cenarion War Hippogryph",
-			["Slot"] = 13,
-			["Id"] = 43927,
-			["CreatureID"] = 24488,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [6]
-		{
-			["Name"] = "Dark Phoenix",
-			["Slot"] = 14,
-			["Id"] = 88990,
-			["CreatureID"] = 47841,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [7]
-		{
-			["Name"] = "Drake of the West Wind",
-			["Slot"] = 15,
-			["Id"] = 88741,
-			["CreatureID"] = 47647,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [8]
-		{
-			["Name"] = "Ebon Gryphon",
-			["Slot"] = 17,
-			["Id"] = 32239,
-			["CreatureID"] = 18357,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [9]
-		{
-			["Name"] = "Flying Carpet",
-			["Slot"] = 19,
-			["Id"] = 61451,
-			["CreatureID"] = 33029,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [10]
-		{
-			["Name"] = "Frosty Flying Carpet",
-			["Slot"] = 20,
-			["Id"] = 75596,
-			["CreatureID"] = 40533,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [11]
-		{
-			["Name"] = "Golden Gryphon",
-			["Slot"] = 21,
-			["Id"] = 32235,
-			["CreatureID"] = 18360,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [12]
-		{
-			["Name"] = "Green Proto-Drake",
-			["Slot"] = 26,
-			["Id"] = 61294,
-			["CreatureID"] = 32562,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [13]
-		{
-			["Name"] = "Green Riding Nether Ray",
-			["Slot"] = 27,
-			["Id"] = 39798,
-			["CreatureID"] = 22958,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [14]
-		{
-			["Name"] = "Headless Horseman's Mount",
-			["Slot"] = 28,
-			["Id"] = 48025,
-			["CreatureID"] = 27152,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [15]
-		{
-			["Name"] = "Imperial Quilen",
-			["Slot"] = 30,
-			["Id"] = 124659,
-			["CreatureID"] = 63831,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [16]
-		{
-			["Name"] = "Magnificent Flying Carpet",
-			["Slot"] = 31,
-			["Id"] = 61309,
-			["CreatureID"] = 33030,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [17]
-		{
-			["Name"] = "Purple Riding Nether Ray",
-			["Slot"] = 33,
-			["Id"] = 39801,
-			["CreatureID"] = 22975,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [18]
-		{
-			["Name"] = "Red Riding Nether Ray",
-			["Slot"] = 35,
-			["Id"] = 39800,
-			["CreatureID"] = 22976,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [19]
-		{
-			["Name"] = "Rusted Proto-Drake",
-			["Slot"] = 36,
-			["Id"] = 63963,
-			["CreatureID"] = 33904,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [20]
-		{
-			["Name"] = "Sandstone Drake",
-			["Slot"] = 37,
-			["Id"] = 93326,
-			["CreatureID"] = 50269,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [21]
-		{
-			["Name"] = "Silver Covenant Hippogryph",
-			["Slot"] = 39,
-			["Id"] = 66087,
-			["CreatureID"] = 35147,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [22]
-		{
-			["Name"] = "Silver Riding Nether Ray",
-			["Slot"] = 40,
-			["Id"] = 39802,
-			["CreatureID"] = 22977,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [23]
-		{
-			["Name"] = "Snowy Gryphon",
-			["Slot"] = 41,
-			["Id"] = 32240,
-			["CreatureID"] = 18359,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [24]
-		{
-			["Name"] = "Spectral Gryphon",
-			["Slot"] = 42,
-			["Id"] = 107516,
-			["CreatureID"] = 57156,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [25]
-		{
-			["Name"] = "Swift Blue Gryphon",
-			["Slot"] = 43,
-			["Id"] = 32242,
-			["CreatureID"] = 18406,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [26]
-		{
-			["Name"] = "Swift Green Gryphon",
-			["Slot"] = 47,
-			["Id"] = 32290,
-			["CreatureID"] = 18375,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [27]
-		{
-			["Name"] = "Swift Purple Gryphon",
-			["Slot"] = 52,
-			["Id"] = 32292,
-			["CreatureID"] = 18362,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [28]
-		{
-			["Name"] = "Swift Red Gryphon",
-			["Slot"] = 53,
-			["Id"] = 32289,
-			["CreatureID"] = 18376,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [29]
-		{
-			["Name"] = "Time-Lost Proto-Drake",
-			["Slot"] = 56,
-			["Id"] = 60002,
-			["CreatureID"] = 32153,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [30]
-		{
-			["Name"] = "Turbo-Charged Flying Machine",
-			["Slot"] = 57,
-			["Id"] = 44151,
-			["CreatureID"] = 24654,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [31]
-		{
-			["Name"] = "Tyrael's Charger",
-			["Slot"] = 58,
-			["Id"] = 107203,
-			["CreatureID"] = 56921,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 0,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [32]
-		{
-			["Name"] = "Violet Proto-Drake",
-			["Slot"] = 60,
-			["Id"] = 60024,
-			["CreatureID"] = 32157,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [33]
-		["TotalWeight"] = {
-			["BattleGrounds"] = 0,
-			["Global World"] = 11,
-			["Arenas"] = 0,
-			["Cities"] = 0,
-			["Instances"] = 0,
-		},
-		["Total"] = 33,
-	},
 	["Companion"] = {
 		{
 			["Id"] = 10184294,
@@ -2615,6 +2137,504 @@ GUPPET_SAVEDDATA = {
 		},
 		["Total"] = 177,
 	},
+	["Aquatic"] = {
+		{
+			["Name"] = "Abyssal Seahorse",
+			["Slot"] = 1,
+			["Id"] = 75207,
+			["CreatureID"] = 40054,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [1]
+		{
+			["Name"] = "Sea Turtle",
+			["Slot"] = 38,
+			["Id"] = 64731,
+			["CreatureID"] = 34187,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [2]
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 2,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 2,
+	},
+	["Fly"] = {
+		{
+			["Name"] = "Albino Drake",
+			["Slot"] = 2,
+			["Id"] = 60025,
+			["CreatureID"] = 32158,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [1]
+		{
+			["Name"] = "Armored Snowy Gryphon",
+			["Slot"] = 3,
+			["Id"] = 61229,
+			["CreatureID"] = 32335,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [2]
+		{
+			["Name"] = "Blue Riding Nether Ray",
+			["Slot"] = 8,
+			["Id"] = 39803,
+			["CreatureID"] = 22978,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [3]
+		{
+			["Name"] = "Bronze Drake Mount",
+			["Slot"] = 9,
+			["Id"] = 59569,
+			["CreatureID"] = 31717,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [4]
+		{
+			["Name"] = "Celestial Steed",
+			["Slot"] = 12,
+			["Id"] = 75614,
+			["CreatureID"] = 40625,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [5]
+		{
+			["Name"] = "Cenarion War Hippogryph",
+			["Slot"] = 13,
+			["Id"] = 43927,
+			["CreatureID"] = 24488,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [6]
+		{
+			["Name"] = "Dark Phoenix",
+			["Slot"] = 14,
+			["Id"] = 88990,
+			["CreatureID"] = 47841,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [7]
+		{
+			["Name"] = "Drake of the West Wind",
+			["Slot"] = 15,
+			["Id"] = 88741,
+			["CreatureID"] = 47647,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [8]
+		{
+			["Name"] = "Ebon Gryphon",
+			["Slot"] = 17,
+			["Id"] = 32239,
+			["CreatureID"] = 18357,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [9]
+		{
+			["Name"] = "Flying Carpet",
+			["Slot"] = 19,
+			["Id"] = 61451,
+			["CreatureID"] = 33029,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [10]
+		{
+			["Name"] = "Frosty Flying Carpet",
+			["Slot"] = 20,
+			["Id"] = 75596,
+			["CreatureID"] = 40533,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [11]
+		{
+			["Name"] = "Golden Gryphon",
+			["Slot"] = 21,
+			["Id"] = 32235,
+			["CreatureID"] = 18360,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [12]
+		{
+			["Name"] = "Green Proto-Drake",
+			["Slot"] = 26,
+			["Id"] = 61294,
+			["CreatureID"] = 32562,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [13]
+		{
+			["Name"] = "Green Riding Nether Ray",
+			["Slot"] = 27,
+			["Id"] = 39798,
+			["CreatureID"] = 22958,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [14]
+		{
+			["Name"] = "Headless Horseman's Mount",
+			["Slot"] = 28,
+			["Id"] = 48025,
+			["CreatureID"] = 27152,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [15]
+		{
+			["Name"] = "Imperial Quilen",
+			["Slot"] = 30,
+			["Id"] = 124659,
+			["CreatureID"] = 63831,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [16]
+		{
+			["Name"] = "Magnificent Flying Carpet",
+			["Slot"] = 31,
+			["Id"] = 61309,
+			["CreatureID"] = 33030,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [17]
+		{
+			["Name"] = "Purple Riding Nether Ray",
+			["Slot"] = 33,
+			["Id"] = 39801,
+			["CreatureID"] = 22975,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [18]
+		{
+			["Name"] = "Red Riding Nether Ray",
+			["Slot"] = 35,
+			["Id"] = 39800,
+			["CreatureID"] = 22976,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [19]
+		{
+			["Name"] = "Rusted Proto-Drake",
+			["Slot"] = 36,
+			["Id"] = 63963,
+			["CreatureID"] = 33904,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [20]
+		{
+			["Name"] = "Sandstone Drake",
+			["Slot"] = 37,
+			["Id"] = 93326,
+			["CreatureID"] = 50269,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [21]
+		{
+			["Name"] = "Silver Covenant Hippogryph",
+			["Slot"] = 39,
+			["Id"] = 66087,
+			["CreatureID"] = 35147,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [22]
+		{
+			["Name"] = "Silver Riding Nether Ray",
+			["Slot"] = 40,
+			["Id"] = 39802,
+			["CreatureID"] = 22977,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [23]
+		{
+			["Name"] = "Snowy Gryphon",
+			["Slot"] = 41,
+			["Id"] = 32240,
+			["CreatureID"] = 18359,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [24]
+		{
+			["Name"] = "Spectral Gryphon",
+			["Slot"] = 42,
+			["Id"] = 107516,
+			["CreatureID"] = 57156,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [25]
+		{
+			["Name"] = "Swift Blue Gryphon",
+			["Slot"] = 43,
+			["Id"] = 32242,
+			["CreatureID"] = 18406,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [26]
+		{
+			["Name"] = "Swift Green Gryphon",
+			["Slot"] = 47,
+			["Id"] = 32290,
+			["CreatureID"] = 18375,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [27]
+		{
+			["Name"] = "Swift Purple Gryphon",
+			["Slot"] = 52,
+			["Id"] = 32292,
+			["CreatureID"] = 18362,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [28]
+		{
+			["Name"] = "Swift Red Gryphon",
+			["Slot"] = 53,
+			["Id"] = 32289,
+			["CreatureID"] = 18376,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [29]
+		{
+			["Name"] = "Time-Lost Proto-Drake",
+			["Slot"] = 56,
+			["Id"] = 60002,
+			["CreatureID"] = 32153,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [30]
+		{
+			["Name"] = "Turbo-Charged Flying Machine",
+			["Slot"] = 57,
+			["Id"] = 44151,
+			["CreatureID"] = 24654,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [31]
+		{
+			["Name"] = "Tyrael's Charger",
+			["Slot"] = 58,
+			["Id"] = 107203,
+			["CreatureID"] = 56921,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 0,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [32]
+		{
+			["Name"] = "Violet Proto-Drake",
+			["Slot"] = 60,
+			["Id"] = 60024,
+			["CreatureID"] = 32157,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [33]
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 11,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 33,
+	},
+	["Multi"] = {
+		{
+			["Name"] = "Sandstone Drake",
+			["Slot"] = 37,
+			["Id"] = 93326,
+			["CreatureID"] = 50269,
+			["Weight"] = {
+				["BattleGrounds"] = 0,
+				["Global World"] = 1,
+				["Arenas"] = 0,
+				["Cities"] = 0,
+				["Instances"] = 0,
+			},
+		}, -- [1]
+		["TotalWeight"] = {
+			["BattleGrounds"] = 0,
+			["Global World"] = 1,
+			["Arenas"] = 0,
+			["Cities"] = 0,
+			["Instances"] = 0,
+		},
+		["Total"] = 1,
+	},
 	["Ground"] = {
 		{
 			["Name"] = "Big Blizzard Bear",
@@ -3028,28 +3048,8 @@ GUPPET_SAVEDDATA = {
 		},
 		["Total"] = 31,
 	},
-	["Multi"] = {
-		{
-			["Name"] = "Sandstone Drake",
-			["Slot"] = 37,
-			["Id"] = 93326,
-			["CreatureID"] = 50269,
-			["Weight"] = {
-				["BattleGrounds"] = 0,
-				["Global World"] = 1,
-				["Arenas"] = 0,
-				["Cities"] = 0,
-				["Instances"] = 0,
-			},
-		}, -- [1]
-		["TotalWeight"] = {
-			["BattleGrounds"] = 0,
-			["Global World"] = 1,
-			["Arenas"] = 0,
-			["Cities"] = 0,
-			["Instances"] = 0,
-		},
-		["Total"] = 1,
+	["Unknown"] = {
+		["Total"] = 0,
 	},
 }
 GUPPET_SAVEDLOCATIONS = {
@@ -3090,7 +3090,7 @@ GUPPET_OPTIONS = {
 			["Enabled"] = false,
 			["Day"] = 0,
 			["Month"] = 0,
-			["PetId"] = 5326715,
+			["PetId"] = 10311939,
 			["Year"] = 0,
 		},
 		["Outside"] = true,

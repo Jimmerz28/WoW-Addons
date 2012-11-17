@@ -8,18 +8,18 @@ MasqueDB = {
 		["Beichte - Deathwing"] = "Default",
 		["Zerkratzen - Deathwing"] = "Default",
 		["Untote - Jubei'Thos"] = "Default",
+		["Prallend - Deathwing"] = "Default",
+		["Brennend - Ysondre"] = "Default",
+		["Giftzahn - Deathwing"] = "Default",
 		["Snatshes - Deathwing"] = "Default",
 		["Notwehr - Deathwing"] = "Default",
-		["Giftzahn - Deathwing"] = "Default",
-		["Erschossen - Deathwing"] = "Default",
-		["Brennend - Ysondre"] = "Default",
-		["Vergottlicht - Deathwing"] = "Default",
 		["Geiler - Deathwing"] = "Default",
-		["Dunskull - Deathwing"] = "Default",
+		["Vergottlicht - Deathwing"] = "Default",
 		["Jaymes - Deathwing"] = "Default",
+		["Dunskull - Deathwing"] = "Default",
 		["Zaubertot - Deathwing"] = "Default",
 		["Geil - Uldum"] = "Default",
-		["Prallend - Deathwing"] = "Default",
+		["Erschossen - Deathwing"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -55,11 +55,10 @@ MasqueDB = {
 				["Dominos_Action Bar"] = {
 					["SkinID"] = "Renaitre: Beveled Light",
 				},
-				["AutoBar_AutoBarClassBarExtras"] = {
-					["Inherit"] = false,
+				["Dominos_Class Bar"] = {
 					["SkinID"] = "Renaitre: Beveled Light",
 				},
-				["AutoBar_AutoBarClassBarHunter"] = {
+				["GupPet_Action Buttons"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Renaitre: Beveled Light",
 				},
@@ -71,10 +70,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Renaitre: Beveled Light",
 				},
-				["Dominos_Bag Bar"] = {
+				["Masque"] = {
 					["SkinID"] = "Renaitre: Beveled Light",
 				},
-				["Dominos"] = {
+				["Dominos_Bag Bar"] = {
 					["SkinID"] = "Renaitre: Beveled Light",
 				},
 				["AutoBar_AutoBarClassBarRogue"] = {
@@ -85,21 +84,22 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Renaitre: Beveled Light",
 				},
+				["Dominos_Pet Bar"] = {
+					["SkinID"] = "Renaitre: Beveled Light",
+				},
 				["AutoBar_AutoBarClassBarMonk"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Renaitre: Beveled Light",
 				},
-				["Dominos_Pet Bar"] = {
-					["SkinID"] = "Renaitre: Beveled Light",
-				},
-				["Masque"] = {
-					["SkinID"] = "Renaitre: Beveled Light",
-				},
-				["GupPet_Action Buttons"] = {
+				["AutoBar_AutoBarClassBarHunter"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Renaitre: Beveled Light",
 				},
-				["Dominos_Class Bar"] = {
+				["Dominos"] = {
+					["SkinID"] = "Renaitre: Beveled Light",
+				},
+				["AutoBar_AutoBarClassBarExtras"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Renaitre: Beveled Light",
 				},
 			},

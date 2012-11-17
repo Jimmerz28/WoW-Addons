@@ -6,13 +6,13 @@ SkadaDB = {
 		["Untote - Jubei'Thos"] = "Default",
 		["Erschossen - Deathwing"] = "Default",
 		["Jaymes - Deathwing"] = "Default",
-		["Notwehr - Deathwing"] = "Default",
+		["Vergottlicht - Deathwing"] = "Default",
 		["Geiler - Deathwing"] = "Default",
 		["Beichte - Deathwing"] = "Default",
 		["Dunskull - Deathwing"] = "Default",
 		["Zaubertot - Deathwing"] = "Default",
 		["Geil - Uldum"] = "Default",
-		["Vergottlicht - Deathwing"] = "Default",
+		["Notwehr - Deathwing"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -28,6 +28,13 @@ SkadaDB = {
 			},
 			["icon"] = {
 				["minimapPos"] = 13.71856350093805,
+			},
+			["report"] = {
+				["number"] = 5,
+				["set"] = "total",
+				["target"] = "gip",
+				["mode"] = "Kelyndra's Healing",
+				["channel"] = "say",
 			},
 			["reset"] = {
 				["instance"] = 2,

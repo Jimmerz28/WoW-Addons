@@ -4,10 +4,22 @@ GenieDB = {
 		["Alliance - Deathwing"] = {
 			["gb"] = {
 				["Inertia"] = {
-					[4] = {
-					},
-					[8] = {
-					},
+					{
+					}, -- [1]
+					{
+					}, -- [2]
+					{
+					}, -- [3]
+					{
+					}, -- [4]
+					{
+					}, -- [5]
+					{
+					}, -- [6]
+					{
+					}, -- [7]
+					{
+					}, -- [8]
 				},
 			},
 		},
@@ -18,8 +30,8 @@ GenieDB = {
 		["Untote - Jubei'Thos"] = "Default",
 		["Erschossen - Deathwing"] = "Default",
 		["Jaymes - Deathwing"] = "Default",
-		["Geiler - Deathwing"] = "Default",
 		["Vergottlicht - Deathwing"] = "Default",
+		["Geiler - Deathwing"] = "Default",
 		["Dunskull - Deathwing"] = "Default",
 		["Beichte - Deathwing"] = "Default",
 		["Zaubertot - Deathwing"] = "Default",

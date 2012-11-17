@@ -1,6 +1,6 @@
 Version: 1
 Frame: TSMMainFrame1
-FrameLevel: 18
+FrameLevel: 12
 Anchor: CENTER
 X: -50
 Y: 45
@@ -139,15 +139,8 @@ X: 11
 Y: -38
 W: 466
 H: 24
-Frame: TSMCraftingFrame
-FrameLevel: 1
-Anchor: RIGHT
-X: 202
-Y: 95
-W: 870
-H: 500
 Frame: AuctionFrame
-FrameLevel: 31
+FrameLevel: 19
 Anchor: LEFT
 X: 16
 Y: 112

@@ -16,7 +16,7 @@ H: 42
 Frame: CombuctorFrame1
 FrameLevel: 1
 Anchor: BOTTOMRIGHT
-X: 0
+X: -3
 Y: 32
 W: 384
 H: 512

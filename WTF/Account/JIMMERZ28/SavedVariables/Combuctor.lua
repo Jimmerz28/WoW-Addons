@@ -8,19 +8,19 @@ CombuctorDB2 = {
 	["profiles"] = {
 		["Beichte - Deathwing"] = {
 			["inventory"] = {
-				["position"] = {
-					"BOTTOMRIGHT", -- [1]
-					nil, -- [2]
-					"BOTTOMRIGHT", -- [3]
-					0, -- [4]
-					32.00000381469727, -- [5]
-				},
-				["h"] = 512,
 				["showBags"] = true,
+				["h"] = 512,
 				["exclude"] = {
 					["All"] = {
 						"All", -- [1]
 					},
+				},
+				["position"] = {
+					"BOTTOMRIGHT", -- [1]
+					nil, -- [2]
+					"BOTTOMRIGHT", -- [3]
+					-2.509712934494019, -- [4]
+					32, -- [5]
 				},
 				["sets"] = {
 					"All", -- [1]
@@ -43,12 +43,6 @@ CombuctorDB2 = {
 			["bank"] = {
 				["h"] = 512,
 				["showBags"] = true,
-				["sets"] = {
-					"All", -- [1]
-					"Equipment", -- [2]
-					"Trade Goods", -- [3]
-					"Miscellaneous", -- [4]
-				},
 				["bags"] = {
 					-1, -- [1]
 					5, -- [2]
@@ -58,6 +52,12 @@ CombuctorDB2 = {
 					9, -- [6]
 					10, -- [7]
 					11, -- [8]
+				},
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+					"Trade Goods", -- [3]
+					"Miscellaneous", -- [4]
 				},
 				["w"] = 512,
 				["exclude"] = {
@@ -69,16 +69,16 @@ CombuctorDB2 = {
 		},
 		["Zerkratzen - Deathwing"] = {
 			["inventory"] = {
+				["position"] = {
+					"RIGHT", -- [1]
+				},
+				["h"] = 512,
+				["showBags"] = false,
 				["exclude"] = {
 					["All"] = {
 						"All", -- [1]
 					},
 				},
-				["h"] = 512,
-				["position"] = {
-					"RIGHT", -- [1]
-				},
-				["showBags"] = false,
 				["sets"] = {
 					"All", -- [1]
 				},
@@ -95,6 +95,12 @@ CombuctorDB2 = {
 			["bank"] = {
 				["h"] = 512,
 				["showBags"] = true,
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+					"Trade Goods", -- [3]
+					"Miscellaneous", -- [4]
+				},
 				["bags"] = {
 					-1, -- [1]
 					5, -- [2]
@@ -104,12 +110,6 @@ CombuctorDB2 = {
 					9, -- [6]
 					10, -- [7]
 					11, -- [8]
-				},
-				["sets"] = {
-					"All", -- [1]
-					"Equipment", -- [2]
-					"Trade Goods", -- [3]
-					"Miscellaneous", -- [4]
 				},
 				["w"] = 512,
 				["exclude"] = {
@@ -121,16 +121,16 @@ CombuctorDB2 = {
 		},
 		["Untote - Jubei'Thos"] = {
 			["inventory"] = {
-				["showBags"] = true,
-				["h"] = 512,
 				["exclude"] = {
 					["All"] = {
 						"All", -- [1]
 					},
 				},
+				["h"] = 512,
 				["position"] = {
 					"RIGHT", -- [1]
 				},
+				["showBags"] = true,
 				["sets"] = {
 					"All", -- [1]
 				},
@@ -147,12 +147,6 @@ CombuctorDB2 = {
 			["bank"] = {
 				["h"] = 512,
 				["showBags"] = false,
-				["sets"] = {
-					"All", -- [1]
-					"Equipment", -- [2]
-					"Trade Goods", -- [3]
-					"Miscellaneous", -- [4]
-				},
 				["bags"] = {
 					-1, -- [1]
 					5, -- [2]
@@ -162,6 +156,12 @@ CombuctorDB2 = {
 					9, -- [6]
 					10, -- [7]
 					11, -- [8]
+				},
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+					"Trade Goods", -- [3]
+					"Miscellaneous", -- [4]
 				},
 				["w"] = 512,
 				["exclude"] = {
@@ -171,17 +171,17 @@ CombuctorDB2 = {
 				},
 			},
 		},
-		["Snatshes - Deathwing"] = {
+		["Erschossen - Deathwing"] = {
 			["inventory"] = {
-				["showBags"] = false,
+				["position"] = {
+					"RIGHT", -- [1]
+				},
 				["h"] = 512,
+				["showBags"] = false,
 				["exclude"] = {
 					["All"] = {
 						"All", -- [1]
 					},
-				},
-				["position"] = {
-					"RIGHT", -- [1]
 				},
 				["bags"] = {
 					0, -- [1]
@@ -204,6 +204,13 @@ CombuctorDB2 = {
 						"All", -- [1]
 					},
 				},
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+					"Trade Goods", -- [3]
+					"Miscellaneous", -- [4]
+				},
+				["w"] = 512,
 				["bags"] = {
 					-1, -- [1]
 					5, -- [2]
@@ -213,25 +220,17 @@ CombuctorDB2 = {
 					9, -- [6]
 					10, -- [7]
 					11, -- [8]
-				},
-				["w"] = 512,
-				["sets"] = {
-					"All", -- [1]
-					"Equipment", -- [2]
-					"Trade Goods", -- [3]
-					"Miscellaneous", -- [4]
 				},
 			},
 		},
 		["Notwehr - Deathwing"] = {
 			["inventory"] = {
-				["showBags"] = true,
-				["h"] = 512,
 				["exclude"] = {
 					["All"] = {
 						"All", -- [1]
 					},
 				},
+				["h"] = 512,
 				["position"] = {
 					"RIGHT", -- [1]
 					nil, -- [2]
@@ -239,6 +238,7 @@ CombuctorDB2 = {
 					0, -- [4]
 					2.746217251115013e-005, -- [5]
 				},
+				["showBags"] = true,
 				["bags"] = {
 					0, -- [1]
 					1, -- [2]
@@ -265,13 +265,6 @@ CombuctorDB2 = {
 						"All", -- [1]
 					},
 				},
-				["sets"] = {
-					"All", -- [1]
-					"Equipment", -- [2]
-					"Trade Goods", -- [3]
-					"Miscellaneous", -- [4]
-				},
-				["w"] = 512,
 				["bags"] = {
 					-1, -- [1]
 					5, -- [2]
@@ -282,19 +275,26 @@ CombuctorDB2 = {
 					10, -- [7]
 					11, -- [8]
 				},
+				["w"] = 512,
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+					"Trade Goods", -- [3]
+					"Miscellaneous", -- [4]
+				},
 			},
 		},
 		["Giftzahn - Deathwing"] = {
 			["inventory"] = {
-				["position"] = {
-					"RIGHT", -- [1]
-				},
-				["h"] = 512,
 				["showBags"] = false,
+				["h"] = 512,
 				["exclude"] = {
 					["All"] = {
 						"All", -- [1]
 					},
+				},
+				["position"] = {
+					"RIGHT", -- [1]
 				},
 				["sets"] = {
 					"All", -- [1]
@@ -312,12 +312,6 @@ CombuctorDB2 = {
 			["bank"] = {
 				["h"] = 512,
 				["showBags"] = false,
-				["sets"] = {
-					"All", -- [1]
-					"Equipment", -- [2]
-					"Trade Goods", -- [3]
-					"Miscellaneous", -- [4]
-				},
 				["bags"] = {
 					-1, -- [1]
 					5, -- [2]
@@ -328,6 +322,12 @@ CombuctorDB2 = {
 					10, -- [7]
 					11, -- [8]
 				},
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+					"Trade Goods", -- [3]
+					"Miscellaneous", -- [4]
+				},
 				["w"] = 512,
 				["exclude"] = {
 					["All"] = {
@@ -336,7 +336,7 @@ CombuctorDB2 = {
 				},
 			},
 		},
-		["Erschossen - Deathwing"] = {
+		["Snatshes - Deathwing"] = {
 			["inventory"] = {
 				["exclude"] = {
 					["All"] = {
@@ -369,6 +369,13 @@ CombuctorDB2 = {
 						"All", -- [1]
 					},
 				},
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+					"Trade Goods", -- [3]
+					"Miscellaneous", -- [4]
+				},
+				["w"] = 512,
 				["bags"] = {
 					-1, -- [1]
 					5, -- [2]
@@ -378,28 +385,21 @@ CombuctorDB2 = {
 					9, -- [6]
 					10, -- [7]
 					11, -- [8]
-				},
-				["w"] = 512,
-				["sets"] = {
-					"All", -- [1]
-					"Equipment", -- [2]
-					"Trade Goods", -- [3]
-					"Miscellaneous", -- [4]
 				},
 			},
 		},
 		["Brennend - Ysondre"] = {
 			["inventory"] = {
-				["showBags"] = false,
-				["h"] = 512,
 				["exclude"] = {
 					["All"] = {
 						"All", -- [1]
 					},
 				},
+				["h"] = 512,
 				["position"] = {
 					"RIGHT", -- [1]
 				},
+				["showBags"] = false,
 				["sets"] = {
 					"All", -- [1]
 				},
@@ -416,6 +416,12 @@ CombuctorDB2 = {
 			["bank"] = {
 				["h"] = 512,
 				["showBags"] = false,
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+					"Trade Goods", -- [3]
+					"Miscellaneous", -- [4]
+				},
 				["bags"] = {
 					-1, -- [1]
 					5, -- [2]
@@ -425,12 +431,6 @@ CombuctorDB2 = {
 					9, -- [6]
 					10, -- [7]
 					11, -- [8]
-				},
-				["sets"] = {
-					"All", -- [1]
-					"Equipment", -- [2]
-					"Trade Goods", -- [3]
-					"Miscellaneous", -- [4]
 				},
 				["w"] = 512,
 				["exclude"] = {
@@ -442,16 +442,16 @@ CombuctorDB2 = {
 		},
 		["Vergottlicht - Deathwing"] = {
 			["inventory"] = {
+				["position"] = {
+					"RIGHT", -- [1]
+				},
+				["h"] = 512,
+				["showBags"] = true,
 				["exclude"] = {
 					["All"] = {
 						"All", -- [1]
 					},
 				},
-				["h"] = 512,
-				["position"] = {
-					"RIGHT", -- [1]
-				},
-				["showBags"] = true,
 				["bags"] = {
 					0, -- [1]
 					1, -- [2]
@@ -476,13 +476,6 @@ CombuctorDB2 = {
 						"All", -- [1]
 					},
 				},
-				["sets"] = {
-					"All", -- [1]
-					"Equipment", -- [2]
-					"Trade Goods", -- [3]
-					"Miscellaneous", -- [4]
-				},
-				["w"] = 512,
 				["bags"] = {
 					-1, -- [1]
 					5, -- [2]
@@ -493,20 +486,27 @@ CombuctorDB2 = {
 					10, -- [7]
 					11, -- [8]
 				},
+				["w"] = 512,
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+					"Trade Goods", -- [3]
+					"Miscellaneous", -- [4]
+				},
 			},
 		},
 		["Geiler - Deathwing"] = {
 			["inventory"] = {
-				["showBags"] = false,
-				["h"] = 512,
 				["exclude"] = {
 					["All"] = {
 						"All", -- [1]
 					},
 				},
+				["h"] = 512,
 				["position"] = {
 					"RIGHT", -- [1]
 				},
+				["showBags"] = false,
 				["sets"] = {
 					"All", -- [1]
 				},
@@ -523,12 +523,6 @@ CombuctorDB2 = {
 			["bank"] = {
 				["h"] = 512,
 				["showBags"] = false,
-				["sets"] = {
-					"All", -- [1]
-					"Equipment", -- [2]
-					"Trade Goods", -- [3]
-					"Miscellaneous", -- [4]
-				},
 				["bags"] = {
 					-1, -- [1]
 					5, -- [2]
@@ -538,6 +532,12 @@ CombuctorDB2 = {
 					9, -- [6]
 					10, -- [7]
 					11, -- [8]
+				},
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+					"Trade Goods", -- [3]
+					"Miscellaneous", -- [4]
 				},
 				["w"] = 512,
 				["exclude"] = {
@@ -549,16 +549,16 @@ CombuctorDB2 = {
 		},
 		["Dunskull - Deathwing"] = {
 			["inventory"] = {
+				["position"] = {
+					"RIGHT", -- [1]
+				},
+				["h"] = 512,
+				["showBags"] = false,
 				["exclude"] = {
 					["All"] = {
 						"All", -- [1]
 					},
 				},
-				["h"] = 512,
-				["position"] = {
-					"RIGHT", -- [1]
-				},
-				["showBags"] = false,
 				["sets"] = {
 					"All", -- [1]
 					"Equipment", -- [2]
@@ -579,12 +579,6 @@ CombuctorDB2 = {
 			["bank"] = {
 				["h"] = 512,
 				["showBags"] = false,
-				["sets"] = {
-					"All", -- [1]
-					"Equipment", -- [2]
-					"Trade Goods", -- [3]
-					"Miscellaneous", -- [4]
-				},
 				["bags"] = {
 					-1, -- [1]
 					5, -- [2]
@@ -594,6 +588,12 @@ CombuctorDB2 = {
 					9, -- [6]
 					10, -- [7]
 					11, -- [8]
+				},
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+					"Trade Goods", -- [3]
+					"Miscellaneous", -- [4]
 				},
 				["w"] = 512,
 				["exclude"] = {
@@ -605,15 +605,15 @@ CombuctorDB2 = {
 		},
 		["Jaymes - Deathwing"] = {
 			["inventory"] = {
-				["position"] = {
-					"RIGHT", -- [1]
-				},
-				["h"] = 512,
 				["showBags"] = true,
+				["h"] = 512,
 				["exclude"] = {
 					["All"] = {
 						"All", -- [1]
 					},
+				},
+				["position"] = {
+					"RIGHT", -- [1]
 				},
 				["bags"] = {
 					0, -- [1]
@@ -641,6 +641,13 @@ CombuctorDB2 = {
 						"All", -- [1]
 					},
 				},
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+					"Trade Goods", -- [3]
+					"Miscellaneous", -- [4]
+				},
+				["w"] = 512,
 				["bags"] = {
 					-1, -- [1]
 					5, -- [2]
@@ -650,27 +657,20 @@ CombuctorDB2 = {
 					9, -- [6]
 					10, -- [7]
 					11, -- [8]
-				},
-				["w"] = 512,
-				["sets"] = {
-					"All", -- [1]
-					"Equipment", -- [2]
-					"Trade Goods", -- [3]
-					"Miscellaneous", -- [4]
 				},
 			},
 		},
 		["Zaubertot - Deathwing"] = {
 			["inventory"] = {
-				["position"] = {
-					"RIGHT", -- [1]
-				},
-				["h"] = 512,
 				["showBags"] = false,
+				["h"] = 512,
 				["exclude"] = {
 					["All"] = {
 						"All", -- [1]
 					},
+				},
+				["position"] = {
+					"RIGHT", -- [1]
 				},
 				["bags"] = {
 					0, -- [1]
@@ -693,13 +693,6 @@ CombuctorDB2 = {
 						"All", -- [1]
 					},
 				},
-				["sets"] = {
-					"All", -- [1]
-					"Equipment", -- [2]
-					"Trade Goods", -- [3]
-					"Miscellaneous", -- [4]
-				},
-				["w"] = 512,
 				["bags"] = {
 					-1, -- [1]
 					5, -- [2]
@@ -709,20 +702,27 @@ CombuctorDB2 = {
 					9, -- [6]
 					10, -- [7]
 					11, -- [8]
+				},
+				["w"] = 512,
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+					"Trade Goods", -- [3]
+					"Miscellaneous", -- [4]
 				},
 			},
 		},
 		["Geil - Uldum"] = {
 			["inventory"] = {
-				["position"] = {
-					"RIGHT", -- [1]
-				},
-				["h"] = 512,
 				["showBags"] = false,
+				["h"] = 512,
 				["exclude"] = {
 					["All"] = {
 						"All", -- [1]
 					},
+				},
+				["position"] = {
+					"RIGHT", -- [1]
 				},
 				["bags"] = {
 					0, -- [1]
@@ -745,13 +745,6 @@ CombuctorDB2 = {
 						"All", -- [1]
 					},
 				},
-				["sets"] = {
-					"All", -- [1]
-					"Equipment", -- [2]
-					"Trade Goods", -- [3]
-					"Miscellaneous", -- [4]
-				},
-				["w"] = 512,
 				["bags"] = {
 					-1, -- [1]
 					5, -- [2]
@@ -762,20 +755,27 @@ CombuctorDB2 = {
 					10, -- [7]
 					11, -- [8]
 				},
+				["w"] = 512,
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+					"Trade Goods", -- [3]
+					"Miscellaneous", -- [4]
+				},
 			},
 		},
 		["Prallend - Deathwing"] = {
 			["inventory"] = {
-				["showBags"] = true,
-				["h"] = 512,
 				["exclude"] = {
 					["All"] = {
 						"All", -- [1]
 					},
 				},
+				["h"] = 512,
 				["position"] = {
 					"RIGHT", -- [1]
 				},
+				["showBags"] = true,
 				["bags"] = {
 					0, -- [1]
 					1, -- [2]
@@ -801,6 +801,13 @@ CombuctorDB2 = {
 						"All", -- [1]
 					},
 				},
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+					"Trade Goods", -- [3]
+					"Miscellaneous", -- [4]
+				},
+				["w"] = 512,
 				["bags"] = {
 					-1, -- [1]
 					5, -- [2]
@@ -810,13 +817,6 @@ CombuctorDB2 = {
 					9, -- [6]
 					10, -- [7]
 					11, -- [8]
-				},
-				["w"] = 512,
-				["sets"] = {
-					"All", -- [1]
-					"Equipment", -- [2]
-					"Trade Goods", -- [3]
-					"Miscellaneous", -- [4]
 				},
 			},
 		},

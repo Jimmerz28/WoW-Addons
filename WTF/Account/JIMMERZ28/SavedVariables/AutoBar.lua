@@ -14,8 +14,8 @@ AutoBarDB = {
 					["hide"] = true,
 					["enabled"] = true,
 					["columns"] = 10,
-					["alpha"] = 1,
 					["frameStrata"] = "LOW",
+					["alpha"] = 1,
 					["buttonWidth"] = 36,
 					["collapseButtons"] = true,
 					["WARRIOR"] = true,
@@ -409,7 +409,7 @@ AutoBarDB = {
 						"AutoBarButtonClassPet", -- [3]
 						"AutoBarButtonConjure", -- [4]
 					},
-					["frameStrata"] = "LOW",
+					["alpha"] = 1,
 					["buttonWidth"] = 36,
 					["collapseButtons"] = true,
 					["MAGE"] = true,
@@ -418,7 +418,7 @@ AutoBarDB = {
 					["popupDirection"] = "1",
 					["padding"] = 0,
 					["dockShiftX"] = 0,
-					["alpha"] = 1,
+					["frameStrata"] = "LOW",
 				},
 			},
 			["buttonList"] = {
@@ -615,8 +615,8 @@ AutoBarDB = {
 					["hide"] = false,
 					["enabled"] = true,
 					["columns"] = 10,
-					["frameStrata"] = "LOW",
 					["alpha"] = 1,
+					["frameStrata"] = "LOW",
 					["buttonWidth"] = 36,
 					["collapseButtons"] = true,
 					["PRIEST"] = true,
@@ -688,7 +688,7 @@ AutoBarDB = {
 						"AutoBarButtonTrap", -- [7]
 						"AutoBarButtonDebuff", -- [8]
 					},
-					["alpha"] = 1,
+					["frameStrata"] = "LOW",
 					["buttonWidth"] = 36,
 					["collapseButtons"] = true,
 					["HUNTER"] = true,
@@ -697,7 +697,7 @@ AutoBarDB = {
 					["popupDirection"] = "1",
 					["padding"] = 0,
 					["dockShiftX"] = 0,
-					["frameStrata"] = "LOW",
+					["alpha"] = 1,
 				},
 			},
 			["buttonList"] = {
@@ -731,14 +731,6 @@ AutoBarDB = {
 					["buttonKey"] = "AutoBarButtonTrap",
 					["defaultButtonIndex"] = "*",
 				},
-				["AutoBarButtonER"] = {
-					["barKey"] = "AutoBarClassBarHunter",
-					["buttonClass"] = "AutoBarButtonER",
-					["noPopup"] = true,
-					["enabled"] = true,
-					["buttonKey"] = "AutoBarButtonER",
-					["defaultButtonIndex"] = "*",
-				},
 				["AutoBarButtonFoodPet"] = {
 					["barKey"] = "AutoBarClassBarHunter",
 					["buttonClass"] = "AutoBarButtonFoodPet",
@@ -746,6 +738,14 @@ AutoBarDB = {
 					["rightClickTargetsPet"] = true,
 					["enabled"] = true,
 					["buttonKey"] = "AutoBarButtonFoodPet",
+					["defaultButtonIndex"] = "*",
+				},
+				["AutoBarButtonER"] = {
+					["barKey"] = "AutoBarClassBarHunter",
+					["buttonClass"] = "AutoBarButtonER",
+					["noPopup"] = true,
+					["enabled"] = true,
+					["buttonKey"] = "AutoBarButtonER",
 					["defaultButtonIndex"] = "*",
 				},
 				["AutoBarButtonClassPets2"] = {
@@ -779,7 +779,7 @@ AutoBarDB = {
 					["columns"] = 10,
 					["buttonKeys"] = {
 					},
-					["frameStrata"] = "LOW",
+					["alpha"] = 1,
 					["buttonWidth"] = 36,
 					["collapseButtons"] = true,
 					["posY"] = 280,
@@ -788,7 +788,7 @@ AutoBarDB = {
 					["popupDirection"] = "1",
 					["padding"] = 0,
 					["dockShiftX"] = 0,
-					["alpha"] = 1,
+					["frameStrata"] = "LOW",
 				},
 			},
 			["buttonList"] = {
@@ -853,6 +853,9 @@ AutoBarDB = {
 		},
 		["Zerkratzen - Deathwing"] = {
 			["buttonDataList"] = {
+				["AutoBarButtonCrafting"] = {
+					["arrangeOnUse"] = "Alchemy",
+				},
 				["AutoBarButtonMount"] = {
 				},
 			},
@@ -887,21 +890,12 @@ AutoBarDB = {
 					["arrangeOnUse"] = "Engineering",
 				},
 				["AutoBarButtonMount"] = {
+					["SetBest"] = nil --[[ skipped inline function ]],
 				},
 				["AutoBarButtonDebuff"] = {
 				},
 				["AutoBarButtonClassBuff"] = {
 					["arrangeOnUse"] = "Soulstone",
-				},
-			},
-			["barList"] = {
-			},
-			["buttonList"] = {
-			},
-		},
-		["Geiler - Deathwing"] = {
-			["buttonDataList"] = {
-				["AutoBarButtonMount"] = {
 				},
 			},
 			["barList"] = {
@@ -917,7 +911,17 @@ AutoBarDB = {
 				["AutoBarButtonMount"] = {
 				},
 				["AutoBarButtonClassBuff"] = {
-					["arrangeOnUse"] = "Blessing of Kings",
+					["arrangeOnUse"] = "Blessing of Might",
+				},
+			},
+			["barList"] = {
+			},
+			["buttonList"] = {
+			},
+		},
+		["Geiler - Deathwing"] = {
+			["buttonDataList"] = {
+				["AutoBarButtonMount"] = {
 				},
 			},
 			["barList"] = {
@@ -944,10 +948,9 @@ AutoBarDB = {
 					["arrangeOnUse"] = "Enchanting",
 				},
 				["AutoBarButtonMount"] = {
-					["SetBest"] = nil --[[ skipped inline function ]],
 				},
 				["AutoBarButtonClassBuff"] = {
-					["arrangeOnUse"] = "Inner Will",
+					["arrangeOnUse"] = "Power Word: Fortitude",
 				},
 			},
 			["barList"] = {
@@ -1040,6 +1043,10 @@ AutoBarDB = {
 					"AutoBarButtonMiscFun", -- [30]
 					"AutoBarButtonShields", -- [31]
 					"AutoBarButtonClassBuff", -- [32]
+					"AutoBarButtonClassPets2", -- [33]
+					"AutoBarButtonDebuff", -- [34]
+					"AutoBarButtonClassPet", -- [35]
+					"AutoBarButtonConjure", -- [36]
 				},
 				["posX"] = 448.4515794240542,
 				["ROGUE"] = true,
@@ -1047,15 +1054,15 @@ AutoBarDB = {
 				["MONK"] = true,
 				["hide"] = false,
 				["DEATHKNIGHT"] = true,
-				["columns"] = 18,
 				["posY"] = 42.80460021220165,
+				["columns"] = 18,
 				["alignButtons"] = "3",
 				["enabled"] = true,
-				["buttonWidth"] = 36,
-				["frameStrata"] = "LOW",
 				["PRIEST"] = true,
-				["collapseButtons"] = true,
 				["alpha"] = 1,
+				["buttonWidth"] = 36,
+				["collapseButtons"] = true,
+				["frameStrata"] = "LOW",
 				["WARLOCK"] = true,
 				["PALADIN"] = true,
 				["buttonHeight"] = 36,
@@ -1089,17 +1096,17 @@ AutoBarDB = {
 				["hide"] = true,
 				["enabled"] = true,
 				["SHAMAN"] = true,
-				["columns"] = 9,
+				["posY"] = 360,
 				["ROGUE"] = true,
 				["HUNTER"] = true,
-				["buttonWidth"] = 36,
-				["frameStrata"] = "LOW",
 				["PRIEST"] = true,
-				["collapseButtons"] = true,
 				["alpha"] = 1,
+				["buttonWidth"] = 36,
+				["collapseButtons"] = true,
+				["frameStrata"] = "LOW",
 				["WARLOCK"] = true,
 				["MAGE"] = true,
-				["posY"] = 360,
+				["columns"] = 9,
 				["padding"] = 0,
 				["dockShiftX"] = 0,
 				["scale"] = 1,
@@ -1302,13 +1309,12 @@ AutoBarDB = {
 				["buttonKey"] = "AutoBarButtonGuildSpell",
 				["defaultButtonIndex"] = 9,
 			},
-			["AutoBarButtonTrack"] = {
+			["AutoBarButtonBandages"] = {
 				["barKey"] = "AutoBarClassBarBasic",
-				["buttonClass"] = "AutoBarButtonTrack",
-				["arrangeOnUse"] = true,
-				["enabled"] = true,
-				["buttonKey"] = "AutoBarButtonTrack",
-				["defaultButtonIndex"] = 23,
+				["buttonClass"] = "AutoBarButtonBandages",
+				["enabled"] = false,
+				["buttonKey"] = "AutoBarButtonBandages",
+				["defaultButtonIndex"] = 3,
 			},
 			["AutoBarButtonMiscFun"] = {
 				["barKey"] = "AutoBarClassBarBasic",
@@ -1394,12 +1400,13 @@ AutoBarDB = {
 				["buttonKey"] = "AutoBarButtonTrinket1",
 				["defaultButtonIndex"] = 26,
 			},
-			["AutoBarButtonBandages"] = {
+			["AutoBarButtonTrack"] = {
 				["barKey"] = "AutoBarClassBarBasic",
-				["buttonClass"] = "AutoBarButtonBandages",
-				["enabled"] = false,
-				["buttonKey"] = "AutoBarButtonBandages",
-				["defaultButtonIndex"] = 3,
+				["buttonClass"] = "AutoBarButtonTrack",
+				["arrangeOnUse"] = true,
+				["enabled"] = true,
+				["buttonKey"] = "AutoBarButtonTrack",
+				["defaultButtonIndex"] = 23,
 			},
 		},
 		["keySeed"] = 1,
