@@ -8,9 +8,11 @@ if not L then return end
 L["Add Mail Target"] = "Ajouter un joueur"
 -- L["After the initial mailing, the auto-mail feature will automatically restart after however many minutes this slider is set to."] = ""
 -- L["Are you sure you want to remove %s as a mail target?"] = ""
+-- L["AutoMail Greens for Disenchanting"] = ""
 L["Auto mailing will let you setup groups and specific items that should be mailed to another characters."] = "le module _Mailiing vous permettra de configurer des groupes & objets spécifique à envoyer a d'autres personnages."
 -- L["AutoMail Restart Delay (minutes)"] = ""
 -- L["AutoMail Send Delay"] = ""
+-- L["AutoMail target for Greens"] = ""
 L[ [=[Automatically rechecks mail every 60 seconds when you have too much mail.
 
 If you loot all mail with this enabled, it will wait and recheck then keep auto looting.]=] ] = [=[Vérifie automatiquement les courriers toute les 60secondes lorsque vous avez trop de courriers.
@@ -21,6 +23,7 @@ L["Auto Recheck Mail"] = "Vérifier auto. les courriers"
 -- L["Below you can change an existing mail target to a new one without losing the items."] = ""
 L["Cannot finish auto looting, inventory is full or too many unique items."] = "Impossible de finir de récupérer le courriers, l'inventaire est plein où vous avez trop d'objets unique."
 -- L["Change Mail Target"] = ""
+-- L["Checking this will mail green quality Items to the selected mail target for Disenchanting"] = ""
 L["Checking this will stop TradesSkillMaster_Mailing from displaying money collected from your mailbox after auto looting"] = "TSM_Mailing n'affichera plus l'argent ramassé si vous cochez ceci"
 L["Check your spelling! If you typo a name, it will send to the wrong person."] = "Faites attention a l'orthographe ! Si vous écrivez incorrectement un pseudo, ça enverra le courrier a la mauvaise personne."
 L["%d mail"] = "%d courriers"
@@ -49,6 +52,7 @@ L[ [=[Runs TradeSkillMaster_Mailing's auto mailer, the last patch of mails will 
 
 [ATTENTION!]Il n'y aura aucune confirmation avant de commencer l'envoi, c'est de votre propre faute si vous avez mal orthographié le pseudo d'un joueur.]=]
 L["%s Collected"] = "%s collectés" -- Needs review
+-- L["Select which Mail Target you would like to send disenchantable green quality items to."] = ""
 L["Send Items Individually"] = "Envoyer les objets individuelement."
 -- L["Sends each unique item in a seperate mail."] = ""
 L[ [=[The name of the player to send items to.

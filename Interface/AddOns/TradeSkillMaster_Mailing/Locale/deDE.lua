@@ -8,9 +8,11 @@ if not L then return end
 L["Add Mail Target"] = "Empfänger hinzufügen"
 -- L["After the initial mailing, the auto-mail feature will automatically restart after however many minutes this slider is set to."] = ""
 L["Are you sure you want to remove %s as a mail target?"] = "Bist du dir sicher %s als Empfänger zu löschen?"
+-- L["AutoMail Greens for Disenchanting"] = ""
 L["Auto mailing will let you setup groups and specific items that should be mailed to another characters."] = "\"Auto mailing\" ermöglicht es Gruppen und spezifische Gegenstände einzustellen, die zu anderen Charakteren geschickt werden sollen."
 L["AutoMail Restart Delay (minutes)"] = "AutoMail Neustartverzögerung (Minuten)"
 L["AutoMail Send Delay"] = "AutoMail Sendeverzögerung"
+-- L["AutoMail target for Greens"] = ""
 L[ [=[Automatically rechecks mail every 60 seconds when you have too much mail.
 
 If you loot all mail with this enabled, it will wait and recheck then keep auto looting.]=] ] = [=[Ruft die Post automatisch alle 60 Sekunden ab wenn zu viel Post im Briefkasten ist.
@@ -21,6 +23,7 @@ L["Auto Recheck Mail"] = "Post automatisch aktualisieren"
 L["Below you can change an existing mail target to a new one without losing the items."] = "Unten kannst du den Empfänger ändern ohne die Items zu verlieren."
 L["Cannot finish auto looting, inventory is full or too many unique items."] = "Automatisches Plündern kann nicht beendet werden. Inventar ist voll oder zu viele \"einzigartige\" Gegenstände vorhanden."
 L["Change Mail Target"] = "Ändere Empfänger"
+-- L["Checking this will mail green quality Items to the selected mail target for Disenchanting"] = ""
 L["Checking this will stop TradesSkillMaster_Mailing from displaying money collected from your mailbox after auto looting"] = "Wenn ausgewählt, wird TradeSkillMaster_Mailing nicht mehr die entnommene Geldsumme nach dem automatischen Plündern des Briefkastens anzeigen."
 L["Check your spelling! If you typo a name, it will send to the wrong person."] = "Schreibweise überprüfen! Bei Schreibfehlern wird zur falschen Person geschickt!"
 L["%d mail"] = "%d Post"
@@ -49,6 +52,7 @@ L[ [=[Runs TradeSkillMaster_Mailing's auto mailer, the last patch of mails will 
 
 [WARNUNG!] Es gibt keine zusätzliche Bestätigung vor dem Start. Es ist deine eigene Schuld falls der Empfänger falsch geschrieben ist.]=]
 L["%s Collected"] = "%s gesammelt"
+-- L["Select which Mail Target you would like to send disenchantable green quality items to."] = ""
 L["Send Items Individually"] = "Sende Items individuell."
 L["Sends each unique item in a seperate mail."] = "Sende jedes einzigartige Item in einem separaten Brief."
 L[ [=[The name of the player to send items to.

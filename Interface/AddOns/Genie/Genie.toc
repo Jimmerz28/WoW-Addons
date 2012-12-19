@@ -3,7 +3,7 @@
 ## Notes-deDE: Genie hilft dir deine Taschen, Bank und/oder Gildenbank ordentlich zu halten
 ## Notes-ruRU: Джин помогает вам упорядочить сумки, банк и/или банк гильдии
 ## Notes-krKR: 지니는 당신의 가방, 은행, 길드은행을 정리해줍니다.
-## Interface: 50001
+## Interface: 50100
 ## Version: 5.0.4
 ## X-Date: 2012-09-02T09:16:12Z
 ## X-Revision: 304

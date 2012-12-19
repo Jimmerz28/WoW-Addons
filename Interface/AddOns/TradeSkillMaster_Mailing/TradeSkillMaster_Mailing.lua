@@ -42,7 +42,8 @@ function TSM:OnEnable()
 
 	TSMAPI:RegisterReleasedModule("TradeSkillMaster_Mailing", TSM.version, GetAddOnMetadata("TradeSkillMaster_Mailing", "Author"), GetAddOnMetadata("TradeSkillMaster_Mailing", "Notes"))
 	TSMAPI:RegisterIcon(L["Mailing Options"], "Interface\\Icons\\Inv_Letter_20", function(...) TSM.Config:Load(...) end, "TradeSkillMaster_Mailing", "options")
-
+	TSMAPI:RegisterData("mailingBusy", function() return TSM.AutoMail:IsBusy() end)
+	
 	TSM:SetupOpenMailButton()
 	
 	-- cache info from the server for all the items in mailing

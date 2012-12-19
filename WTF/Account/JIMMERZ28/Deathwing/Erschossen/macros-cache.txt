@@ -1,9 +1,9 @@
-MACRO 16777220 "AS" "INV_Misc_QuestionMark"
+MACRO64 0000000001000004 "AS" "INV_Misc_QuestionMark"
 #showtooltip Arcane Shot
 /cast Bestial Wrath
 /cast Arcane Shot
 END
-MACRO 16777219 "SS" "INV_Misc_QuestionMark"
+MACRO64 0000000001000003 "SS" "INV_Misc_QuestionMark"
 #showtooltip Steady Shot
 /use 13
 /use 14

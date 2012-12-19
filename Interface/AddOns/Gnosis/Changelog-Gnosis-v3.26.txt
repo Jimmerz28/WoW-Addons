@@ -1,0 +1,8 @@
+2012-11-28  elchefe <>  <>
+
+[e6d1ec2c8779] [v3.26]
+* Gnosis.lua, Gnosis.toc, Variables.lua:
+
+added GCD/Swing timer creation bugfix, toc bump for patch 5.1
+
+

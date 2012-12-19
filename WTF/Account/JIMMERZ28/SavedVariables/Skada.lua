@@ -6,13 +6,13 @@ SkadaDB = {
 		["Untote - Jubei'Thos"] = "Default",
 		["Erschossen - Deathwing"] = "Default",
 		["Jaymes - Deathwing"] = "Default",
-		["Vergottlicht - Deathwing"] = "Default",
+		["Notwehr - Deathwing"] = "Default",
 		["Geiler - Deathwing"] = "Default",
 		["Beichte - Deathwing"] = "Default",
 		["Dunskull - Deathwing"] = "Default",
 		["Zaubertot - Deathwing"] = "Default",
 		["Geil - Uldum"] = "Default",
-		["Notwehr - Deathwing"] = "Default",
+		["Vergottlicht - Deathwing"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -31,10 +31,10 @@ SkadaDB = {
 			},
 			["report"] = {
 				["number"] = 5,
+				["chantype"] = "whisper",
 				["set"] = "total",
-				["target"] = "gip",
-				["mode"] = "Kelyndra's Healing",
-				["channel"] = "say",
+				["target"] = "Shammwwoww-Lethon",
+				["channel"] = "whisper",
 			},
 			["reset"] = {
 				["instance"] = 2,

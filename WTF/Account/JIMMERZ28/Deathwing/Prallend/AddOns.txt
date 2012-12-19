@@ -7,3 +7,5 @@ TradeSkillMaster_Accounting: enabled
 TradeSkillMaster_Crafting: enabled
 TradeSkillMaster_Mailing: enabled
 Skada: enabled
+PetTheory: disabled
+TradeSkillMaster: enabled

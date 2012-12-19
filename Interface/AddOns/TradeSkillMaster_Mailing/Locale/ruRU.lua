@@ -8,9 +8,11 @@ if not L then return end
 L["Add Mail Target"] = "Добавить получателя"
 L["After the initial mailing, the auto-mail feature will automatically restart after however many minutes this slider is set to."] = "После начальной отправки, авто-отправка будет автоматически запускаться через указанные интервалы времени в минутах." -- Needs review
 L["Are you sure you want to remove %s as a mail target?"] = "Вы точно хотите удалить получателя %s?" -- Needs review
+-- L["AutoMail Greens for Disenchanting"] = ""
 L["Auto mailing will let you setup groups and specific items that should be mailed to another characters."] = "Auto mailing позволяет определить список вещей для отправки другим персонажам."
 L["AutoMail Restart Delay (minutes)"] = "Интервал запуска авто-отправки (минуты)" -- Needs review
 L["AutoMail Send Delay"] = "Задержка между посылками" -- Needs review
+-- L["AutoMail target for Greens"] = ""
 L[ [=[Automatically rechecks mail every 60 seconds when you have too much mail.
 
 If you loot all mail with this enabled, it will wait and recheck then keep auto looting.]=] ] = "Автоматически проверяет почтовый ящик каждые 60 секунд, если у вас больше 50 писем. Если включить эту опцию, то при нажатии на кнопку \"Получить всё\" модуль заберет все письма из почтового ящика, обновит его и продолжит получение писем."
@@ -19,6 +21,7 @@ L["Auto Recheck Mail"] = "Авто проверка почты"
 L["Below you can change an existing mail target to a new one without losing the items."] = "Ниже можно изменить существующего получателя на другого без потери настроек получения." -- Needs review
 L["Cannot finish auto looting, inventory is full or too many unique items."] = "Невозможно завершить получение почты. Ваши сумки заполнены, или у вас слишком много уникальных предметов."
 L["Change Mail Target"] = "Изменить получателя" -- Needs review
+-- L["Checking this will mail green quality Items to the selected mail target for Disenchanting"] = ""
 L["Checking this will stop TradesSkillMaster_Mailing from displaying money collected from your mailbox after auto looting"] = "Отметьте этот пункт, чтобы не показывать количество полученного из писем золота."
 L["Check your spelling! If you typo a name, it will send to the wrong person."] = "Проверьте, правильно ли введено имя получателя. Письма могут быть отосланы неверному персонажу."
 L["%d mail"] = "%d почта"
@@ -47,6 +50,7 @@ L[ [=[Runs TradeSkillMaster_Mailing's auto mailer, the last patch of mails will 
 
 [Внимание!] Никакого подтверждения перед отправкой писем вы не получите. Не ошибитесь в написании имени получателя.]=]
 L["%s Collected"] = "%s получено" -- Needs review
+-- L["Select which Mail Target you would like to send disenchantable green quality items to."] = ""
 L["Send Items Individually"] = "Отправлять предметы по отдельности" -- Needs review
 L["Sends each unique item in a seperate mail."] = "Отправляет каждый отдельный предмет в отдельном письме." -- Needs review
 L[ [=[The name of the player to send items to.

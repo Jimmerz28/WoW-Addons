@@ -111,7 +111,7 @@ function Data:ProcessData(scanData, clearMinBuyouts)
 			
 			TSM.data[itemID].seen = ((TSM.data[itemID].seen or 0) + data.quantity)
 			TSM.data[itemID].currentQuantity = data.quantity
-			TSM.data[itemID].lastScan = time()
+			TSM.data[itemID].lastScan = TSM.db.factionrealm.lastCompleteScan
 			TSM.data[itemID].minBuyout = data.minBuyout > 0 and data.minBuyout or nil
 			Data:UpdateMarketValue(TSM.data[itemID])
 			

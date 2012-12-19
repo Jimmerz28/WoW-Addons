@@ -76,6 +76,7 @@ L["Goblineer (by Sterling - The Consortium)"] = true
 L["Jaded (by Ravanys - The Consortium)"] = true
 L["TSMDeck (by Jim Younkin - Power Word: Gold)"] = true
 L["TSM Classic (by Jim Younkin - Power Word: Gold)"] = true
+L["Mage (by Elvine)"] = true
 L["TSM Appearance Options"] = true
 L["Use the options below to change and tweak the appearance of TSM."] = true
 L["Import Appearance Settings"] = true

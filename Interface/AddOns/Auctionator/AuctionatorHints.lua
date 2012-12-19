@@ -2,6 +2,7 @@
 local addonName, addonTable = ...; 
 local zc = addonTable.zc;
 local zz = zc.md;
+local _
 
 -----------------------------------------
 
@@ -278,6 +279,14 @@ local GREATER_CEL		= 52719;
 local LESSER_CEL		= 52718;
 local MAELSTROM_CRYSTAL	= 52722;
 
+local ETHEREAL_SHARD	= 74247
+local SMALL_ETHEREAL	= 74252
+
+local SPIRIT_DUST		= 74249
+local MYSTERIOUS_ESS	= 74250
+local GREATER_MYST_ESS	= 74251
+local SHA_CRYSTAL		= 74248
+
 --[[
 local CINDERBLOOM		= 52983;
 local STORMVINE			= 52984;
@@ -344,6 +353,15 @@ engDEnames [GREATER_CEL]		= "Greater Celestial Essence";
 engDEnames [LESSER_CEL]			= "Lesser Celestial Essence";
 engDEnames [MAELSTROM_CRYSTAL]	= "Maelstrom Crystal";
 
+engDEnames[SMALL_ETHEREAL]		= 'Small Ethereal Shard'
+engDEnames[ETHEREAL_SHARD]		= 'Ethereal Shard'
+
+engDEnames[SPIRIT_DUST]			= 'Spirit Dust'
+engDEnames[MYSTERIOUS_ESS]		= 'Mysterious Essence'
+engDEnames[GREATER_MYST_ESS]	= 'Greater Mysterious Essence'
+engDEnames[SHA_CRYSTAL]			= 'Sha Crystal'
+
+
 
 local dustsAndEssences = {};
 
@@ -401,6 +419,14 @@ tinsert (dustsAndEssences, HYPN_DUST)
 tinsert (dustsAndEssences, GREATER_CEL)
 tinsert (dustsAndEssences, LESSER_CEL)
 tinsert (dustsAndEssences, MAELSTROM_CRYSTAL)
+
+tinsert (dustsAndEssences, SMALL_ETHEREAL)
+tinsert (dustsAndEssences, ETHEREAL_SHARD)
+                        
+tinsert (dustsAndEssences, SPIRIT_DUST)
+tinsert (dustsAndEssences, MYSTERIOUS_ESS)
+tinsert (dustsAndEssences, GREATER_MYST_ESS)
+tinsert (dustsAndEssences, SHA_CRYSTAL)
 
 
 gAtr_dustCacheIndex = 1;
@@ -543,7 +569,7 @@ end
 
 -----------------------------------------
 
-function Atr_InitDETable()		-- based on table at wowwiki.com/Disenchanting_tables
+function Atr_InitDETable()
 
 
 	-- UNCOMMON (GREEN) ARMOR
@@ -585,6 +611,11 @@ function Atr_InitDETable()		-- based on table at wowwiki.com/Disenchanting_table
 	DEtableInsert (t, {325,325        ,17,3,HYPN_DUST       ,17,4,HYPN_DUST       ,17,5,HYPN_DUST       ,50,2,GREATER_CEL  })
 	DEtableInsert (t, {333,333        ,12,2,HYPN_DUST       ,24,3,HYPN_DUST       ,12,4,HYPN_DUST       ,29,5,HYPN_DUST       ,18,2,GREATER_CEL       ,6,3,GREATER_CEL  })
 
+	DEtableInsert (t, {364,380			,85,2	,SPIRIT_DUST		,15, 1,   MYSTERIOUS_ESS})
+	DEtableInsert (t, {381,390			,85,2.5	,SPIRIT_DUST		,15, 1,	  MYSTERIOUS_ESS})
+	DEtableInsert (t, {391,410			,85,3	,SPIRIT_DUST		,15, 1.5, MYSTERIOUS_ESS})
+	DEtableInsert (t, {411,450			,85,3.5	,SPIRIT_DUST		,15, 2,   MYSTERIOUS_ESS})
+
 	-- UNCOMMON (GREEN) WEAPONS
 
 	deTable[deKey(WEAPON, UNCOMMON)] = {};
@@ -619,7 +650,11 @@ function Atr_InitDETable()		-- based on table at wowwiki.com/Disenchanting_table
 	DEtableInsert (t, {317,317        ,6,2,HYPN_DUST       ,7,3,HYPN_DUST       ,7,4,HYPN_DUST       ,6,5,HYPN_DUST       ,37,2,GREATER_CEL       ,36,3,GREATER_CEL       ,1,5,GREATER_CEL  })
 	DEtableInsert (t, {318,318        ,21,3,HYPN_DUST       ,5,5,HYPN_DUST       ,42,2,GREATER_CEL       ,32,3,GREATER_CEL  })
 
-	
+	DEtableInsert(t, {351,380		, 85, 2.5, SPIRIT_DUST,		15, 1, MYSTERIOUS_ESS})
+	DEtableInsert(t, {381,390		, 85, 3,   SPIRIT_DUST,		15, 1, MYSTERIOUS_ESS})
+	DEtableInsert(t, {391,410		, 85, 3.5, SPIRIT_DUST,		15, 1.5, MYSTERIOUS_ESS})
+	DEtableInsert(t, {411,450		, 85, 4,   SPIRIT_DUST,		15, 2, MYSTERIOUS_ESS})
+
 	-- RARE (BLUE) ARMOR
 	
 	deTable[deKey(ARMOR, RARE)] = {};
@@ -649,9 +684,13 @@ function Atr_InitDETable()		-- based on table at wowwiki.com/Disenchanting_table
 	DEtableInsert (t, {333,333        ,97,1,HEAVENLY_SHARD       ,3,2,HEAVENLY_SHARD  })
 	DEtableInsert (t, {339,339        ,98,1,HEAVENLY_SHARD       ,2,2,HEAVENLY_SHARD  })
 	DEtableInsert (t, {346,346        ,99,1,HEAVENLY_SHARD       ,1,2,HEAVENLY_SHARD  })
-	DEtableInsert (t, {352,352        ,100,1,HEAVENLY_SHARD  })
+	DEtableInsert (t, {352,380        ,100,1,HEAVENLY_SHARD  })
 
-
+	DEtableInsert (t, {381,424,		100, 1, SMALL_ETHEREAL})
+	DEtableInsert (t, {425,449,		100, 1, ETHEREAL_SHARD})
+	DEtableInsert (t, {450,450,		20,  1, ETHEREAL_SHARD,			80, 1, SMALL_ETHEREAL})
+	DEtableInsert (t, {451,500,		100, 1, ETHEREAL_SHARD})
+  
 	-- RARE (BLUE) WEAPON
 	
 	deTable[deKey(WEAPON, RARE)] = {};
@@ -677,6 +716,12 @@ function Atr_InitDETable()		-- based on table at wowwiki.com/Disenchanting_table
 	DEtableInsert (t, {333,333        ,100,1,HEAVENLY_SHARD  })
 	DEtableInsert (t, {346,346        ,93,1,HEAVENLY_SHARD       ,7,2,HEAVENLY_SHARD  })
 
+	DEtableInsert (t, {381,424,		100, 1, SMALL_ETHEREAL})
+	DEtableInsert (t, {425,449,		100, 1, ETHEREAL_SHARD})
+	DEtableInsert (t, {450,450,		20,  1, ETHEREAL_SHARD,			80, 1, SMALL_ETHEREAL})
+	DEtableInsert (t, {451,500,		100, 1, ETHEREAL_SHARD})
+  
+
 	-- EPIC ITEMS
 	
 	deTable[deKey(ARMOR, EPIC)] = {};
@@ -692,7 +737,8 @@ function Atr_InitDETable()		-- based on table at wowwiki.com/Disenchanting_table
 	DEtableInsert (t, {105, 164,	33.3, 1, VOID_CRYSTAL,	66.6, 2, VOID_CRYSTAL});
 	DEtableInsert (t, {165, 280,	100, 1, ABYSS_CRYSTAL});
 	DEtableInsert (t, {281, 450,	100, 1, MAELSTROM_CRYSTAL});
-
+	DEtableInsert (t, {420, 600,	100, 1, SHA_CRYSTAL})
+  
 	deTable[deKey(WEAPON, EPIC)] = {};
 	zc.CopyDeep (deTable[deKey(WEAPON, EPIC)], deTable[deKey(ARMOR, EPIC)]);	-- copy it this time because of differences
 
@@ -726,7 +772,7 @@ end
 
 -----------------------------------------
 
-local function Atr_AddDEDetailsToTip (tip, itemType, itemRarity, itemLevel)
+function Atr_AddDEDetailsToTip (tip, itemType, itemRarity, itemLevel)
 
 	local ta = Atr_FindDEentry (itemType, itemRarity, itemLevel);
 
@@ -798,55 +844,25 @@ end
 
 -----------------------------------------
 
-local function ShowTipWithPricing (tip, link, num)
-
-	if (link == nil) then
-		return;
-	end
-
-	local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, _, _, _, _, itemVendorPrice = GetItemInfo (link);
-
-	local vendorPrice	= 0;
-	local auctionPrice	= 0;
-	local dePrice		= nil;
+function Atr_STWP_AddVendorInfo (tip, xstring, vendorPrice, auctionPrice)
 	
-	if (AUCTIONATOR_V_TIPS == 1) then vendorPrice	= itemVendorPrice; end;
-	if (AUCTIONATOR_A_TIPS == 1) then auctionPrice	= Atr_GetAuctionPrice (itemName); end;
-	if (AUCTIONATOR_D_TIPS == 1) then dePrice		= Atr_CalcDisenchantPrice (itemType, itemRarity, itemLevel); end;
-	
-	local xstring = "";
-	local showStackPrices = IsShiftKeyDown();
-	
-	if (AUCTIONATOR_SHIFT_TIPS == 2) then
-		showStackPrices = not IsShiftKeyDown();
-	end
-
-	if (num and showStackPrices) then
-		if (auctionPrice)	then	auctionPrice = auctionPrice * num;	end;
-		if (vendorPrice)	then	vendorPrice  = vendorPrice  * num;	end;
-		if (dePrice)  		then	dePrice  	 = dePrice  * num;	end;
-		xstring = "|cFFAAAAFF x"..num.."|r";
-	end;
-
-	if (vendorPrice == nil) then
-		vendorPrice = 0;
-	end
-
-	-- vendor info
-
 	if (AUCTIONATOR_V_TIPS == 1 and vendorPrice > 0) then
 		local vpadding = Atr_CalcTTpadding (vendorPrice, auctionPrice);
 		tip:AddDoubleLine (ZT("Vendor")..xstring, "|cFFFFFFFF"..zc.priceToMoneyString (vendorPrice))
 	end
 	
-	-- auction info
+end
+	
+-----------------------------------------
 
+function Atr_STWP_AddAuctionInfo (tip, xstring, link, auctionPrice)
+	
 	if (AUCTIONATOR_A_TIPS == 1) then
 		
 		local itemID = zc.ItemIDfromLink (link);
 		itemID = tonumber(itemID);
 	
-		local bondtype = Atr_GetBondType(itemID);
+		local bondtype = Atr_GetBondType (itemID);
 		
 		if (bondtype == ATR_BIND_ON_PICKUP) then
 			tip:AddDoubleLine (ZT("Auction")..xstring, "|cFFFFFFFF"..ZT("BOP").."  ");		
@@ -860,9 +876,13 @@ local function ShowTipWithPricing (tip, link, num)
 			tip:AddDoubleLine (ZT("Auction")..xstring, "|cFFFFFFFF"..ZT("unknown").."  ");
 		end
 	end
+		
+end
 	
-	-- disenchanting info
+-----------------------------------------
 
+function Atr_STWP_AddBasicDEInfo (tip, xstring, dePrice)
+	
 	if (AUCTIONATOR_D_TIPS == 1 and dePrice ~= nil) then
 		if (dePrice > 0) then
 			tip:AddDoubleLine (ZT("Disenchant")..xstring, "|cFFFFFFFF"..zc.priceToMoneyString(dePrice));
@@ -870,6 +890,69 @@ local function ShowTipWithPricing (tip, link, num)
 			tip:AddDoubleLine (ZT("Disenchant")..xstring, "|cFFFFFFFF"..ZT("unknown").."  ");
 		end
 	end
+
+end
+	
+-----------------------------------------
+
+function Atr_STWP_GetPrices (link, num, showStackPrices, itemVendorPrice, itemName, itemType, itemRarity, itemLevel)
+
+	local vendorPrice	= 0;
+	local auctionPrice	= 0;
+	local dePrice		= nil;
+	
+	if (AUCTIONATOR_V_TIPS == 1) then vendorPrice	= itemVendorPrice; end;
+	if (AUCTIONATOR_A_TIPS == 1) then auctionPrice	= Atr_GetAuctionPrice (itemName); end;
+	if (AUCTIONATOR_D_TIPS == 1) then dePrice		= Atr_CalcDisenchantPrice (itemType, itemRarity, itemLevel); end;
+	
+	if (num and showStackPrices) then
+		if (auctionPrice)	then	auctionPrice = auctionPrice * num;	end;
+		if (vendorPrice)	then	vendorPrice  = vendorPrice  * num;	end;
+		if (dePrice)  		then	dePrice  	 = dePrice  * num;	end;
+	end;
+
+	if (vendorPrice == nil) then
+		vendorPrice = 0;
+	end
+
+	return vendorPrice, auctionPrice, dePrice;
+
+end
+
+-----------------------------------------
+
+function Atr_ShowTipWithPricing (tip, link, num)
+
+	if (link == nil or zc.IsBattlePetLink(link)) then
+		return;
+	end
+
+	local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, _, _, _, _, itemVendorPrice = GetItemInfo (link);
+
+	local showStackPrices = IsShiftKeyDown();
+	if (AUCTIONATOR_SHIFT_TIPS == 2) then
+		showStackPrices = not IsShiftKeyDown();
+	end
+
+	local xstring = "";
+	if (num and showStackPrices) then
+		xstring = "|cFFAAAAFF x"..num.."|r";
+	end
+
+
+	local vendorPrice, auctionPrice, dePrice = Atr_STWP_GetPrices (link, num, showStackPrices, itemVendorPrice, itemName, itemType, itemRarity, itemLevel);
+
+	-- vendor info
+
+	Atr_STWP_AddVendorInfo (tip, xstring, vendorPrice, auctionPrice)
+	
+	-- auction info
+
+	Atr_STWP_AddAuctionInfo (tip, xstring, link, auctionPrice)
+
+	-- disenchanting info
+
+	Atr_STWP_AddBasicDEInfo (tip, xstring, dePrice)
 
 	local showDetails = true;
 	
@@ -880,8 +963,9 @@ local function ShowTipWithPricing (tip, link, num)
 	if (AUCTIONATOR_DE_DETAILS_TIPS == 5) then showDetails = true; end;
 	
 	if (showDetails and dePrice ~= nil) then
-		Atr_AddDEDetailsToTip (tip, itemType, itemRarity, itemLevel);
+		Atr_AddDEDetailsToTip (tip, itemType, itemRarity, itemLevel)
 	end
+	
 
 	tip:Show()
 
@@ -892,14 +976,14 @@ end
 hooksecurefunc (GameTooltip, "SetBagItem",
 	function(tip, bag, slot)
 		local _, num = GetContainerItemInfo(bag, slot);
-		ShowTipWithPricing (tip, GetContainerItemLink(bag, slot), num);
+		Atr_ShowTipWithPricing (tip, GetContainerItemLink(bag, slot), num);
 	end
 );
 
 hooksecurefunc (GameTooltip, "SetAuctionItem",
 	function (tip, type, index)
 		local _, _, num = GetAuctionItemInfo(type, index);
-		ShowTipWithPricing (tip, GetAuctionItemLink(type, index), num);
+		Atr_ShowTipWithPricing (tip, GetAuctionItemLink(type, index), num);
 	end
 );
 
@@ -907,7 +991,7 @@ hooksecurefunc (GameTooltip, "SetAuctionSellItem",
 	function (tip)
 		local name, _, count = GetAuctionSellItemInfo();
 		local __, link = GetItemInfo(name);
-		ShowTipWithPricing (tip, link, num);
+		Atr_ShowTipWithPricing (tip, link, num);
 	end
 );
 
@@ -916,7 +1000,7 @@ hooksecurefunc (GameTooltip, "SetLootItem",
 	function (tip, slot)
 		if LootSlotHasItem(slot) then
 			local link, _, num = GetLootSlotLink(slot);
-			ShowTipWithPricing (tip, link, num);
+			Atr_ShowTipWithPricing (tip, link, num);
 		end
 	end
 );
@@ -924,21 +1008,21 @@ hooksecurefunc (GameTooltip, "SetLootItem",
 hooksecurefunc (GameTooltip, "SetLootRollItem",
 	function (tip, slot)
 		local _, _, num = GetLootRollItemInfo(slot);
-		ShowTipWithPricing (tip, GetLootRollItemLink(slot), num);
+		Atr_ShowTipWithPricing (tip, GetLootRollItemLink(slot), num);
 	end
 );
 
 
 hooksecurefunc (GameTooltip, "SetInventoryItem",
 	function (tip, unit, slot)
-		ShowTipWithPricing (tip, GetInventoryItemLink(unit, slot), GetInventoryItemCount(unit, slot));
+		Atr_ShowTipWithPricing (tip, GetInventoryItemLink(unit, slot), GetInventoryItemCount(unit, slot));
 	end
 );
 
 hooksecurefunc (GameTooltip, "SetGuildBankItem",
 	function (tip, tab, slot)
 		local _, num = GetGuildBankItemInfo(tab, slot);
-		ShowTipWithPricing (tip, GetGuildBankItemLink(tab, slot), num);
+		Atr_ShowTipWithPricing (tip, GetGuildBankItemLink(tab, slot), num);
 	end
 );
 
@@ -951,28 +1035,28 @@ hooksecurefunc (GameTooltip, "SetTradeSkillItem",
 			num = select (3, GetTradeSkillReagentInfo(skill, id));
 		end
 
-		ShowTipWithPricing (tip, link, num);
+		Atr_ShowTipWithPricing (tip, link, num);
 	end
 );
 
 hooksecurefunc (GameTooltip, "SetTradePlayerItem",
 	function (tip, id)
 		local _, _, num = GetTradePlayerItemInfo(id);
-		ShowTipWithPricing (tip, GetTradePlayerItemLink(id), num);
+		Atr_ShowTipWithPricing (tip, GetTradePlayerItemLink(id), num);
 	end
 );
 
 hooksecurefunc (GameTooltip, "SetTradeTargetItem",
 	function (tip, id)
 		local _, _, num = GetTradeTargetItemInfo(id);
-		ShowTipWithPricing (tip, GetTradeTargetItemLink(id), num);
+		Atr_ShowTipWithPricing (tip, GetTradeTargetItemLink(id), num);
 	end
 );
 
 hooksecurefunc (GameTooltip, "SetQuestItem",
 	function (tip, type, index)
 		local _, _, num = GetQuestItemInfo(type, index);
-		ShowTipWithPricing (tip, GetQuestItemLink(type, index), num);
+		Atr_ShowTipWithPricing (tip, GetQuestItemLink(type, index), num);
 	end
 );
 
@@ -985,14 +1069,14 @@ hooksecurefunc (GameTooltip, "SetQuestLogItem",
 			_, _, num = GetQuestLogRewardInfo(index)
 		end
 
-		ShowTipWithPricing (tip, GetQuestLogItemLink(type, index), num);
+		Atr_ShowTipWithPricing (tip, GetQuestLogItemLink(type, index), num);
 	end
 );
 
 hooksecurefunc (GameTooltip, "SetInboxItem",
 	function (tip, index, attachIndex)
 		local _, _, num = GetInboxItem(index, attachIndex);
-		ShowTipWithPricing (tip, GetInboxItemLink(index, attachIndex), num);
+		Atr_ShowTipWithPricing (tip, GetInboxItemLink(index, attachIndex), num);
 	end
 );
 
@@ -1000,21 +1084,21 @@ hooksecurefunc (GameTooltip, "SetSendMailItem",
 	function (tip, id)
 		local name, _, num = GetSendMailItem(id)
 		local name, link = GetItemInfo(name);
-		ShowTipWithPricing (tip, link, num);
+		Atr_ShowTipWithPricing (tip, link, num);
 	end
 );
 
 hooksecurefunc (GameTooltip, "SetHyperlink",
 	function (tip, itemstring, num)
 		local name, link = GetItemInfo (itemstring);
-		ShowTipWithPricing (tip, link, num);
+		Atr_ShowTipWithPricing (tip, link, num);
 	end
 );
 
 hooksecurefunc (ItemRefTooltip, "SetHyperlink",
 	function (tip, itemstring)
 		local name, link = GetItemInfo (itemstring);
-		ShowTipWithPricing (tip, link);
+		Atr_ShowTipWithPricing (tip, link);
 	end
 );
 

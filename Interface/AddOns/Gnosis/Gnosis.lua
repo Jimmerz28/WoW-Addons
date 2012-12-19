@@ -944,13 +944,13 @@ end
 function Gnosis:CreateMadnessSet()
 	local i;
 	for i = 1, 99 do
-		self:AddBasicCastbar("Player " .. i, "player", 10-i%20, -2+floor(i/20));
+		self:AddBasicCastbar("Player " .. i, "player", 10-i%20, -2+floor(i/20), 1.0);
 	end
 end
 
 function Gnosis:CreateGCDSwingTimers()
-	self:AddBasicCastbar(self.L["CBSetGCD"], "gcd", -3, 0);
-	self:AddBasicCastbar(self.L["CBSetSwing"], "smr", -4, 0);
+	self:AddBasicCastbar(self.L["CBSetGCD"], "gcd", -3, 0, 1.0);
+	self:AddBasicCastbar(self.L["CBSetSwing"], "smr", -4, 0, 1.0);
 
 	local cfg = self.s.cbconf[self.L["CBSetGCD"]];
 	cfg.height = 3;

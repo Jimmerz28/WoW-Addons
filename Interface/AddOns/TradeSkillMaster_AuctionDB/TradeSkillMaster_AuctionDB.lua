@@ -48,7 +48,8 @@ function TSM:OnInitialize()
 		TSM[moduleName] = module
 	end
 
-	TSM:Deserialize(TSM.db.factionrealm.scanData)
+	TSM.data = {}
+	TSM:Deserialize(TSM.db.factionrealm.scanData, TSM.data)
 	TSM.db.factionrealm.playerAuctions = nil
 
 	TSM:RegisterEvent("PLAYER_LOGOUT", TSM.OnDisable)
@@ -61,6 +62,8 @@ function TSM:OnInitialize()
 	TSMAPI:RegisterData("lastCompleteScan", TSM.GetLastCompleteScan)
 	TSMAPI:RegisterData("lastCompleteScanTime", TSM.GetLastScanTime)
 	TSMAPI:RegisterData("deValue", TSM.GetDisenchantValue)
+	TSMAPI:RegisterData("adbScans", TSM.GetScans)
+	TSMAPI:RegisterData("adbOppositeFaction", TSM.GetOppositeFactionData)
 	TSMAPI:AddPriceSource("DBMarket", L["AuctionDB - Market Value"], function(itemLink) return TSM:GetData(itemLink) end)
 	TSMAPI:AddPriceSource("DBMinBuyout", L["AuctionDB - Minimum Buyout"], function(itemLink) return select(5, TSM:GetData(itemLink)) end)
 
@@ -81,6 +84,7 @@ function TSM:OnEnable()
 	if TSM.AppData then
 		local realm = GetRealmName()
 		local faction = UnitFactionGroup("player")
+		if not faction then end
 		local newData = {}
 		local numNewScans = 0
 		for realmInfo, data in pairs(TSM.AppData) do
@@ -112,7 +116,7 @@ function TSM:OnEnable()
 				
 				TSM.data[itemID].seen = ((TSM.data[itemID].seen or 0) + num)
 				
-				if TSM.data[itemID].lastScan < epochTime then
+				if not TSM.data[itemID].lastScan or TSM.data[itemID].lastScan < epochTime then
 					TSM.data[itemID].currentQuantity = num
 					TSM.data[itemID].lastScan = epochTime
 					TSM.data[itemID].minBuyout = minBuyout > 0 and minBuyout or nil
@@ -125,6 +129,8 @@ function TSM:OnEnable()
 			TSM.db.factionrealm.lastCompleteScan = TSM.db.factionrealm.appDataUpdate
 			TSM:Printf("Imported %s scans worth of new auction data!", numNewScans)
 		end
+		wipe(TSM.AppData)
+		collectgarbage()
 	end
 end
 
@@ -309,16 +315,12 @@ function TSM:Serialize()
 	TSM.db.factionrealm.scanData = table.concat(results)
 end
 
-function TSM:Deserialize(data)
-	if strsub(data, 1, 1) ~= "?" then
-		TSM.data = {}
-		return
-	end
+function TSM:Deserialize(data, resultTbl)
+	if strsub(data, 1, 1) ~= "?" then return end
 
-	TSM.data = TSM.data or {}
 	for k,a,b,c,d,f,s in gmatch(data, "?([^,]+),([^,]+),([^,]+),([^,]+),([^,]+),([^,]+),([^?]+)") do
 		local itemID = decode(k)
-		TSM.data[itemID] = {seen=decode(a),marketValue=decode(b),lastScan=decode(c),currentQuantity=(decode(d) or 0),minBuyout=decode(f),scans=decodeScans(s)}
+		resultTbl[itemID] = {seen=decode(a),marketValue=decode(b),lastScan=decode(c),currentQuantity=(decode(d) or 0),minBuyout=decode(f),scans=decodeScans(s)}
 	end
 end
 
@@ -341,10 +343,20 @@ function TSM:GetLastScanTime()
 	return TSM.db.factionrealm.lastCompleteScan
 end
 
+function TSM:GetScans(link)
+	if not link then return end
+	link = select(2, GetItemInfo(link))
+	if not link then return end
+	local itemID = TSMAPI:GetItemID(link)
+	if not TSM.data[itemID] then return end
+	
+	return CopyTable(TSM.data[itemID].scans)
+end
+
 function TSM:GetDisenchantValue(link)
 	local _, itemLink, quality, ilvl, _, iType = GetItemInfo(link)
 	local id = TSMAPI:GetItemID(itemLink)
-	if not id or TSMAPI.DestroyingData.notDisenchantable[id] or not (iType == ARMOR or iType == WEAPON) then return 0 end
+	if not id or TSMAPI.DestroyingData.notDisenchantable[id] or not (iType == ARMOR or iType == ENCHSLOT_WEAPON) then return 0 end
 	
 	local value = 0
 	for _, data in ipairs(TSMAPI.DestroyingData.disenchant) do
@@ -367,4 +379,23 @@ function TSM:GetDisenchantValue(link)
 	end
 	
 	return value
+end
+
+function TSM:GetOppositeFactionData()
+	local realm = GetRealmName()
+	local faction = UnitFactionGroup("player")
+	if faction == "Horde" then
+		faction = "Alliance"
+	elseif faction == "Alliance" then
+		faction = "Horde"
+	else
+		return
+	end
+	
+	local data = TSM.db.sv.factionrealm[faction.." - "..realm]
+	if not data or type(data.scanData) ~= "string" then return end
+	
+	local result = {}
+	TSM:Deserialize(data.scanData, result)
+	return result
 end

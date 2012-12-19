@@ -1,7 +1,7 @@
-MACRO 5 "FIGHT SONG" "INV_WAND_1H_430NIGHTELF_C_01"
+MACRO64 0000000000000005 "FIGHT SONG" "INV_WAND_1H_430NIGHTELF_C_01"
 /2 Go Costa, Fight Costa, Win Costa! When we enter a fight, those horde better run for the hills, because if they do not, then for us it's free honor kills! Hail Costa, We Will Never Fail!
 END
-MACRO 2 "Milling" "INV_Misc_QuestionMark"
+MACRO64 0000000000000002 "Milling" "INV_Misc_QuestionMark"
 /cast Milling
 /use Cinderbloom
 /use Khadgar's Whisker
@@ -14,16 +14,16 @@ MACRO 2 "Milling" "INV_Misc_QuestionMark"
 /use Silkweed
 /use Green Tea Leaf
 END
-MACRO 4 "Mount" "Ability_Creature_Cursed_03"
+MACRO64 0000000000000004 "Mount" "Ability_Creature_Cursed_03"
 /guppet am
 END
-MACRO 1 "Prospecting" "INV_Misc_QuestionMark"
+MACRO64 0000000000000001 "Prospecting" "INV_Misc_QuestionMark"
 /cast Prospecting
 /use Elementium Ore
 /use Obsidium Ore
 /use Ghost Iron Ore
 /use Kyparite
 END
-MACRO 3 "tar" "Ability_Ambush"
-/tar Karken
+MACRO64 0000000000000003 "tar" "Ability_Ambush"
+/tar Spirit
 END

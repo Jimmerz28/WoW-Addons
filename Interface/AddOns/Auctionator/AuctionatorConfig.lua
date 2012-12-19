@@ -2,6 +2,7 @@
 local addonName, addonTable = ...; 
 local zc = addonTable.zc;
 local zz = zc.md;
+local _
 
 Atr_LoadOptionsSubPanel_NumCalls = 0;
 
@@ -75,6 +76,9 @@ function Atr_SetupOptionsFrame()
 
 	local expText = "<html><body>"
 					.."<p>"..ZT("The latest information on Auctionator can be found at").." auctionator-addon.com.".."</p>"
+					.."<p><br/>"
+					.."MoP disenchanting data courtesy of the Auctioneer folks"
+					.."</p>"
 					.."<p><br/>"
 					.."|cffaaaaaa"..string.format (ZT("German translation courtesy of %s"),  "|rCkaotik").."<br/>"
 					.."|cffaaaaaa"..string.format (ZT("Russian translation courtesy of %s"), "|rStingerSoft").."<br/>"

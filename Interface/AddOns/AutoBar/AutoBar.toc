@@ -1,4 +1,4 @@
-## Interface: 50001
+## Interface: 50100
 ## Title: AutoBar
 ## Author: MuffinManKen, Maggz,  Toadkiller (Original code)
 ## Version: v5.0.4.06

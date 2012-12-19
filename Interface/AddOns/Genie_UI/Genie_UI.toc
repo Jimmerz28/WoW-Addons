@@ -1,5 +1,5 @@
 ## Title: Genie |cff7fff7f UI|r
-## Interface: 50001
+## Interface: 50100
 ## Version: 5.0.4
 ## X-Date: 2012-09-02T09:16:12Z
 ## X-Revision: 304

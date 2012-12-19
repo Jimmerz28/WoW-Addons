@@ -3,7 +3,6 @@ local TSM = select(2, ...)
 local GUI = TSMAPI:GetGUIFunctions()
 local L = LibStub("AceLocale-3.0"):GetLocale("TradeSkillMaster") -- loads the localization table
 
-local currentAuction
 local private = TSM:GetAuctionFramePrivate()
 LibStub("AceEvent-3.0"):Embed(private)
 LibStub("AceHook-3.0"):Embed(private)
@@ -61,6 +60,10 @@ function private:InitializeAHTab()
 				TSMAuctionFrame:SetAlpha(1)
 				TSMAuctionFrame:SetFrameStrata(AuctionFrame:GetFrameStrata())
 				TSMAuctionFrame:SetFrameLevel(AuctionFrame:GetFrameLevel() + 1)
+				if private.mode and private.mode.isMinimized then
+					private.mode.isMinimized = nil
+					private.mode:Maximize()
+				end
 			elseif TSMAuctionFrame.isAttached then
 				private:MinimizeAHTab()
 			end
@@ -125,13 +128,17 @@ function private:MinimizeAHTab()
 	AuctionFrameCloseButton:Show()
 	AuctionFrameTab1:SetPoint("TOPLEFT", AuctionFrame, "BOTTOMLEFT", 15, 12)
 	
+	if private.mode and private.mode.Minimize then
+		private.mode.isMinimized = true
+		private.mode:Minimize()
+	end
+	
 	TSMAuctionFrame:SetAlpha(0)
 	TSMAuctionFrame:SetFrameStrata("LOW")
 end
 
 function private:HideCurrentMode()
 	if private.mode then private.mode:Hide() end
-	currentAuction = nil
 	private.mode = nil
 end
 

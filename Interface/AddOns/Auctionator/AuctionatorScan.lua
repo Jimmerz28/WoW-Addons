@@ -2,6 +2,7 @@
 local addonName, addonTable = ...
 local zc = addonTable.zc
 local zz = zc.md
+local _
 
 KM_NULL_STATE	= 0;
 KM_PREQUERY		= 1;
@@ -10,10 +11,13 @@ KM_POSTQUERY	= 3;
 KM_ANALYZING	= 4;
 KM_SETTINGSORT	= 5;
 
-local AUCTION_CLASS_WEAPON = 1;
-local AUCTION_CLASS_ARMOR  = 2;
+local AUCTION_CLASS_WEAPON		 = 1;
+local AUCTION_CLASS_ARMOR 		 = 2;
+local AUCTION_CLASS_BATTLEPET	 = 11;
 
 local gAllScans = {};
+
+local BATTLE_PET_ITEMID = 82800
 
 local BIGNUM = 999999999999;
 
@@ -185,6 +189,7 @@ function AtrScan:Init (IDstring, itemName)
 	
 end
 
+
 -----------------------------------------
 
 function AtrScan:UpdateItemLink (itemLink)
@@ -192,13 +197,28 @@ function AtrScan:UpdateItemLink (itemLink)
 	if (itemLink and self.itemLink == nil) then
 	
 		self.itemLink = itemLink;
-	
-		local _, _, quality, iLevel, _, sType, sSubType = GetItemInfo(itemLink);
 
+		local _, quality, iLevel, sType, sSubType;
+
+		if (zc.IsBattlePetLink (itemLink)) then
+			
+			local speciesID, level, breedQuality = zc.ParseBattlePetLink (itemLink)
+			
+			iLevel	= level;
+			quality	= breedQuality;
+			
+			self.itemClass		= AUCTION_CLASS_BATTLEPET;
+			self.itemSubclass	= 0;
+
+		else
+			_, _, quality, iLevel, _, sType, sSubType = GetItemInfo(itemLink);
+
+			self.itemClass		= Atr_ItemType2AuctionClass (sType);
+			self.itemSubclass	= Atr_SubType2AuctionSubclass (self.itemClass, sSubType);	
+		end
+			
 		self.itemQuality	= quality;
 		self.itemLevel		= iLevel;
-		self.itemClass		= Atr_ItemType2AuctionClass (sType);
-		self.itemSubclass	= Atr_SubType2AuctionSubclass (self.itemClass, sSubType);	
 
 		self.itemTextColor = { 0.75, 0.75, 0.75 };
 
@@ -210,6 +230,7 @@ function AtrScan:UpdateItemLink (itemLink)
 	end
 
 end
+
 
 
 -----------------------------------------
@@ -836,10 +857,10 @@ function AtrSearch:Finish()
 		if (scn.lowprice < BIGNUM) then
 		
 			if (scn.itemQuality == nil) then
-				zc.msg_anm ("|cffff0000Error: scn.itemQuality == nil|c, scn.itemName: ", scn.itemName);
+				zc.msg_anm ("|cffff0000Error: scn.itemQuality == nil, scn.itemName: ", scn.itemName);
 			end
 			
-			if (scn.itemQuality ~= nil and scn.itemQuality + 1 >= AUCTIONATOR_SCAN_MINLEVEL) then
+			if (scn.itemQuality ~= nil and (scn.itemQuality + 1 >= AUCTIONATOR_SCAN_MINLEVEL or scn.quality == -1)) then		--  battle pets can be UNKNOWN (-1) quality
 								
 				Atr_UpdateScanDBprice		(scn.itemName, scn.lowprice);
 				Atr_UpdateScanDBclassInfo	(scn.itemName, scn.itemClass, scn.itemSubclass);

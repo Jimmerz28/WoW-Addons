@@ -86,9 +86,9 @@ H: 40
 Frame: DominosFrameclass
 FrameLevel: 1
 Anchor: CENTER
-X: -232
+X: -248
 Y: -28
-W: 126
+W: 94
 H: 30
 Frame: DominosFramepet
 FrameLevel: 1
@@ -132,3 +132,10 @@ X: 11
 Y: -38
 W: 466
 H: 24
+Frame: SkadaBarWindowSkada
+FrameLevel: 1
+Anchor: LEFT
+X: 0
+Y: 33
+W: 240
+H: 200

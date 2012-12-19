@@ -410,13 +410,15 @@ local defaultColScripts = {
 		end
 	end,
 	
-	OnClick = function(self, ...)
+	OnClick = function(self, button, ...)
 		if self.rt.disabled then return end
 		self.rt:ClearSelection()
 		self.rt.selected = GetTableIndex(self.rt.data, self.row.data)
 		self.row.highlight:Show()
 		
-		if self.rt.quickBuyout and IsAltKeyDown() then
+		if button == "RightButton" then
+			TSMAPI:GetSTRowRightClickFunction()(self, self.row.data.auctionRecord.parent.itemLink)
+		elseif self.rt.quickBuyout and IsAltKeyDown() then
 			local rowRecord = self.row.data.auctionRecord
 			for i=GetNumAuctionItems("list"), 1, -1 do
 				local link = GetAuctionItemLink("list", i)
@@ -435,7 +437,7 @@ local defaultColScripts = {
 		
 		local handler = self.rt.handlers.OnClick
 		if handler then
-			handler(self.rt, self.row.data, self, ...)
+			handler(self.rt, self.row.data, self, button, ...)
 		end
 	end,
 	
@@ -565,6 +567,7 @@ function TSMAPI:CreateAuctionResultsTable(parent, colInfo, handlers, quickBuyout
 			text:SetPoint("BOTTOMRIGHT", -1, 1)
 			col:SetFontString(text)
 			col:SetHeight(rt.ROW_HEIGHT)
+			col:RegisterForClicks("AnyUp")
 			for name, func in pairs(defaultColScripts) do
 				col:SetScript(name, func)
 			end

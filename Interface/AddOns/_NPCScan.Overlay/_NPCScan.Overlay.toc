@@ -1,4 +1,4 @@
-## Interface: 50001
+## Interface: 50100
 ## Title: _|cffCCCC88NPCScan|r.Overlay
 ## Notes: Adds mob patrol paths to your map.
 ## Notes-deDE: Fügt deiner Karte die Laufpfade hinzu

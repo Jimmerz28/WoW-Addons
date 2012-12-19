@@ -1,4 +1,4 @@
-## Interface: 50001
+## Interface: 50100
 ## Title: |cff00ff00TradeSkillMaster_Accounting|r
 ## Notes: Tracks your auction sales and provides you with a list of what's been selling and for how much.
 ## Author: Sapu94

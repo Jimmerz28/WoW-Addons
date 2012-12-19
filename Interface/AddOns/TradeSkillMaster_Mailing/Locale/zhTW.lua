@@ -8,9 +8,11 @@ if not L then return end
 L["Add Mail Target"] = "添加送信人"
 -- L["After the initial mailing, the auto-mail feature will automatically restart after however many minutes this slider is set to."] = ""
 -- L["Are you sure you want to remove %s as a mail target?"] = ""
+-- L["AutoMail Greens for Disenchanting"] = ""
 L["Auto mailing will let you setup groups and specific items that should be mailed to another characters."] = "自動郵寄會將你設定的群組和具體物品郵寄到另一個角色."
 -- L["AutoMail Restart Delay (minutes)"] = ""
 -- L["AutoMail Send Delay"] = ""
+-- L["AutoMail target for Greens"] = ""
 L[ [=[Automatically rechecks mail every 60 seconds when you have too much mail.
 
 If you loot all mail with this enabled, it will wait and recheck then keep auto looting.]=] ] = [=[當你有過多郵件時,將每60秒複查郵件.
@@ -21,6 +23,7 @@ L["Auto Recheck Mail"] = "自動複查郵件"
 -- L["Below you can change an existing mail target to a new one without losing the items."] = ""
 L["Cannot finish auto looting, inventory is full or too many unique items."] = "無法完成自動拾取郵件,行囊已滿或者擁有過多唯一物品."
 -- L["Change Mail Target"] = ""
+-- L["Checking this will mail green quality Items to the selected mail target for Disenchanting"] = ""
 L["Checking this will stop TradesSkillMaster_Mailing from displaying money collected from your mailbox after auto looting"] = "不顯示在自動打開郵件後從郵件中獲取金錢的提示."
 L["Check your spelling! If you typo a name, it will send to the wrong person."] = "請檢查你的輸入!如果你輸入一個錯誤的名稱,郵件將發給一個錯誤的送信人."
 L["%d mail"] = "%d 郵件"
@@ -49,6 +52,7 @@ L[ [=[Runs TradeSkillMaster_Mailing's auto mailer, the last patch of mails will 
 
 [警告!] 在開始送信前你不會得到任何確認資訊.如果您錯誤輸入送信人名稱,一切後果自負.]=]
 -- L["%s Collected"] = ""
+-- L["Select which Mail Target you would like to send disenchantable green quality items to."] = ""
 -- L["Send Items Individually"] = ""
 -- L["Sends each unique item in a seperate mail."] = ""
 L[ [=[The name of the player to send items to.

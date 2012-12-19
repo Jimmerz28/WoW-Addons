@@ -66,3 +66,7 @@ L["Remove Mail Target"] = true
 L["Are you sure you want to remove %s as a mail target?"] = true
 L["Items/Groups to Add:"] = true
 L["Items/Groups to remove:"] = true
+L["AutoMail Greens for Disenchanting"] = true
+L["Checking this will mail green quality Items to the selected mail target for Disenchanting"] = true
+L["AutoMail target for Greens"] = true
+L["Select which Mail Target you would like to send disenchantable green quality items to."] = true

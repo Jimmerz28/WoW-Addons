@@ -1,7 +1,16 @@
 
 TradeSkillMaster_MailingDB = {
-	["profiles"] = {
-		["Default"] = {
+	["factionrealm"] = {
+		["Alliance - Deathwing"] = {
+			["mailTargets"] = {
+				"jaymes", -- [1]
+				"vergottlicht", -- [2]
+			},
+			["mailItems"] = {
+				["cards"] = "jaymes",
+				[79255] = "vergottlicht",
+				["glyphs"] = "jaymes",
+			},
 		},
 	},
 	["profileKeys"] = {
@@ -10,23 +19,16 @@ TradeSkillMaster_MailingDB = {
 		["Untote - Jubei'Thos"] = "Default",
 		["Erschossen - Deathwing"] = "Default",
 		["Jaymes - Deathwing"] = "Default",
-		["Prallend - Deathwing"] = "Default",
+		["Beichte - Deathwing"] = "Default",
 		["Vergottlicht - Deathwing"] = "Default",
 		["Geiler - Deathwing"] = "Default",
 		["Notwehr - Deathwing"] = "Default",
 		["Zaubertot - Deathwing"] = "Default",
 		["Geil - Uldum"] = "Default",
-		["Beichte - Deathwing"] = "Default",
+		["Prallend - Deathwing"] = "Default",
 	},
-	["factionrealm"] = {
-		["Alliance - Deathwing"] = {
-			["mailTargets"] = {
-				"jaymes", -- [1]
-			},
-			["mailItems"] = {
-				["glyphs"] = "jaymes",
-				["cards"] = "jaymes",
-			},
+	["profiles"] = {
+		["Default"] = {
 		},
 	},
 }

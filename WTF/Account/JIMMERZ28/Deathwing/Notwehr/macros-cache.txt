@@ -1,24 +1,24 @@
-MACRO 16777221 "Burst" "INV_Misc_QuestionMark"
+MACRO64 0000000001000005 "Burst" "INV_Misc_QuestionMark"
 /castsequence reset=8 Flame shock, Lava Burst 
 END
-MACRO 16777223 "ES" "INV_Misc_QuestionMark"
+MACRO64 0000000001000007 "ES" "INV_Misc_QuestionMark"
 #showtooltip Wind Shear
 /cast [target=focus] Wind Shear
 /cast Wind Shear
 END
-MACRO 16777224 "Focus" "INV_Misc_QuestionMark"
+MACRO64 0000000001000008 "Focus" "INV_Misc_QuestionMark"
 /focus
 END
-MACRO 16777219 "Lightning" "INV_Misc_QuestionMark"
+MACRO64 0000000001000003 "Lightning" "INV_Misc_QuestionMark"
 #showtooltip Lightning Bolt
 /use 13
 /cast Lightning Bolt
 END
-MACRO 16777226 "pros" "INV_Misc_QuestionMark"
+MACRO64 000000000100000A "pros" "INV_Misc_QuestionMark"
 /cast Prospecting
 /use Titanium Ore
 END
-MACRO 16777225 "riptide" "INV_Misc_QuestionMark"
+MACRO64 0000000001000009 "riptide" "INV_Misc_QuestionMark"
 #showtooltip Riptide
 /use Binding Light
 /use Energy Siphon
@@ -27,7 +27,7 @@ MACRO 16777225 "riptide" "INV_Misc_QuestionMark"
 /cast [modifier:alt,target=player] Riptide
 /cast Riptide
 END
-MACRO 16777222 "TT" "INV_Misc_QuestionMark"
+MACRO64 0000000001000006 "TT" "INV_Misc_QuestionMark"
 #showtooltip
 /castsequence reset=combat/60 Flametongue Totem, Strength of Earth Totem, Healing Stream Totem, Wrath of Air Totem
 END

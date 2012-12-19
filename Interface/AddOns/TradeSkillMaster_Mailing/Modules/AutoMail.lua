@@ -97,7 +97,7 @@ function private:StartAutoMailing()
 	for bag=0, 4 do
 		for slot=1, GetContainerNumSlots(bag) do
 			local itemID = TSMAPI:GetItemID(GetContainerItemLink(bag, slot))
-			local target = TSM.db.factionrealm.mailItems[itemID] or TSM.Config.itemsInGroup[itemID]
+			local target = TSM.db.factionrealm.mailItems[itemID] or TSM.Config.itemsInGroup[itemID] or private:GetGreenDeMailTarget(itemID)
 			if target and not TSM.Config:IsSoulbound(bag, slot, itemID) then
 				target = strlower(target)
 				private.mailTargets[target] = private.mailTargets[target] or {}
@@ -222,4 +222,30 @@ function private:GetNumPendingAttachments()
 	end
 	
 	return totalAttached
+end
+
+function AutoMail:IsBusy()
+	local collectBusy = not TSM:IsButtonEnabled()
+	local sendBusy = private.sendingFrame and private.sendingFrame:IsVisible()
+	return not (collectBusy or sendBusy)
+end
+
+function private:GetGreenDeMailTarget(itemID)
+    if not itemID then return end
+    local _, itemLink, quality, ilvl, _, iType = GetItemInfo(itemID)
+    local id = TSMAPI:GetItemID(itemLink)
+    if not id or TSMAPI.DestroyingData.notDisenchantable[id] or not (iType == ARMOR or iType == ENCHSLOT_WEAPON) or not (quality == 2) then return end
+
+	local groupNames, _ = TSMAPI:GetData("auctioningGroups")
+	if groupNames then
+		for _, items in pairs(TSMAPI:GetData("auctioningGroups")) do
+			if items[itemID] then return end
+		end
+	end
+
+    if not (TSM.db.profile.autoMailGreens and TSM.db.factionrealm.deMailTarget) then
+        return
+    else
+        return TSM.db.factionrealm.deMailTarget
+    end
 end

@@ -354,6 +354,7 @@ local function LoadOptionsPage(parent)
 		jaded = {L["Jaded (by Ravanys - The Consortium)"], "frameColors{frameBG{backdrop{0,0,0,0.6}border{0,0,0,0.4}}content{backdrop{62,62,62,1}border{72,72,72,1}}frame{backdrop{32,32,32,1}border{2,2,2,0.48}}}textColors{text{enabled{99,219,136,1}disabled{95,98,90,1}}iconRegion{enabled{43,255,156,1}}title{enabled{75,255,150,1}}label{enabled{99,219,136,1}disabled{177,176,168,1}}}edgeSize{1}fontSizes{normal{15}small{12}}"},
 		tsmdeck = {L["TSMDeck (by Jim Younkin - Power Word: Gold)"], "inlineColors{link2{153,255,255,1}category2{85,180,8,1}link{89,139,255,1}category{80,222,22,1}}textColors{iconRegion{enabled{117,117,122,1}}title{enabled{247,248,255,1}}label{enabled{238,249,237,1}disabled{110,110,110,1}}text{enabled{245,240,251,1}disabled{115,115,115,1}}link{enabled{49,56,133,1}}}fontSizes{normal{14}small{12}}edgeSize{1}frameColors{frameBG{backdrop{29,29,29,1}border{20,20,20,1}}content{backdrop{27,27,27,1}border{67,67,65,1}}frame{backdrop{39,39,40,1}border{20,20,20,1}}}"},
 		tsmclassic = {L["TSM Classic (by Jim Younkin - Power Word: Gold)"], "inlineColors{link{89,139,255,1}link2{153,255,255,1}category{80,222,22,1}category2{85,180,8,1}}textColors{text{enabled{245,240,251,1}disabled{115,115,115,1}}iconRegion{enabled{216,216,224,1}}title{enabled{247,248,255,1}}label{enabled{238,249,237,1}disabled{110,110,110,1}}}fontSizes{normal{14}small{12}}edgeSize{1}frameColors{frameBG{backdrop{8,8,8,1}border{4,2,147,1}}content{backdrop{18,18,18,1}border{102,108,105,1}}frame{backdrop{2,2,2,1}border{4,2,147,1}}}"},
+		mage = {L["Mage (by Elvine)"], "inlineColors{link{133,124,131,1}link2{153,255,255,1}tooltip{130,130,250}category{36,106,36,1}category2{85,180,8,1}}textColors{iconRegion{enabled{255,255,255,1}}title{enabled{255,231,255,1}}label{enabled{0,150,212,1}disabled{255,252,238,1}}text{enabled{221,255,248,1}disabled{247,255,233,1}}link{enabled{49,56,133,1}}}fontSizes{normal{15}small{12}}edgeSize{1.5}frameColors{frameBG{backdrop{0,0,0,1}border{43,43,43,1}}content{backdrop{0,0,0,1}border{49,49,49,1}}frame{backdrop{14,14,14,0.82999999821186}border{0,150,212,1}}}"},
 	}
 	
 	local presetThemeList = {}
@@ -441,7 +442,11 @@ local function LoadOptionsPage(parent)
 							label = L["Make Auction Frame Movable"],
 							quickCBInfo = {TSM.db.profile, "auctionFrameMovable"},
 							relativeWidth = 0.5,
-							callback = function(_,_,value) AuctionFrame:SetMovable(value) end,
+							callback = function(_,_,value)
+								if AuctionFrame then
+								AuctionFrame:SetMovable(value)
+								end
+							end,
 						},
 						{
 							type = "Slider",

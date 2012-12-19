@@ -1,3 +1,12 @@
+v5.1
+-update TOC pending changes which I'm still testing
+
+v5.0.3
+-added Fade Circle
+
+v5.0.2
+-fixed typo, version update
+
 v5.0.1
 -update TOC
 

@@ -2,15 +2,17 @@
 -- Please use the localization app on CurseForge to update this
 -- http://wow.curseforge.com/addons/tradeskillmaster_mailing/localization/
 
-local L = LibStub("AceLocale-3.0"):NewLocale("TradeSkillMaster_Mailing", "zhCH")
+local L = LibStub("AceLocale-3.0"):NewLocale("TradeSkillMaster_Mailing", "zhCN")
 if not L then return end
 
 L["Add Mail Target"] = "添加收件人"
 L["After the initial mailing, the auto-mail feature will automatically restart after however many minutes this slider is set to."] = "初次邮寄后，自动邮寄功能将在滑动条设置的分钟数后自动重启。" -- Needs review
 L["Are you sure you want to remove %s as a mail target?"] = "你确定想要移除邮件收件人 %s ?" -- Needs review
+-- L["AutoMail Greens for Disenchanting"] = ""
 L["Auto mailing will let you setup groups and specific items that should be mailed to another characters."] = "自动邮寄会将你设定的分组和特定物品邮寄给另一个角色。" -- Needs review
 L["AutoMail Restart Delay (minutes)"] = "自动邮件重启延迟 (分钟)" -- Needs review
 L["AutoMail Send Delay"] = "自动邮件发送延迟" -- Needs review
+-- L["AutoMail target for Greens"] = ""
 L[ [=[Automatically rechecks mail every 60 seconds when you have too much mail.
 
 If you loot all mail with this enabled, it will wait and recheck then keep auto looting.]=] ] = [=[当你有过多邮件时，每60秒自动重新检查邮件。
@@ -21,6 +23,7 @@ L["Auto Recheck Mail"] = "自动重新检查邮件" -- Needs review
 L["Below you can change an existing mail target to a new one without losing the items."] = "在下面你可以更改一个已有邮件收件人为别人而不会丢失物品设置。" -- Needs review
 L["Cannot finish auto looting, inventory is full or too many unique items."] = "自动打开邮件无法完成，背包已满或者拥有过多唯一物品。" -- Needs review
 L["Change Mail Target"] = "更改邮件收件人" -- Needs review
+-- L["Checking this will mail green quality Items to the selected mail target for Disenchanting"] = ""
 L["Checking this will stop TradesSkillMaster_Mailing from displaying money collected from your mailbox after auto looting"] = "选中此项将不再显示自动打开邮件后从邮件中所获得金钱的提示。" -- Needs review
 L["Check your spelling! If you typo a name, it will send to the wrong person."] = "检查你的输入！如果你写错名字，邮件将会发给错误的收件人。" -- Needs review
 L["%d mail"] = "%d 邮件"
@@ -49,6 +52,7 @@ L[ [=[Runs TradeSkillMaster_Mailing's auto mailer, the last patch of mails will 
 
 [警告!] 在开始发送邮件前你不会得到任何确认信息，如果您输错收件人，后果自负。]=] -- Needs review
 L["%s Collected"] = "%s 已收集" -- Needs review
+-- L["Select which Mail Target you would like to send disenchantable green quality items to."] = ""
 L["Send Items Individually"] = "单独邮件发送每种物品" -- Needs review
 L["Sends each unique item in a seperate mail."] = "使用单独的邮件发送每个唯一物品" -- Needs review
 L[ [=[The name of the player to send items to.

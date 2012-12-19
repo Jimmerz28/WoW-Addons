@@ -8,13 +8,13 @@ local function CreateRightClickFrame(parent)
 	frame:SetFrameStrata("TOOLTIP")
 	frame:SetScript("OnShow", function(self)
 			local x, y = GetCursorPosition()
-			x = x / UIParent:GetEffectiveScale() - 5
-			y = y / UIParent:GetEffectiveScale() + 5
+			x = x / UIParent:GetEffectiveScale() - 20
+			y = y / UIParent:GetEffectiveScale() - 10
 			self:SetPoint("TOPLEFT", UIParent, "BOTTOMLEFT", x, y)
 			self.timeLeft = 0.5
 		end)
 	frame:SetScript("OnUpdate", function(self, elapsed)
-			if not GetMouseFocus() then return self:Hide() end
+			if not GetMouseFocus() then return end
 			if GetMouseFocus() == self or GetMouseFocus().isTSMRightClickChild then
 				self.timeLeft = 0.5
 			elseif self.timeLeft then

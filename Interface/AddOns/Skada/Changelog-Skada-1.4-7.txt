@@ -1,0 +1,73 @@
+------------------------------------------------------------------------
+r417 | zarnivoop | 2012-11-28 14:11:42 +0000 (Wed, 28 Nov 2012) | 1 line
+Changed paths:
+   A /tags/1.4-7 (from /trunk:416)
+
+Tagging as 1.4-7
+------------------------------------------------------------------------
+r416 | zarnivoop | 2012-11-28 13:33:28 +0000 (Wed, 28 Nov 2012) | 1 line
+Changed paths:
+   M /trunk/Skada.toc
+   M /trunk/modules/SkadaCC/SkadaCC.toc
+   M /trunk/modules/SkadaDamage/SkadaDamage.toc
+   M /trunk/modules/SkadaDamageTaken/SkadaDamageTaken.toc
+   M /trunk/modules/SkadaDeaths/SkadaDeaths.toc
+   M /trunk/modules/SkadaDebuffs/SkadaDebuffs.toc
+   M /trunk/modules/SkadaDispels/SkadaDispels.toc
+   M /trunk/modules/SkadaEnemies/SkadaEnemies.toc
+   M /trunk/modules/SkadaHealing/SkadaHealing.toc
+   M /trunk/modules/SkadaPower/SkadaPower.toc
+   M /trunk/modules/SkadaThreat/SkadaThreat.toc
+
+.toc update
+------------------------------------------------------------------------
+r415 | funkydude | 2012-11-28 01:13:19 +0000 (Wed, 28 Nov 2012) | 1 line
+Changed paths:
+   M /trunk/Menus.lua
+   M /trunk/Skada.lua
+
+Use a popup index of 4 and don't recreate the popup table on every reset call
+------------------------------------------------------------------------
+r413 | zarnivoop | 2012-11-20 21:03:51 +0000 (Tue, 20 Nov 2012) | 1 line
+Changed paths:
+   M /trunk/modules/SkadaDamageTaken/DamageTaken.lua
+
+added min/max/avg to damage taken module
+------------------------------------------------------------------------
+r412 | zarnivoop | 2012-11-20 20:47:33 +0000 (Tue, 20 Nov 2012) | 1 line
+Changed paths:
+   M /trunk/BarDisplay.lua
+   M /trunk/lib/SpecializedLibBars-1.0/SpecializedLibBars-1.0.lua
+   M /trunk/modules/SkadaCC/CC.lua
+   M /trunk/modules/SkadaDamage/Damage.lua
+   M /trunk/modules/SkadaDamageTaken/DamageTaken.lua
+   M /trunk/modules/SkadaDeaths/Deaths.lua
+   M /trunk/modules/SkadaDebuffs/Debuffs.lua
+   M /trunk/modules/SkadaDispels/Dispels.lua
+   M /trunk/modules/SkadaDispels/Interrupts.lua
+   M /trunk/modules/SkadaEnemies/Enemies.lua
+   M /trunk/modules/SkadaHealing/Healing.lua
+   M /trunk/modules/SkadaHealing/Overhealing.lua
+   M /trunk/modules/SkadaHealing/TotalHealing.lua
+   M /trunk/modules/SkadaPower/Power.lua
+   M /trunk/modules/SkadaThreat/Threat.lua
+
+fix for bar placement in mixed icon/iconless modes
+------------------------------------------------------------------------
+r411 | zarnivoop | 2012-11-20 19:09:43 +0000 (Tue, 20 Nov 2012) | 1 line
+Changed paths:
+   M /trunk/Menus.lua
+   M /trunk/Skada.lua
+   M /trunk/locale/enUS.lua
+
+added RealID reporting, only one expansion late
+------------------------------------------------------------------------
+r410 | durcyn | 2012-10-24 17:46:34 +0000 (Wed, 24 Oct 2012) | 3 lines
+Changed paths:
+   M /trunk/Skada.lua
+   M /trunk/modules/SkadaDeaths/Deaths.lua
+
+Skada.lua:1854: fix SETGLOBAL petMobID
+modules/SkadaDeaths/Deaths.lua:96: fix SETGLOBAL srcName_modified
+
+------------------------------------------------------------------------

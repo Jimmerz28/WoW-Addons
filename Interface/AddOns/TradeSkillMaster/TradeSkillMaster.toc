@@ -1,12 +1,12 @@
-﻿## Interface: 50001
+## Interface: 50100
 ## Title: |cff00fe00TradeSkillMaster|r
 ## Notes: Core addon for the TradeSkillMaster suite. Does nothing without modules installed.
 ## Author: Sapu94
-## Version: v1.5.8
+## Version: v1.5.12
 ## SavedVariables: TradeSkillMasterDB
 ## OptionalDeps: Ace3, LibDataBroker-1.1, LibDBIcon-1.0, LibExtraTip, TipHelper, lib-st, LibAuctionScan-1.0, LibParse, LibCompress
 ## X-Embeds: Ace3, LibDataBroker-1.1, LibDBIcon-1.0, LibExtraTip, TipHelper, lib-st, LibAuctionScan-1.0, LibParse, LibCompress
-## X-Curse-Packaged-Version: v1.5.8
+## X-Curse-Packaged-Version: v1.5.12
 ## X-Curse-Project-Name: TradeSkillMaster
 ## X-Curse-Project-ID: tradeskill-master
 ## X-Curse-Repository-ID: wow/tradeskill-master/mainline

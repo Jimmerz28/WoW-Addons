@@ -92,6 +92,13 @@ function Config:DrawMain(container)
 
 	local oldTargetIndex
 
+    local deMailTargets = {}
+
+    for _, v in ipairs(TSM.db.factionrealm.mailTargets) do
+        --      for _, v in ipairs(TSMAPI:GetData("playerlist")) do
+        deMailTargets[v] = v
+    end
+
 	local page = {
 		{	-- scroll frame to contain everything
 			type = "ScrollFrame",
@@ -171,6 +178,32 @@ function Config:DrawMain(container)
 								end,
 							tooltip = L["After the initial mailing, the auto-mail feature will automatically restart after however many minutes this slider is set to."],
 						},
+                        {
+                            type = "CheckBox",
+                            label = L["AutoMail Greens for Disenchanting"],
+                            value = TSM.db.profile.autoMailGreens,
+                            callback = function(self,_,value)
+                                for i, widget in ipairs(self.parent.children) do
+                                    if widget == self then
+                                        self.parent.children[i+1]:SetDisabled(not value)
+                                        self:SetValue(value)
+                                        TSM.db.profile.autoMailGreens = value
+                                        break
+                                    end
+                                end
+                            end,
+                            tooltip = L["Checking this will mail green quality Items to the selected mail target for Disenchanting"],
+                        },
+                        {
+                            type = "Dropdown",
+                            label = L["AutoMail target for Greens"],
+                            list = deMailTargets,
+                            value = TSM.db.factionrealm.deMailTarget,
+                            disabled = not TSM.db.profile.autoMailGreens,
+                            relativeWidth = 0.49,
+                            callback = function(_,_,value) TSM.db.factionrealm.deMailTarget = value end,
+                            tooltip = L["Select which Mail Target you would like to send disenchantable green quality items to."],
+                        },
 					},
 				},
 				{
